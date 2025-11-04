@@ -1,14 +1,14 @@
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.o: \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src/SFML/Graphics/Texture.cpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Graphics/Texture.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Graphics/Export.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Config.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src/SFML/Graphics/Texture.cpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Texture.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Export.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Config.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Graphics/Image.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Graphics/Rect.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Vector2.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Image.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Color.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Rect.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Vector2.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -644,7 +644,7 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/execution \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_execution_policy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bit \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Graphics/Rect.inl \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Rect.inl \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__debug_utils/sanitizers.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/enable_insertable.h \
@@ -753,32 +753,32 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/GlResource.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/NonCopyable.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Export.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src/SFML/Graphics/GLCheck.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src/SFML/Graphics/GLExtensions.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/extlibs/headers/glad/include/glad/gl.h \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src/SFML/Graphics/TextureSaver.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/Context.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/Window.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/WindowBase.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/Cursor.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/VideoMode.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/Vulkan.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Clock.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Time.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/String.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Utf.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Utf.inl \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/String.inl \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Mutex.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Lock.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Err.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/GlResource.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/NonCopyable.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Export.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src/SFML/Graphics/GLCheck.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src/SFML/Graphics/GLExtensions.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers/glad/include/glad/gl.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src/SFML/Graphics/TextureSaver.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/Context.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/Window.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/WindowBase.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/Cursor.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/VideoMode.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/Vulkan.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Clock.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Time.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/String.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Utf.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Utf.inl \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/String.inl \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Mutex.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Lock.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Err.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/put_character_sequence.h \

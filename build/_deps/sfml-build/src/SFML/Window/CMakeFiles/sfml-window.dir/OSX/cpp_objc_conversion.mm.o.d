@@ -1,7 +1,7 @@
 _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/OSX/cpp_objc_conversion.mm.o: \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src/SFML/Window/OSX/cpp_objc_conversion.mm \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Utf.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Config.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src/SFML/Window/OSX/cpp_objc_conversion.mm \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Utf.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Config.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
@@ -727,11 +727,11 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/OSX/cpp_objc_convers
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Utf.inl \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src/SFML/Window/OSX/cpp_objc_conversion.h \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/String.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Export.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/String.inl \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Utf.inl \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src/SFML/Window/OSX/cpp_objc_conversion.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/String.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Export.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/String.inl \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/assert.h \

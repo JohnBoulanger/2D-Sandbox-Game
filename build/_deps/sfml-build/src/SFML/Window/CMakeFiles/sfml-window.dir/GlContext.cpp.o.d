@@ -1,16 +1,16 @@
 _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/GlContext.cpp.o: \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src/SFML/Window/GlContext.cpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src/SFML/Window/GlContext.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Config.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src/SFML/Window/GlContext.cpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src/SFML/Window/GlContext.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Config.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/Context.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/GlResource.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/NonCopyable.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Export.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/ThreadLocalPtr.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/ThreadLocal.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/Context.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/GlResource.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/NonCopyable.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Export.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/ThreadLocalPtr.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/ThreadLocal.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdlib \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -96,10 +96,10 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/GlContext.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_abort.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_dev_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_mode_t.h \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/ThreadLocalPtr.inl \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Mutex.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Lock.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Err.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/ThreadLocalPtr.inl \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Mutex.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Lock.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Err.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/operations.h \
@@ -793,11 +793,11 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/GlContext.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/unistd.h \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/extlibs/headers/glad/include/glad/gl.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers/glad/include/glad/gl.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/assert.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_assert.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src/SFML/Window/OSX/SFContext.hpp
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src/SFML/Window/OSX/SFContext.hpp

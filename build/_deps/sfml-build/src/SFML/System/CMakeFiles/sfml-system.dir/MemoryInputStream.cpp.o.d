@@ -1,10 +1,10 @@
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.o: \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src/SFML/System/MemoryInputStream.cpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/MemoryInputStream.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Config.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src/SFML/System/MemoryInputStream.cpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/MemoryInputStream.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Config.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/InputStream.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Export.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/InputStream.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Export.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdlib \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \

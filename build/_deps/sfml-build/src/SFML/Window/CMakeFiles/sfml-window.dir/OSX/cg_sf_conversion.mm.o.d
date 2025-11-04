@@ -1,9 +1,9 @@
 _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/OSX/cg_sf_conversion.mm.o: \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src/SFML/Window/OSX/cg_sf_conversion.mm \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src/SFML/Window/OSX/cg_sf_conversion.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/VideoMode.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Config.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src/SFML/Window/OSX/cg_sf_conversion.mm \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src/SFML/Window/OSX/cg_sf_conversion.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/VideoMode.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Config.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
@@ -1503,8 +1503,8 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/OSX/cg_sf_conversion
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATSUI.framework/Headers/ATSUnicodeFlattening.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATSUI.framework/Headers/ATSUnicodeDirectAccess.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/ApplicationServices.framework/Frameworks/SpeechSynthesis.framework/Headers/SpeechSynthesis.h \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Err.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Export.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Err.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Export.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/put_character_sequence.h \
@@ -1539,11 +1539,11 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/OSX/cg_sf_conversion
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Vector2.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src/SFML/Window/OSX/Scaling.h \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src/SFML/Window/OSX/WindowImplDelegateProtocol.h \
-  /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Vector2.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src/SFML/Window/OSX/Scaling.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src/SFML/Window/OSX/WindowImplDelegateProtocol.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKitDefines.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKitErrors.h \

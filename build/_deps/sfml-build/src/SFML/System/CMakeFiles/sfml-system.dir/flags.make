@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DSFML_SYSTEM_EXPORTS
 
-CXX_INCLUDES = -I/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include -I/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src
+CXX_INCLUDES = -I/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include -I/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src
 
 CXX_FLAGSarm64 = -g -arch arm64 -fPIC -fvisibility=hidden
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include
+CXX_INCLUDES = -I/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include
 
 CXX_FLAGSarm64 = -g -std=gnu++17 -arch arm64
 

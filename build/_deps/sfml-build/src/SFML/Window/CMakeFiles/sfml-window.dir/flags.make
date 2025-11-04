@@ -5,7 +5,7 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = -DSFML_WINDOW_EXPORTS
 
-C_INCLUDES = -I/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include -I/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src -I/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/extlibs/headers/vulkan -isystem /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/extlibs/headers/glad/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
+C_INCLUDES = -I/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include -I/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src -I/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers/vulkan -isystem /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers/glad/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
 
 C_FLAGSarm64 = -g -arch arm64 -fPIC -fvisibility=hidden
 
@@ -13,7 +13,7 @@ C_FLAGS = -g -arch arm64 -fPIC -fvisibility=hidden
 
 CXX_DEFINES = -DSFML_WINDOW_EXPORTS
 
-CXX_INCLUDES = -I/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include -I/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src -I/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/extlibs/headers/vulkan -isystem /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/extlibs/headers/glad/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
+CXX_INCLUDES = -I/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include -I/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src -I/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers/vulkan -isystem /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers/glad/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
 
 CXX_FLAGSarm64 = -g -arch arm64 -fPIC -fvisibility=hidden
 

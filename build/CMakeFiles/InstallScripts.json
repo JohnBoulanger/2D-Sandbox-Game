@@ -1,14 +1,14 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/johnboulanger/Desktop/Games/Terraria/build/cmake_install.cmake",
-		"/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-build/cmake_install.cmake",
-		"/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-build/src/SFML/cmake_install.cmake",
-		"/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-build/src/SFML/System/cmake_install.cmake",
-		"/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-build/src/SFML/Window/cmake_install.cmake",
-		"/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-build/src/SFML/Network/cmake_install.cmake",
-		"/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-build/src/SFML/Graphics/cmake_install.cmake",
-		"/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-build/src/SFML/Audio/cmake_install.cmake"
+		"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/cmake_install.cmake",
+		"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/cmake_install.cmake",
+		"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/cmake_install.cmake",
+		"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/System/cmake_install.cmake",
+		"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Window/cmake_install.cmake",
+		"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Network/cmake_install.cmake",
+		"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Graphics/cmake_install.cmake",
+		"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Audio/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

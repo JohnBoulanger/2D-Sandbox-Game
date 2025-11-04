@@ -4,11 +4,11 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_AUDIO_EXPORTS
 
-CXX_INCLUDES = -I/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/include -I/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/src -isystem /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/extlibs/headers/minimp3 -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenAL.framework/Headers -isystem /Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/extlibs/headers
+CXX_INCLUDES = -I/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include -I/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src -isystem /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers/minimp3 -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenAL.framework/Headers -isystem /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers
 
-CXX_FLAGSarm64 = -g -arch arm64 -fPIC -F/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/extlibs/libs-osx/Frameworks  -fvisibility=hidden
+CXX_FLAGSarm64 = -g -arch arm64 -fPIC -F/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks  -fvisibility=hidden
 
-CXX_FLAGS = -g -arch arm64 -fPIC -F/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-src/extlibs/libs-osx/Frameworks  -fvisibility=hidden
+CXX_FLAGS = -g -arch arm64 -fPIC -F/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks  -fvisibility=hidden
 
 # Custom flags: _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/ALCheck.cpp.o_FLAGS =  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Wno-unknown-warning-option
 

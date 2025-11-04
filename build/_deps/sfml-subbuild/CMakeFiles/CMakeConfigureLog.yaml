@@ -33,6 +33,7 @@ events:
       - "/Library/Apple/usr/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/johnboulanger/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/Library/Frameworks/Python.framework/Versions/3.11/bin/uname"
       - "/usr/local/bin/uname"
@@ -53,6 +54,8 @@ events:
         - "/Library/Apple/usr/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/Users/johnboulanger/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "message-v1"
     backtrace:
@@ -93,6 +96,7 @@ events:
       - "/Library/Apple/usr/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/johnboulanger/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/Library/Frameworks/Python.framework/Versions/3.11/bin/install_name_tool"
       - "/usr/local/bin/install_name_tool"
@@ -113,5 +117,7 @@ events:
         - "/Library/Apple/usr/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/Users/johnboulanger/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
       CMAKE_INSTALL_PREFIX: "/usr/local"
 ...

@@ -8,10 +8,10 @@ int main()
     sf::RectangleShape player(sf::Vector2f(100,400.0/3.0));
     player.setPosition(sf::Vector2f(200.0f, 200.f));
     sf::Texture playerTexture;
-    playerTexture.loadFromFile("textures/player.png");
+    playerTexture.loadFromFile("textures/example.png");
     player.setTexture(&playerTexture);
 
-    Animation animation(&playerTexture, sf::Vector2u(23, 4), 0.1f);
+    Animation animation(&playerTexture, sf::Vector2u(19, 1), 0.2f);
 
     float deltaTime = 0.0f;
     sf::Clock clock;
@@ -36,7 +36,7 @@ int main()
 
             }
         }
-        animation.Update(1, deltaTime);
+        animation.Update(0, deltaTime);
         player.setTextureRect(animation.uvRect);
 
         window.clear();

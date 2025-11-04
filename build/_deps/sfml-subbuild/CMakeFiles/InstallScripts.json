@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/johnboulanger/Desktop/Games/Terraria/build/_deps/sfml-subbuild/cmake_install.cmake"
+		"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-subbuild/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
