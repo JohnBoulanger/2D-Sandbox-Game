@@ -4,14 +4,21 @@
 
 int main()
 {
+    // initialize window object, viewport size x-800 y-600, window name terraria clone
     sf::RenderWindow window(sf::VideoMode(800, 600), "Terraria CLONE", sf::Style::Close | sf::Style::Resize);
-    sf::RectangleShape player(sf::Vector2f(100,400.0/3.0));
+    // initialize the player as a rectangle shape
+    sf::RectangleShape player(sf::Vector2f(50,75));
+    // set the players initial position in the window
     player.setPosition(sf::Vector2f(200.0f, 200.f));
+    // initialize a player texture object and load the file we want to use as the texture
     sf::Texture playerTexture;
-    playerTexture.loadFromFile("textures/example.png");
+    playerTexture.loadFromFile("textures/player.png");
+    // set the texture for the player to the playerTexture reference
     player.setTexture(&playerTexture);
 
-    Animation animation(&playerTexture, sf::Vector2u(19, 1), 0.2f);
+    // initialize an animation object for the player
+    // spritesheet orgainzed in on row for all states, 19 frames, walk, jump, hit, etc...
+    Animation animation(&playerTexture, sf::Vector2u(13, 4), 0.1f);
 
     float deltaTime = 0.0f;
     sf::Clock clock;

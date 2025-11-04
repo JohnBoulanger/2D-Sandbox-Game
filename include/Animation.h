@@ -7,6 +7,7 @@ public:
     Animation(sf::Texture* texture, sf::Vector2u imageCount, float switchTime);
     ~Animation();
 
+    // update the animation frame by frame
     void Update(int row, float deltaTime);
 
 public:
