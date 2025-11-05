@@ -1,24 +1,21 @@
-// PlayerState.h
-#pragma once
+#include <SFML/Graphics.hpp>
+#include "Animation.h"
+#include "PlayerState.h"
 
-enum PlayerState {
-    WALK = 0,
-    JUMP,
-    SWING,
-    IDLE,
-    NUM_STATES
-};
+class Player
+{
+public:
+    Player(PlayerState playerState, sf::Texture* texture, sf::Vector2u imageCount, float switchTime, float speed);
+    ~Player();
 
-// frame counts
-constexpr int NUM_WALK_FRAMES = 13;
-constexpr int NUM_JUMP_FRAMES = 1;
-constexpr int NUM_SWING_FRAMES = 4;
-constexpr int NUM_IDLE_FRAMES = 1;
+    void Update(float deltaTime);
+    void Draw(sf::RenderWindow& window);
 
-
-constexpr int NUM_FRAMES[NUM_STATES] = {
-    NUM_WALK_FRAMES,
-    NUM_JUMP_FRAMES,
-    NUM_SWING_FRAMES,
-    NUM_IDLE_FRAMES
+private:
+    PlayerState playerState;
+    sf::RectangleShape body;
+    Animation animation;
+    unsigned int row;
+    float speed;
+    bool faceLeft;
 };

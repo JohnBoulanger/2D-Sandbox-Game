@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Animation.cpp" "CMakeFiles/main.dir/src/Animation.cpp.o" "gcc" "CMakeFiles/main.dir/src/Animation.cpp.o.d"
+  "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Player.cpp" "CMakeFiles/main.dir/src/Player.cpp.o" "gcc" "CMakeFiles/main.dir/src/Player.cpp.o.d"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
   )
 

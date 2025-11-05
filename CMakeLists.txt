@@ -12,6 +12,7 @@ FetchContent_MakeAvailable(SFML)
 add_executable(main
     src/main.cpp
     src/Animation.cpp
+    src/Player.cpp
 )
 target_link_libraries(main PRIVATE sfml-graphics)
 target_compile_features(main PRIVATE cxx_std_17)

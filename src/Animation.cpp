@@ -22,7 +22,7 @@ Animation::~Animation()
 }
 
 // Update the animation object every fram
-void Animation::Update(int row, float deltaTime, int numFrames, bool faceRight) 
+void Animation::Update(int row, float deltaTime, int numFrames, bool faceLeft) 
 {
     // set spritesheet row and time passed since the most recent frame
     currentImage.y = row;
@@ -40,6 +40,23 @@ void Animation::Update(int row, float deltaTime, int numFrames, bool faceRight)
     }
     
     // set the coordiantes in pixels of the top left portion of the sprite we will use in the spritesheet
-    uvRect.left = currentImage.x * uvRect.width;
+    // if faceLeft true, face the user sprite to the left
+    if (faceLeft)
+    {
+        uvRect.left = currentImage.x * uvRect.width;
+        uvRect.width = abs(uvRect.width);
+    }
+    // otherwise, flip the sprite by multiplying the width by -1
+    else
+    {
+        uvRect.left = (currentImage.x + 1) * -uvRect.width;
+        uvRect.width = -abs(uvRect.width);
+    }
     uvRect.top = currentImage.y * uvRect.height;
+}
+
+void Animation::Reset()
+{
+    currentImage.x = 0;
+    totalTime = 0;
 }
