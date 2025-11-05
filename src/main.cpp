@@ -16,7 +16,7 @@ int main()
     // initialize an animation object for the player
     // spritesheet orgainzed in on row for all states, 19 frames, walk, jump, hit, etc...
     PlayerState defaultPlayerState = IDLE;
-    Player player(defaultPlayerState, &playerTexture, sf::Vector2u(13, 4), 0.1f, 100.0f);
+    Player player(defaultPlayerState, playerTexture, sf::Vector2u(13, 4), 0.1f, 100.0f);
 
     float deltaTime = 0.0f;
     sf::Clock clock;
@@ -41,6 +41,7 @@ int main()
 
             }
         }
+        // animate player and redraw
         player.Update(deltaTime);
         window.clear();
         player.Draw(window);
