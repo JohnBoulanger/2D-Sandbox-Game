@@ -1,8 +1,8 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include "../include/Animation.h"
-#include "../include/Player.h"
-#include "../include/PlayerState.h"
+#include "Animation.h"
+#include "Player.h"
+#include "PlayerState.h"
 
 
 int main()

@@ -1,6 +1,6 @@
 CMakeFiles/main.dir/src/Animation.cpp.o: \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Animation.cpp \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/../include/Animation.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Animation.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System.hpp \

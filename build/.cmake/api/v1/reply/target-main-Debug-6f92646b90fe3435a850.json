@@ -12,6 +12,7 @@
 		[
 			"add_executable",
 			"target_link_libraries",
+			"target_include_directories",
 			"target_compile_features"
 		],
 		"files" : 
@@ -28,13 +29,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 12,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 17,
+				"line" : 24,
 				"parent" : 0
 			},
 			{
@@ -58,7 +59,13 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 18,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 25,
 				"parent" : 0
 			}
 		]
@@ -75,6 +82,10 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 7,
+					"path" : "/Users/johnboulanger/Desktop/Games/Terraria-Clone/include"
+				},
+				{
 					"backtrace" : 2,
 					"path" : "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include"
 				}
@@ -84,7 +95,7 @@
 			{
 				"backtraces" : 
 				[
-					7
+					8
 				],
 				"standard" : "17"
 			},

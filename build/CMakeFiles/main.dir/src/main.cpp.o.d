@@ -870,6 +870,6 @@ CMakeFiles/main.dir/src/main.cpp.o: \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/../include/Animation.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/../include/Player.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/../include/PlayerState.h
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Animation.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Player.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/PlayerState.h

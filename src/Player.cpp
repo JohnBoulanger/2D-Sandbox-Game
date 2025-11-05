@@ -1,4 +1,4 @@
-#include "../include/Player.h"
+#include "Player.h"
 
 Player::Player(PlayerState playerState, sf::Texture* texture, sf::Vector2u imageCount, float switchTime, float speed) :
     animation(texture, imageCount, switchTime)

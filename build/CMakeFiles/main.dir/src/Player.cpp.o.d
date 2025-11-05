@@ -1,6 +1,6 @@
 CMakeFiles/main.dir/src/Player.cpp.o: \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Player.cpp \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/../include/Player.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Player.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System.hpp \
@@ -869,5 +869,5 @@ CMakeFiles/main.dir/src/Player.cpp.o: \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Sprite.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Text.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/../include/Animation.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/../include/PlayerState.h
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Animation.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/PlayerState.h
