@@ -8,7 +8,7 @@ public:
     ~Animation();
 
     // update the animation frame by frame
-    void Update(int row, float deltaTime);
+    void Update(int row, float deltaTime, int numFrames, bool faceRight);
 
 public:
     sf::IntRect uvRect;

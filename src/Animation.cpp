@@ -22,7 +22,7 @@ Animation::~Animation()
 }
 
 // Update the animation object every fram
-void Animation::Update(int row, float deltaTime) 
+void Animation::Update(int row, float deltaTime, int numFrames, bool faceRight) 
 {
     // set spritesheet row and time passed since the most recent frame
     currentImage.y = row;
@@ -33,7 +33,7 @@ void Animation::Update(int row, float deltaTime)
     {
         totalTime -= switchTime;
         currentImage.x++;
-        if (currentImage.x >= imageCount.x)
+        if (currentImage.x >= numFrames)
         {
             currentImage.x = 0;
         }

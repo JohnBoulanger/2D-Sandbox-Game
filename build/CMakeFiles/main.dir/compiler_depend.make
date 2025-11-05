@@ -1743,7 +1743,8 @@ CMakeFiles/main.dir/src/main.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-
   _deps/sfml-src/include/SFML/Window/WindowBase.hpp \
   _deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
   _deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Animation.h
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Animation.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Player.h
 
 
 _deps/sfml-src/include/SFML/Window/WindowHandle.hpp:
@@ -3017,6 +3018,8 @@ _deps/sfml-src/include/SFML/Graphics.hpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/check_memory_order.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/gamma.h:
+
+/Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Player.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/atomic_lock_free.h:
 

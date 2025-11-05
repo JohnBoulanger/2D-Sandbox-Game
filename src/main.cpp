@@ -1,6 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include "../include/Animation.h"
+#include "../include/Player.h"
 
 int main()
 {
@@ -23,6 +24,8 @@ int main()
     float deltaTime = 0.0f;
     sf::Clock clock;
 
+    PlayerState currentState = SWING;
+
     // run the program as long as the window is open
     while (window.isOpen())
     {
@@ -43,7 +46,7 @@ int main()
 
             }
         }
-        animation.Update(0, deltaTime);
+        animation.Update(currentState, deltaTime, NUM_FRAMES[currentState], false);
         player.setTextureRect(animation.uvRect);
 
         window.clear();
