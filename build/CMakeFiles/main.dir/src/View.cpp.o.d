@@ -1,5 +1,6 @@
-CMakeFiles/main.dir/src/main.cpp.o: \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/main.cpp \
+CMakeFiles/main.dir/src/View.cpp.o: \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/View.cpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/View.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System.hpp \
@@ -867,14 +868,4 @@ CMakeFiles/main.dir/src/main.cpp.o: \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Glsl.inl \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Sprite.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Text.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Animation.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Player.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/PlayerState.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Collider.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Platform.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/PhysicsConstants.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/View.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Map.h
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp

@@ -307,6 +307,30 @@ src/Collider.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Collider.cpp.s
 .PHONY : src/Collider.cpp.s
 
+src/Map.o: src/Map.cpp.o
+.PHONY : src/Map.o
+
+# target to build an object file
+src/Map.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Map.cpp.o
+.PHONY : src/Map.cpp.o
+
+src/Map.i: src/Map.cpp.i
+.PHONY : src/Map.i
+
+# target to preprocess a source file
+src/Map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Map.cpp.i
+.PHONY : src/Map.cpp.i
+
+src/Map.s: src/Map.cpp.s
+.PHONY : src/Map.s
+
+# target to generate assembly for a file
+src/Map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Map.cpp.s
+.PHONY : src/Map.cpp.s
+
 src/Platform.o: src/Platform.cpp.o
 .PHONY : src/Platform.o
 
@@ -354,6 +378,30 @@ src/Player.s: src/Player.cpp.s
 src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
+
+src/View.o: src/View.cpp.o
+.PHONY : src/View.o
+
+# target to build an object file
+src/View.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/View.cpp.o
+.PHONY : src/View.cpp.o
+
+src/View.i: src/View.cpp.i
+.PHONY : src/View.i
+
+# target to preprocess a source file
+src/View.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/View.cpp.i
+.PHONY : src/View.cpp.i
+
+src/View.s: src/View.cpp.s
+.PHONY : src/View.s
+
+# target to generate assembly for a file
+src/View.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/View.cpp.s
+.PHONY : src/View.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -405,12 +453,18 @@ help:
 	@echo "... src/Collider.o"
 	@echo "... src/Collider.i"
 	@echo "... src/Collider.s"
+	@echo "... src/Map.o"
+	@echo "... src/Map.i"
+	@echo "... src/Map.s"
 	@echo "... src/Platform.o"
 	@echo "... src/Platform.i"
 	@echo "... src/Platform.s"
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
+	@echo "... src/View.o"
+	@echo "... src/View.i"
+	@echo "... src/View.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -5,48 +5,36 @@
 #include "PlayerState.h"
 #include "Platform.h"
 #include "PhysicsConstants.h"
-
-static const float VIEW_HEIGHT = 600.0f;
-static const float VIEW_WIDTH  = VIEW_HEIGHT * (4.0f / 3.0f);
-
-void ResizeView(const sf::RenderWindow& window, sf::View& view)
-{
-    float aspectRatio = static_cast<float>(window.getSize().x) / static_cast<float>(window.getSize().y);
-    float targetRatio = VIEW_WIDTH / VIEW_HEIGHT;
-
-    if (aspectRatio >= targetRatio)
-    {
-        // window wider than target: pillarbox
-        float newWidth = VIEW_HEIGHT * aspectRatio;
-        view.setSize(newWidth, VIEW_HEIGHT);
-    }
-    else
-    {
-        // window taller than target: letterbox
-        float newHeight = VIEW_WIDTH / aspectRatio;
-        view.setSize(VIEW_WIDTH, newHeight);
-    }
-}
-
+#include "View.h"
+#include "Map.h"
 
 int main()
 {
-    // initialize window object, viewport size x-800 y-600, window name terraria clone
+    // init window
     sf::RenderWindow window(sf::VideoMode(800, 600), "Terraria CLONE", sf::Style::Close | sf::Style::Resize);
-    // initialize a player texture object and load the file we want to use as the texture
+
+    // init player
     sf::Texture playerTexture;
     playerTexture.loadFromFile("textures/player.png");
 
-    // create a view
+    // init view
     sf::View view(sf::Vector2f(0.0f, 0.0f), sf::Vector2f(VIEW_WIDTH, VIEW_HEIGHT));
 
-    // initialize an animation object for the player
-    // spritesheet orgainzed in on row for all states, 19 frames, walk, jump, hit, etc...
+    // init player state and spritesheet
     PlayerState defaultPlayerState = IDLE;
     Player player(defaultPlayerState, playerTexture, sf::Vector2u(13, 4), 0.1f, SPEED, JUMP_HEIGHT);
-
     // create a platform for the player to stand on
     Platform platform1(nullptr, sf::Vector2f(400.0f, 200.0f), sf::Vector2f(400.0f, 330.0f));
+    // init map
+    Map myMap(32);
+    // print map
+    for (int i = 0; i < 32; i++) {
+        for (int j = 0; j < 32; j++) {
+            printf("%d", myMap.GetMap()[i][j]);
+        }
+        printf("\n");
+    }
+
 
     float deltaTime = 0.0f;
     sf::Clock clock;

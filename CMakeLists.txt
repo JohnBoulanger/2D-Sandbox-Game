@@ -16,6 +16,8 @@ add_executable(main
     src/Player.cpp
     src/Platform.cpp
     src/Collider.cpp
+    src/View.cpp
+    src/Map.cpp
 )
 
 # Allow clean includes like #include "Player.h"
