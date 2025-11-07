@@ -3486,6 +3486,7 @@ CMakeFiles/main.dir/src/Player.cpp.o: /Users/johnboulanger/Desktop/Games/Terrari
   _deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Animation.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Collider.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/PhysicsConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Player.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/PlayerState.h
 
@@ -4362,6 +4363,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-
   _deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Animation.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Collider.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/PhysicsConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Platform.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Player.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/PlayerState.h
@@ -5456,6 +5458,8 @@ _deps/sfml-src/include/SFML/Graphics/Font.hpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/atomic_init.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h:
+
+/Users/johnboulanger/Desktop/Games/Terraria-Clone/include/PhysicsConstants.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/is_valid.h:
 

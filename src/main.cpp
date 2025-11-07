@@ -4,6 +4,7 @@
 #include "Player.h"
 #include "PlayerState.h"
 #include "Platform.h"
+#include "PhysicsConstants.h"
 
 static const float VIEW_HEIGHT = 600.0f;
 static const float VIEW_WIDTH  = VIEW_HEIGHT * (4.0f / 3.0f);
@@ -42,18 +43,20 @@ int main()
     // initialize an animation object for the player
     // spritesheet orgainzed in on row for all states, 19 frames, walk, jump, hit, etc...
     PlayerState defaultPlayerState = IDLE;
-    Player player(defaultPlayerState, playerTexture, sf::Vector2u(13, 4), 0.1f, 100.0f);
+    Player player(defaultPlayerState, playerTexture, sf::Vector2u(13, 4), 0.1f, SPEED, JUMP_HEIGHT);
 
     // create a platform for the player to stand on
     Platform platform1(nullptr, sf::Vector2f(400.0f, 200.0f), sf::Vector2f(400.0f, 330.0f));
 
     float deltaTime = 0.0f;
     sf::Clock clock;
-
+    
     // run the program as long as the window is open
     while (window.isOpen())
     {
         deltaTime = clock.restart().asSeconds();
+        if (deltaTime > 1.0f / 20.0f)
+            deltaTime = 1.0f / 20.0f;
 
         // check all the window's events that were triggered since the last iteration of the loop
         sf::Event event;
@@ -74,7 +77,11 @@ int main()
         }
         // animate player and redraw
         player.Update(deltaTime);
-        platform1.GetCollider().CheckCollision(player.GetCollider(), 0.0f);
+        sf::Vector2f direction;
+        // if the player is colliding with something, determine which direction its coming from
+        // then using that direction update the players velocity and jump state
+        if (platform1.GetCollider().CheckCollision(player.GetCollider(), direction, 0.0f))
+            player.OnCollision(direction);
 
         view.setCenter(player.GetPosition());
 

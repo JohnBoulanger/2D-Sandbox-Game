@@ -874,4 +874,5 @@ CMakeFiles/main.dir/src/main.cpp.o: \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Player.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/PlayerState.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Collider.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Platform.h
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Platform.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/PhysicsConstants.h

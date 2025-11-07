@@ -871,4 +871,5 @@ CMakeFiles/main.dir/src/Player.cpp.o: \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Animation.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/PlayerState.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Collider.h
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Collider.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/PhysicsConstants.h

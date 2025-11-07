@@ -11,7 +11,7 @@ Collider::~Collider()
 
 }
 
-bool Collider::CheckCollision(Collider& other, float push)
+bool Collider::CheckCollision(Collider& other, sf::Vector2f& direction, float push)
 {
     sf::Vector2f otherPosition = other.GetPosition();
     sf::Vector2f otherHalfSize = other.GetHalfSize();
@@ -38,26 +38,42 @@ bool Collider::CheckCollision(Collider& other, float push)
             // move colliding objects in opposite directions in the x-axis (intersect X is currently negative already)
             if (dx > 0.0f)
             {
+                // colliding with something to the right of us
                 Move(intersectX * (1.0f - push), 0.0f);
                 other.Move(-intersectX * push, 0.0f);
+
+                direction.x = 1.0f;
+                direction.y = 0.0f;
             }
             else 
             {
+                // colliding with something to the left of us
                 Move(-intersectX * (1.0f - push), 0.0f);
                 other.Move(intersectX * push, 0.0f);
+
+                direction.x = -1.0f;
+                direction.y = 0.0f;
             }
         }
         else
         {
             if (dy > 0.0f)
             {
+                // colliding with something underneath us
                 Move(0.0f, intersectY * (1.0f - push));
                 other.Move(0.0f, -intersectY * push);
+
+                direction.x = 0.0f;
+                direction.y = 1.0f;
             }
             else 
             {
+                // colliding with something above us
                 Move(0.0f, -intersectY * (1.0f - push));
                 other.Move(0.0f, intersectY * push);
+
+                direction.x = 0.0f;
+                direction.y = -1.0f;
             }
         }
 

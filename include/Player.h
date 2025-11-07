@@ -6,11 +6,12 @@
 class Player
 {
 public:
-    Player(PlayerState playerState, sf::Texture& texture, sf::Vector2u imageCount, float switchTime, float speed);
+    Player(PlayerState playerState, sf::Texture& texture, sf::Vector2u imageCount, float switchTime, float speed, float jumpHeight);
     ~Player();
 
     void Update(float deltaTime);
     void Draw(sf::RenderWindow& window);
+    void OnCollision(sf::Vector2f direction);
 
     sf::Vector2f GetPosition() { return body.getPosition(); }
     Collider& GetCollider() { return collider; }
@@ -20,6 +21,9 @@ private:
     PlayerState playerState;
     sf::Sprite body;
     float speed;
+    sf::Vector2f velocity;
+    bool canJump;
+    float jumpHeight;
     
     // player animation
     Animation animation;
@@ -29,5 +33,5 @@ private:
     // player hitbox
     sf::RectangleShape hitbox;
     Collider collider;
-    sf::Vector2f hitboxOffset = {0.0f, 5.0f};
+    sf::Vector2f hitboxOffset = {0.0f, 4.0f};
 };

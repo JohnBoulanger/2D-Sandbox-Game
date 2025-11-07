@@ -1,13 +1,15 @@
 #include "Player.h"
+#include "PhysicsConstants.h"
 
 // initialize player
 // use reference to texture to signify that the player owns that sprite texture and directly depends on being valid and uses it
 // construct the animation before the constructor body executes
-Player::Player(PlayerState playerState, sf::Texture& texture, sf::Vector2u imageCount, float switchTime, float speed) :
+Player::Player(PlayerState playerState, sf::Texture& texture, sf::Vector2u imageCount, float switchTime, float speed, float jumpHeight) :
     animation(&texture, imageCount, switchTime),
     collider(hitbox)
 {
     this->speed = speed;
+    this->jumpHeight = jumpHeight;
     row = 0;
     faceLeft = true;
     playerState = IDLE;
@@ -47,28 +49,35 @@ void Player::Update(float deltaTime)
 {
     // keep track of old player state
     static PlayerState previousPlayerState = playerState;
-    // reset movement to 0 initially for each frame
-    sf::Vector2f movement(0.0f, 0.0f);
+
+    // initial x velocity to 0 if nothing pressed
+    velocity.x = 0.0f;
+
 
     // get user input and update movement speed
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-        movement.x -= speed * deltaTime;
+        velocity.x -= speed;
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
-        movement.x += speed * deltaTime;
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
-        movement.y -= speed * deltaTime;
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
-        movement.y += speed * deltaTime;
+        velocity.x += speed;
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && canJump)
+    {
+        canJump = false;
+        velocity.y = -sqrtf(981.0f * jumpHeight);
+    }
+
+    velocity.y += 981.0f * deltaTime;
+    // clamp max velocity in the y direction
+    velocity.y = std::min(std::max(-MAX_Y, velocity.y), MAX_Y);
 
     // determine state based on player movement which determines what sprite to render
-    if (movement.x == 0.0f && movement.y == 0.0f)
+    if (canJump && velocity.x == 0.0f)
         playerState = IDLE;
-    if (abs(movement.x) > 0.0f)
+    if (abs(velocity.x) > 0.0f)
     {
         playerState = WALK;
-        faceLeft = (movement.x < 0.0f);
+        faceLeft = (velocity.x < 0.0f);
     }
-    if (abs(movement.y) > 0.0f)
+    if (!canJump)
     {
         playerState = JUMP;
     } 
@@ -84,6 +93,31 @@ void Player::Update(float deltaTime)
     animation.Update(playerState, deltaTime, NUM_FRAMES[playerState], faceLeft);
     body.setTextureRect(animation.uvRect);
     // move the sprite by an "offset" defined in the vector2f movement
-    body.move(movement);
+    body.move(velocity * deltaTime);
     hitbox.setPosition(body.getPosition() + hitboxOffset);
+}
+
+void Player::OnCollision(sf::Vector2f direction)
+{
+    // colliding with something to the left
+    if (direction.x < 0.0f)
+    {
+        velocity.x = 0;
+    }
+    // right
+    else if (direction.x > 0.0f)
+    {
+        velocity.x = 0;
+    }
+    // below
+    if (direction.y < 0.0f)
+    {
+        velocity.y = 0;
+        canJump = true;
+    }
+    // above
+    else if (direction.y > 0.0f)
+    {
+        velocity.y = 0;
+    }
 }
