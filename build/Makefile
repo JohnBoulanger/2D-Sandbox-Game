@@ -283,6 +283,54 @@ src/Animation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Animation.cpp.s
 .PHONY : src/Animation.cpp.s
 
+src/Collider.o: src/Collider.cpp.o
+.PHONY : src/Collider.o
+
+# target to build an object file
+src/Collider.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Collider.cpp.o
+.PHONY : src/Collider.cpp.o
+
+src/Collider.i: src/Collider.cpp.i
+.PHONY : src/Collider.i
+
+# target to preprocess a source file
+src/Collider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Collider.cpp.i
+.PHONY : src/Collider.cpp.i
+
+src/Collider.s: src/Collider.cpp.s
+.PHONY : src/Collider.s
+
+# target to generate assembly for a file
+src/Collider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Collider.cpp.s
+.PHONY : src/Collider.cpp.s
+
+src/Platform.o: src/Platform.cpp.o
+.PHONY : src/Platform.o
+
+# target to build an object file
+src/Platform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Platform.cpp.o
+.PHONY : src/Platform.cpp.o
+
+src/Platform.i: src/Platform.cpp.i
+.PHONY : src/Platform.i
+
+# target to preprocess a source file
+src/Platform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Platform.cpp.i
+.PHONY : src/Platform.cpp.i
+
+src/Platform.s: src/Platform.cpp.s
+.PHONY : src/Platform.s
+
+# target to generate assembly for a file
+src/Platform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Platform.cpp.s
+.PHONY : src/Platform.cpp.s
+
 src/Player.o: src/Player.cpp.o
 .PHONY : src/Player.o
 
@@ -354,6 +402,12 @@ help:
 	@echo "... src/Animation.o"
 	@echo "... src/Animation.i"
 	@echo "... src/Animation.s"
+	@echo "... src/Collider.o"
+	@echo "... src/Collider.i"
+	@echo "... src/Collider.s"
+	@echo "... src/Platform.o"
+	@echo "... src/Platform.i"
+	@echo "... src/Platform.s"
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"

@@ -4,18 +4,30 @@
 // use reference to texture to signify that the player owns that sprite texture and directly depends on being valid and uses it
 // construct the animation before the constructor body executes
 Player::Player(PlayerState playerState, sf::Texture& texture, sf::Vector2u imageCount, float switchTime, float speed) :
-    animation(&texture, imageCount, switchTime)
+    animation(&texture, imageCount, switchTime),
+    collider(hitbox)
 {
     this->speed = speed;
     row = 0;
     faceLeft = true;
     playerState = IDLE;
 
-    // initialize the player as a rectangle shape
-    // set the players initial position in the window
-    body.setPosition(sf::Vector2f(200.0f, 200.f));
     // set the texture for the player to the playerTexture reference
     body.setTexture(texture);
+    body.setTextureRect(animation.uvRect);
+    // set the players origin
+    sf::FloatRect bounds = body.getLocalBounds();
+    body.setOrigin(bounds.width / 2.0f, bounds.height / 2.0f);
+    body.setScale(1.5f, 1.5f);
+    // initial world positon
+    body.setPosition(400.0f, 300.0f);
+
+    // initialize the hitbox for the player
+    hitbox.setSize(sf::Vector2f(bounds.width, bounds.height));
+    hitbox.setOrigin(hitbox.getSize() / 2.0f);
+    hitbox.setScale(0.75f, 0.75f);
+    hitbox.setPosition(400.0f, 300.0f);
+    hitbox.setFillColor(sf::Color(255, 0, 0, 0));
 }
 
 Player::~Player()
@@ -27,6 +39,7 @@ Player::~Player()
 void Player::Draw(sf::RenderWindow& window)
 {
     window.draw(body);
+    window.draw(hitbox);
 }
 
 // update the players state and position based on user input
@@ -42,14 +55,23 @@ void Player::Update(float deltaTime)
         movement.x -= speed * deltaTime;
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
         movement.x += speed * deltaTime;
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+        movement.y -= speed * deltaTime;
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+        movement.y += speed * deltaTime;
 
     // determine state based on player movement which determines what sprite to render
-    if (movement.x == 0.0f)
+    if (movement.x == 0.0f && movement.y == 0.0f)
         playerState = IDLE;
-    else {
+    if (abs(movement.x) > 0.0f)
+    {
         playerState = WALK;
         faceLeft = (movement.x < 0.0f);
     }
+    if (abs(movement.y) > 0.0f)
+    {
+        playerState = JUMP;
+    } 
 
     // if the player has changed states, use sprite frame 0 of the new state by calling reset
     if (previousPlayerState != playerState)
@@ -63,4 +85,5 @@ void Player::Update(float deltaTime)
     body.setTextureRect(animation.uvRect);
     // move the sprite by an "offset" defined in the vector2f movement
     body.move(movement);
+    hitbox.setPosition(body.getPosition() + hitboxOffset);
 }

@@ -14,6 +14,8 @@ add_executable(main
     src/main.cpp
     src/Animation.cpp
     src/Player.cpp
+    src/Platform.cpp
+    src/Collider.cpp
 )
 
 # Allow clean includes like #include "Player.h"
@@ -23,3 +25,6 @@ target_include_directories(main PRIVATE
 
 target_link_libraries(main PRIVATE sfml-graphics)
 target_compile_features(main PRIVATE cxx_std_17)
+
+set(CMAKE_BUILD_TYPE Debug)
+

@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/Animation.cpp.o"
   "CMakeFiles/main.dir/src/Animation.cpp.o.d"
+  "CMakeFiles/main.dir/src/Collider.cpp.o"
+  "CMakeFiles/main.dir/src/Collider.cpp.o.d"
+  "CMakeFiles/main.dir/src/Platform.cpp.o"
+  "CMakeFiles/main.dir/src/Platform.cpp.o.d"
   "CMakeFiles/main.dir/src/Player.cpp.o"
   "CMakeFiles/main.dir/src/Player.cpp.o.d"
   "CMakeFiles/main.dir/src/main.cpp.o"

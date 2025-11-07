@@ -872,4 +872,6 @@ CMakeFiles/main.dir/src/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Animation.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Player.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/PlayerState.h
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/PlayerState.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Collider.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/Platform.h
