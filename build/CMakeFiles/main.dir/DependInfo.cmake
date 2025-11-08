@@ -10,9 +10,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Animation.cpp" "CMakeFiles/main.dir/src/Animation.cpp.o" "gcc" "CMakeFiles/main.dir/src/Animation.cpp.o.d"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Collider.cpp" "CMakeFiles/main.dir/src/Collider.cpp.o" "gcc" "CMakeFiles/main.dir/src/Collider.cpp.o.d"
+  "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Game.cpp" "CMakeFiles/main.dir/src/Game.cpp.o" "gcc" "CMakeFiles/main.dir/src/Game.cpp.o.d"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Map.cpp" "CMakeFiles/main.dir/src/Map.cpp.o" "gcc" "CMakeFiles/main.dir/src/Map.cpp.o.d"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Platform.cpp" "CMakeFiles/main.dir/src/Platform.cpp.o" "gcc" "CMakeFiles/main.dir/src/Platform.cpp.o.d"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Player.cpp" "CMakeFiles/main.dir/src/Player.cpp.o" "gcc" "CMakeFiles/main.dir/src/Player.cpp.o.d"
+  "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/TextureUtils.cpp" "CMakeFiles/main.dir/src/TextureUtils.cpp.o" "gcc" "CMakeFiles/main.dir/src/TextureUtils.cpp.o.d"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/View.cpp" "CMakeFiles/main.dir/src/View.cpp.o" "gcc" "CMakeFiles/main.dir/src/View.cpp.o.d"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
   )

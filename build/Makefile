@@ -307,6 +307,30 @@ src/Collider.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Collider.cpp.s
 .PHONY : src/Collider.cpp.s
 
+src/Game.o: src/Game.cpp.o
+.PHONY : src/Game.o
+
+# target to build an object file
+src/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Game.cpp.o
+.PHONY : src/Game.cpp.o
+
+src/Game.i: src/Game.cpp.i
+.PHONY : src/Game.i
+
+# target to preprocess a source file
+src/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
+
+src/Game.s: src/Game.cpp.s
+.PHONY : src/Game.s
+
+# target to generate assembly for a file
+src/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
+
 src/Map.o: src/Map.cpp.o
 .PHONY : src/Map.o
 
@@ -378,6 +402,30 @@ src/Player.s: src/Player.cpp.s
 src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
+
+src/TextureUtils.o: src/TextureUtils.cpp.o
+.PHONY : src/TextureUtils.o
+
+# target to build an object file
+src/TextureUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TextureUtils.cpp.o
+.PHONY : src/TextureUtils.cpp.o
+
+src/TextureUtils.i: src/TextureUtils.cpp.i
+.PHONY : src/TextureUtils.i
+
+# target to preprocess a source file
+src/TextureUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TextureUtils.cpp.i
+.PHONY : src/TextureUtils.cpp.i
+
+src/TextureUtils.s: src/TextureUtils.cpp.s
+.PHONY : src/TextureUtils.s
+
+# target to generate assembly for a file
+src/TextureUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TextureUtils.cpp.s
+.PHONY : src/TextureUtils.cpp.s
 
 src/View.o: src/View.cpp.o
 .PHONY : src/View.o
@@ -453,6 +501,9 @@ help:
 	@echo "... src/Collider.o"
 	@echo "... src/Collider.i"
 	@echo "... src/Collider.s"
+	@echo "... src/Game.o"
+	@echo "... src/Game.i"
+	@echo "... src/Game.s"
 	@echo "... src/Map.o"
 	@echo "... src/Map.i"
 	@echo "... src/Map.s"
@@ -462,6 +513,9 @@ help:
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
+	@echo "... src/TextureUtils.o"
+	@echo "... src/TextureUtils.i"
+	@echo "... src/TextureUtils.s"
 	@echo "... src/View.o"
 	@echo "... src/View.i"
 	@echo "... src/View.s"

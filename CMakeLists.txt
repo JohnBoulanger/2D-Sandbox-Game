@@ -12,12 +12,14 @@ FetchContent_MakeAvailable(SFML)
 
 add_executable(main
     src/main.cpp
+    src/Game.cpp
     src/Animation.cpp
     src/Player.cpp
     src/Platform.cpp
     src/Collider.cpp
     src/View.cpp
     src/Map.cpp
+    src/TextureUtils.cpp
 )
 
 # Allow clean includes like #include "Player.h"

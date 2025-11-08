@@ -86,10 +86,24 @@ CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
 
+CMakeFiles/main.dir/src/Game.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/Game.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Game.cpp
+CMakeFiles/main.dir/src/Game.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Game.cpp.o -MF CMakeFiles/main.dir/src/Game.cpp.o.d -o CMakeFiles/main.dir/src/Game.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Game.cpp
+
+CMakeFiles/main.dir/src/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Game.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Game.cpp > CMakeFiles/main.dir/src/Game.cpp.i
+
+CMakeFiles/main.dir/src/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Game.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Game.cpp -o CMakeFiles/main.dir/src/Game.cpp.s
+
 CMakeFiles/main.dir/src/Animation.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Animation.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Animation.cpp
 CMakeFiles/main.dir/src/Animation.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/Animation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/Animation.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Animation.cpp.o -MF CMakeFiles/main.dir/src/Animation.cpp.o.d -o CMakeFiles/main.dir/src/Animation.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Animation.cpp
 
 CMakeFiles/main.dir/src/Animation.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/main.dir/src/Animation.cpp.s: cmake_force
 CMakeFiles/main.dir/src/Player.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Player.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Player.cpp
 CMakeFiles/main.dir/src/Player.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/Player.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Player.cpp.o -MF CMakeFiles/main.dir/src/Player.cpp.o.d -o CMakeFiles/main.dir/src/Player.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Player.cpp
 
 CMakeFiles/main.dir/src/Player.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/main.dir/src/Player.cpp.s: cmake_force
 CMakeFiles/main.dir/src/Platform.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Platform.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Platform.cpp
 CMakeFiles/main.dir/src/Platform.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/Platform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/Platform.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Platform.cpp.o -MF CMakeFiles/main.dir/src/Platform.cpp.o.d -o CMakeFiles/main.dir/src/Platform.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Platform.cpp
 
 CMakeFiles/main.dir/src/Platform.cpp.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/main.dir/src/Platform.cpp.s: cmake_force
 CMakeFiles/main.dir/src/Collider.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Collider.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Collider.cpp
 CMakeFiles/main.dir/src/Collider.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/Collider.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/Collider.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Collider.cpp.o -MF CMakeFiles/main.dir/src/Collider.cpp.o.d -o CMakeFiles/main.dir/src/Collider.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Collider.cpp
 
 CMakeFiles/main.dir/src/Collider.cpp.i: cmake_force
@@ -145,7 +159,7 @@ CMakeFiles/main.dir/src/Collider.cpp.s: cmake_force
 CMakeFiles/main.dir/src/View.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/View.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/View.cpp
 CMakeFiles/main.dir/src/View.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/View.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/View.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/View.cpp.o -MF CMakeFiles/main.dir/src/View.cpp.o.d -o CMakeFiles/main.dir/src/View.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/View.cpp
 
 CMakeFiles/main.dir/src/View.cpp.i: cmake_force
@@ -159,7 +173,7 @@ CMakeFiles/main.dir/src/View.cpp.s: cmake_force
 CMakeFiles/main.dir/src/Map.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Map.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Map.cpp
 CMakeFiles/main.dir/src/Map.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/Map.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/Map.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Map.cpp.o -MF CMakeFiles/main.dir/src/Map.cpp.o.d -o CMakeFiles/main.dir/src/Map.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Map.cpp
 
 CMakeFiles/main.dir/src/Map.cpp.i: cmake_force
@@ -170,32 +184,50 @@ CMakeFiles/main.dir/src/Map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Map.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/Map.cpp -o CMakeFiles/main.dir/src/Map.cpp.s
 
+CMakeFiles/main.dir/src/TextureUtils.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/TextureUtils.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/TextureUtils.cpp
+CMakeFiles/main.dir/src/TextureUtils.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/src/TextureUtils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/TextureUtils.cpp.o -MF CMakeFiles/main.dir/src/TextureUtils.cpp.o.d -o CMakeFiles/main.dir/src/TextureUtils.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/TextureUtils.cpp
+
+CMakeFiles/main.dir/src/TextureUtils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/TextureUtils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/TextureUtils.cpp > CMakeFiles/main.dir/src/TextureUtils.cpp.i
+
+CMakeFiles/main.dir/src/TextureUtils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/TextureUtils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/TextureUtils.cpp -o CMakeFiles/main.dir/src/TextureUtils.cpp.s
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/src/main.cpp.o" \
+"CMakeFiles/main.dir/src/Game.cpp.o" \
 "CMakeFiles/main.dir/src/Animation.cpp.o" \
 "CMakeFiles/main.dir/src/Player.cpp.o" \
 "CMakeFiles/main.dir/src/Platform.cpp.o" \
 "CMakeFiles/main.dir/src/Collider.cpp.o" \
 "CMakeFiles/main.dir/src/View.cpp.o" \
-"CMakeFiles/main.dir/src/Map.cpp.o"
+"CMakeFiles/main.dir/src/Map.cpp.o" \
+"CMakeFiles/main.dir/src/TextureUtils.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
 bin/main: CMakeFiles/main.dir/src/main.cpp.o
+bin/main: CMakeFiles/main.dir/src/Game.cpp.o
 bin/main: CMakeFiles/main.dir/src/Animation.cpp.o
 bin/main: CMakeFiles/main.dir/src/Player.cpp.o
 bin/main: CMakeFiles/main.dir/src/Platform.cpp.o
 bin/main: CMakeFiles/main.dir/src/Collider.cpp.o
 bin/main: CMakeFiles/main.dir/src/View.cpp.o
 bin/main: CMakeFiles/main.dir/src/Map.cpp.o
+bin/main: CMakeFiles/main.dir/src/TextureUtils.cpp.o
 bin/main: CMakeFiles/main.dir/build.make
 bin/main: _deps/sfml-build/lib/libsfml-graphics-d.2.6.2.dylib
 bin/main: _deps/sfml-build/lib/libsfml-window-d.2.6.2.dylib
 bin/main: _deps/sfml-build/lib/libsfml-system-d.2.6.2.dylib
 bin/main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable bin/main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable bin/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

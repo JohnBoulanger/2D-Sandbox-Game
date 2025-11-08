@@ -32,3 +32,14 @@ Map::~Map()
 {
 
 }
+
+void Map::PrintMap()
+{
+    // print map
+    for (int i = 0; i < 32; i++) {
+        for (int j = 0; j < 32; j++) {
+            printf("%d", map[i][j]);
+        }
+        printf("\n");
+    }
+}

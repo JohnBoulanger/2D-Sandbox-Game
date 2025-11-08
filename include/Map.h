@@ -7,7 +7,7 @@ public:
     Map(int size);
     ~Map();
 
-    std::vector<std::vector<int>> GetMap() { return map; }
+    void PrintMap();
 
 private:
     std::vector<std::vector<int>> map;    
