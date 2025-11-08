@@ -1,4 +1,4 @@
-/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/main.dir
+/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/terraria_clone.dir
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/package.dir
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/package_source.dir
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/edit_cache.dir

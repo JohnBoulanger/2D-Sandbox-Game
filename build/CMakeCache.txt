@@ -200,7 +200,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=CMakeSFMLProject
+CMAKE_PROJECT_NAME:STATIC=terraria_clone
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -475,6 +475,15 @@ sfml-system_LIB_DEPENDS:STATIC=general;pthread;
 
 //Dependencies for the target
 sfml-window_LIB_DEPENDS:STATIC=general;sfml-system;general;-framework Foundation;general;-framework AppKit;general;-framework IOKit;general;-framework Carbon;
+
+//Value Computed by CMake
+terraria_clone_BINARY_DIR:STATIC=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build
+
+//Value Computed by CMake
+terraria_clone_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+terraria_clone_SOURCE_DIR:STATIC=/Users/johnboulanger/Desktop/Games/Terraria-Clone
 
 
 ########################

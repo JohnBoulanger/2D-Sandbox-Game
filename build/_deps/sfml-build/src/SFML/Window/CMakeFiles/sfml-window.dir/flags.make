@@ -15,9 +15,9 @@ CXX_DEFINES = -DSFML_WINDOW_EXPORTS
 
 CXX_INCLUDES = -I/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include -I/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src -I/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers/vulkan -isystem /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers/glad/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
 
-CXX_FLAGSarm64 = -g -arch arm64 -fPIC -fvisibility=hidden
+CXX_FLAGSarm64 = -g -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden
 
-CXX_FLAGS = -g -arch arm64 -fPIC -fvisibility=hidden
+CXX_FLAGS = -g -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden
 
 # Custom flags: _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Clipboard.cpp.o_FLAGS =  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Wno-unknown-warning-option
 

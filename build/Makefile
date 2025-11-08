@@ -178,21 +178,22 @@ preinstall/fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named terraria_clone
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+terraria_clone: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 terraria_clone
+.PHONY : terraria_clone
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+terraria_clone/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/build
+.PHONY : terraria_clone/fast
 
 #=============================================================================
 # Target rules for targets named sfml-system
@@ -259,204 +260,180 @@ sfml-audio/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
 .PHONY : sfml-audio/fast
 
-src/Animation.o: src/Animation.cpp.o
-.PHONY : src/Animation.o
+src/core/Animation.o: src/core/Animation.cpp.o
+.PHONY : src/core/Animation.o
 
 # target to build an object file
-src/Animation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Animation.cpp.o
-.PHONY : src/Animation.cpp.o
+src/core/Animation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/core/Animation.cpp.o
+.PHONY : src/core/Animation.cpp.o
 
-src/Animation.i: src/Animation.cpp.i
-.PHONY : src/Animation.i
+src/core/Animation.i: src/core/Animation.cpp.i
+.PHONY : src/core/Animation.i
 
 # target to preprocess a source file
-src/Animation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Animation.cpp.i
-.PHONY : src/Animation.cpp.i
+src/core/Animation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/core/Animation.cpp.i
+.PHONY : src/core/Animation.cpp.i
 
-src/Animation.s: src/Animation.cpp.s
-.PHONY : src/Animation.s
+src/core/Animation.s: src/core/Animation.cpp.s
+.PHONY : src/core/Animation.s
 
 # target to generate assembly for a file
-src/Animation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Animation.cpp.s
-.PHONY : src/Animation.cpp.s
+src/core/Animation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/core/Animation.cpp.s
+.PHONY : src/core/Animation.cpp.s
 
-src/Collider.o: src/Collider.cpp.o
-.PHONY : src/Collider.o
+src/core/Game.o: src/core/Game.cpp.o
+.PHONY : src/core/Game.o
 
 # target to build an object file
-src/Collider.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Collider.cpp.o
-.PHONY : src/Collider.cpp.o
+src/core/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/core/Game.cpp.o
+.PHONY : src/core/Game.cpp.o
 
-src/Collider.i: src/Collider.cpp.i
-.PHONY : src/Collider.i
+src/core/Game.i: src/core/Game.cpp.i
+.PHONY : src/core/Game.i
 
 # target to preprocess a source file
-src/Collider.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Collider.cpp.i
-.PHONY : src/Collider.cpp.i
+src/core/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/core/Game.cpp.i
+.PHONY : src/core/Game.cpp.i
 
-src/Collider.s: src/Collider.cpp.s
-.PHONY : src/Collider.s
+src/core/Game.s: src/core/Game.cpp.s
+.PHONY : src/core/Game.s
 
 # target to generate assembly for a file
-src/Collider.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Collider.cpp.s
-.PHONY : src/Collider.cpp.s
+src/core/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/core/Game.cpp.s
+.PHONY : src/core/Game.cpp.s
 
-src/Game.o: src/Game.cpp.o
-.PHONY : src/Game.o
+src/core/TextureUtils.o: src/core/TextureUtils.cpp.o
+.PHONY : src/core/TextureUtils.o
 
 # target to build an object file
-src/Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Game.cpp.o
-.PHONY : src/Game.cpp.o
+src/core/TextureUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/core/TextureUtils.cpp.o
+.PHONY : src/core/TextureUtils.cpp.o
 
-src/Game.i: src/Game.cpp.i
-.PHONY : src/Game.i
+src/core/TextureUtils.i: src/core/TextureUtils.cpp.i
+.PHONY : src/core/TextureUtils.i
 
 # target to preprocess a source file
-src/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Game.cpp.i
-.PHONY : src/Game.cpp.i
+src/core/TextureUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/core/TextureUtils.cpp.i
+.PHONY : src/core/TextureUtils.cpp.i
 
-src/Game.s: src/Game.cpp.s
-.PHONY : src/Game.s
+src/core/TextureUtils.s: src/core/TextureUtils.cpp.s
+.PHONY : src/core/TextureUtils.s
 
 # target to generate assembly for a file
-src/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Game.cpp.s
-.PHONY : src/Game.cpp.s
+src/core/TextureUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/core/TextureUtils.cpp.s
+.PHONY : src/core/TextureUtils.cpp.s
 
-src/Map.o: src/Map.cpp.o
-.PHONY : src/Map.o
+src/core/View.o: src/core/View.cpp.o
+.PHONY : src/core/View.o
 
 # target to build an object file
-src/Map.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Map.cpp.o
-.PHONY : src/Map.cpp.o
+src/core/View.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/core/View.cpp.o
+.PHONY : src/core/View.cpp.o
 
-src/Map.i: src/Map.cpp.i
-.PHONY : src/Map.i
+src/core/View.i: src/core/View.cpp.i
+.PHONY : src/core/View.i
 
 # target to preprocess a source file
-src/Map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Map.cpp.i
-.PHONY : src/Map.cpp.i
+src/core/View.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/core/View.cpp.i
+.PHONY : src/core/View.cpp.i
 
-src/Map.s: src/Map.cpp.s
-.PHONY : src/Map.s
+src/core/View.s: src/core/View.cpp.s
+.PHONY : src/core/View.s
 
 # target to generate assembly for a file
-src/Map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Map.cpp.s
-.PHONY : src/Map.cpp.s
+src/core/View.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/core/View.cpp.s
+.PHONY : src/core/View.cpp.s
 
-src/Platform.o: src/Platform.cpp.o
-.PHONY : src/Platform.o
+src/entities/Collider.o: src/entities/Collider.cpp.o
+.PHONY : src/entities/Collider.o
 
 # target to build an object file
-src/Platform.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Platform.cpp.o
-.PHONY : src/Platform.cpp.o
+src/entities/Collider.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.o
+.PHONY : src/entities/Collider.cpp.o
 
-src/Platform.i: src/Platform.cpp.i
-.PHONY : src/Platform.i
+src/entities/Collider.i: src/entities/Collider.cpp.i
+.PHONY : src/entities/Collider.i
 
 # target to preprocess a source file
-src/Platform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Platform.cpp.i
-.PHONY : src/Platform.cpp.i
+src/entities/Collider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.i
+.PHONY : src/entities/Collider.cpp.i
 
-src/Platform.s: src/Platform.cpp.s
-.PHONY : src/Platform.s
+src/entities/Collider.s: src/entities/Collider.cpp.s
+.PHONY : src/entities/Collider.s
 
 # target to generate assembly for a file
-src/Platform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Platform.cpp.s
-.PHONY : src/Platform.cpp.s
+src/entities/Collider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.s
+.PHONY : src/entities/Collider.cpp.s
 
-src/Player.o: src/Player.cpp.o
-.PHONY : src/Player.o
+src/entities/Platform.o: src/entities/Platform.cpp.o
+.PHONY : src/entities/Platform.o
 
 # target to build an object file
-src/Player.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Player.cpp.o
-.PHONY : src/Player.cpp.o
+src/entities/Platform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/entities/Platform.cpp.o
+.PHONY : src/entities/Platform.cpp.o
 
-src/Player.i: src/Player.cpp.i
-.PHONY : src/Player.i
+src/entities/Platform.i: src/entities/Platform.cpp.i
+.PHONY : src/entities/Platform.i
 
 # target to preprocess a source file
-src/Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Player.cpp.i
-.PHONY : src/Player.cpp.i
+src/entities/Platform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/entities/Platform.cpp.i
+.PHONY : src/entities/Platform.cpp.i
 
-src/Player.s: src/Player.cpp.s
-.PHONY : src/Player.s
+src/entities/Platform.s: src/entities/Platform.cpp.s
+.PHONY : src/entities/Platform.s
 
 # target to generate assembly for a file
-src/Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Player.cpp.s
-.PHONY : src/Player.cpp.s
+src/entities/Platform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/entities/Platform.cpp.s
+.PHONY : src/entities/Platform.cpp.s
 
-src/TextureUtils.o: src/TextureUtils.cpp.o
-.PHONY : src/TextureUtils.o
+src/entities/Player.o: src/entities/Player.cpp.o
+.PHONY : src/entities/Player.o
 
 # target to build an object file
-src/TextureUtils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TextureUtils.cpp.o
-.PHONY : src/TextureUtils.cpp.o
+src/entities/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.o
+.PHONY : src/entities/Player.cpp.o
 
-src/TextureUtils.i: src/TextureUtils.cpp.i
-.PHONY : src/TextureUtils.i
-
-# target to preprocess a source file
-src/TextureUtils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TextureUtils.cpp.i
-.PHONY : src/TextureUtils.cpp.i
-
-src/TextureUtils.s: src/TextureUtils.cpp.s
-.PHONY : src/TextureUtils.s
-
-# target to generate assembly for a file
-src/TextureUtils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TextureUtils.cpp.s
-.PHONY : src/TextureUtils.cpp.s
-
-src/View.o: src/View.cpp.o
-.PHONY : src/View.o
-
-# target to build an object file
-src/View.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/View.cpp.o
-.PHONY : src/View.cpp.o
-
-src/View.i: src/View.cpp.i
-.PHONY : src/View.i
+src/entities/Player.i: src/entities/Player.cpp.i
+.PHONY : src/entities/Player.i
 
 # target to preprocess a source file
-src/View.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/View.cpp.i
-.PHONY : src/View.cpp.i
+src/entities/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.i
+.PHONY : src/entities/Player.cpp.i
 
-src/View.s: src/View.cpp.s
-.PHONY : src/View.s
+src/entities/Player.s: src/entities/Player.cpp.s
+.PHONY : src/entities/Player.s
 
 # target to generate assembly for a file
-src/View.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/View.cpp.s
-.PHONY : src/View.cpp.s
+src/entities/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.s
+.PHONY : src/entities/Player.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -464,7 +441,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -472,8 +449,32 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/world/Map.o: src/world/Map.cpp.o
+.PHONY : src/world/Map.o
+
+# target to build an object file
+src/world/Map.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o
+.PHONY : src/world/Map.cpp.o
+
+src/world/Map.i: src/world/Map.cpp.i
+.PHONY : src/world/Map.i
+
+# target to preprocess a source file
+src/world/Map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/world/Map.cpp.i
+.PHONY : src/world/Map.cpp.i
+
+src/world/Map.s: src/world/Map.cpp.s
+.PHONY : src/world/Map.s
+
+# target to generate assembly for a file
+src/world/Map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/world/Map.cpp.s
+.PHONY : src/world/Map.cpp.s
 
 # Help Target
 help:
@@ -489,39 +490,39 @@ help:
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... rebuild_cache"
-	@echo "... main"
 	@echo "... sfml-audio"
 	@echo "... sfml-graphics"
 	@echo "... sfml-network"
 	@echo "... sfml-system"
 	@echo "... sfml-window"
-	@echo "... src/Animation.o"
-	@echo "... src/Animation.i"
-	@echo "... src/Animation.s"
-	@echo "... src/Collider.o"
-	@echo "... src/Collider.i"
-	@echo "... src/Collider.s"
-	@echo "... src/Game.o"
-	@echo "... src/Game.i"
-	@echo "... src/Game.s"
-	@echo "... src/Map.o"
-	@echo "... src/Map.i"
-	@echo "... src/Map.s"
-	@echo "... src/Platform.o"
-	@echo "... src/Platform.i"
-	@echo "... src/Platform.s"
-	@echo "... src/Player.o"
-	@echo "... src/Player.i"
-	@echo "... src/Player.s"
-	@echo "... src/TextureUtils.o"
-	@echo "... src/TextureUtils.i"
-	@echo "... src/TextureUtils.s"
-	@echo "... src/View.o"
-	@echo "... src/View.i"
-	@echo "... src/View.s"
+	@echo "... terraria_clone"
+	@echo "... src/core/Animation.o"
+	@echo "... src/core/Animation.i"
+	@echo "... src/core/Animation.s"
+	@echo "... src/core/Game.o"
+	@echo "... src/core/Game.i"
+	@echo "... src/core/Game.s"
+	@echo "... src/core/TextureUtils.o"
+	@echo "... src/core/TextureUtils.i"
+	@echo "... src/core/TextureUtils.s"
+	@echo "... src/core/View.o"
+	@echo "... src/core/View.i"
+	@echo "... src/core/View.s"
+	@echo "... src/entities/Collider.o"
+	@echo "... src/entities/Collider.i"
+	@echo "... src/entities/Collider.s"
+	@echo "... src/entities/Platform.o"
+	@echo "... src/entities/Platform.i"
+	@echo "... src/entities/Platform.s"
+	@echo "... src/entities/Player.o"
+	@echo "... src/entities/Player.i"
+	@echo "... src/entities/Player.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/world/Map.o"
+	@echo "... src/world/Map.i"
+	@echo "... src/world/Map.s"
 .PHONY : help
 
 
@@ -533,6 +534,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

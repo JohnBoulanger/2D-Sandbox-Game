@@ -11,6 +11,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.1.2/CMakeCCompiler.cmake"
   "CMakeFiles/4.1.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.1.2/CMakeSystem.cmake"
+  "CMakeFiles/VerifyGlobs.cmake"
+  "CMakeFiles/cmake.verify_globs"
   "_deps/sfml-src/CMakeLists.txt"
   "_deps/sfml-src/cmake/CompilerOptionsOverride.cmake"
   "_deps/sfml-src/cmake/CompilerWarnings.cmake"
@@ -101,7 +103,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/main.dir/DependInfo.cmake"
+  "CMakeFiles/terraria_clone.dir/DependInfo.cmake"
   "_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/DependInfo.cmake"
   "_deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/DependInfo.cmake"
   "_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/DependInfo.cmake"

@@ -6,9 +6,9 @@ CXX_DEFINES = -DSFML_SYSTEM_EXPORTS
 
 CXX_INCLUDES = -I/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include -I/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/src
 
-CXX_FLAGSarm64 = -g -arch arm64 -fPIC -fvisibility=hidden
+CXX_FLAGSarm64 = -g -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden
 
-CXX_FLAGS = -g -arch arm64 -fPIC -fvisibility=hidden
+CXX_FLAGS = -g -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden
 
 # Custom flags: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.o_FLAGS =  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Wno-unknown-warning-option
 
