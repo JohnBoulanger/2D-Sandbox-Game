@@ -9,10 +9,11 @@ set(OLD_GLOB
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/core/TextureUtils.cpp"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/core/View.cpp"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/entities/Collider.cpp"
-  "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/entities/Platform.cpp"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/entities/Player.cpp"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/main.cpp"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/Map.cpp"
+  "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/Tile.cpp"
+  "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/World.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

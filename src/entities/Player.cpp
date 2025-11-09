@@ -22,14 +22,14 @@ Player::Player(PlayerState playerState, sf::Texture& texture, sf::Vector2u image
     body.setOrigin(bounds.width / 2.0f, bounds.height / 2.0f);
     body.setScale(1.5f, 1.5f);
     // initial world positon
-    body.setPosition(400.0f, 300.0f);
+    body.setPosition(300.0f, -100.0f);
 
     // initialize the hitbox for the player
     hitbox.setSize(sf::Vector2f(bounds.width, bounds.height));
     hitbox.setOrigin(hitbox.getSize() / 2.0f);
     hitbox.setScale(0.75f, 0.75f);
-    hitbox.setPosition(400.0f, 300.0f);
-    hitbox.setFillColor(sf::Color(255, 0, 0, 0));
+    hitbox.setPosition(300.0f, -100.0f);
+    hitbox.setFillColor(sf::Color::Red);
 }
 
 Player::~Player()
@@ -41,7 +41,6 @@ Player::~Player()
 void Player::Draw(sf::RenderWindow& window)
 {
     window.draw(body);
-    window.draw(hitbox);
 }
 
 // update the players state and position based on user input
@@ -62,10 +61,10 @@ void Player::Update(float deltaTime)
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && canJump)
     {
         canJump = false;
-        velocity.y = -sqrtf(981.0f * jumpHeight);
+        velocity.y = -sqrtf(GRAVITY * jumpHeight);
     }
 
-    velocity.y += 981.0f * deltaTime;
+    velocity.y += GRAVITY * deltaTime;
     // clamp max velocity in the y direction
     velocity.y = std::min(std::max(-MAX_Y, velocity.y), MAX_Y);
 
@@ -120,4 +119,7 @@ void Player::OnCollision(sf::Vector2f direction)
     {
         velocity.y = 0;
     }
+    // collision moves the hitbox itself, not the player
+    // so snap the player back to hits hitbox
+    body.setPosition(hitbox.getPosition() - hitboxOffset);
 }

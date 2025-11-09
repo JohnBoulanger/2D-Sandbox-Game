@@ -2,14 +2,16 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug SFML App",
+      "name": "Debug Terraria Clone (LLDB)",
       "type": "lldb",
       "request": "launch",
-      "program": "${workspaceFolder}/build/bin/main",
+      "program": "${workspaceFolder}/build/bin/terraria_clone",
       "args": [],
       "cwd": "${workspaceFolder}",
       "stopOnEntry": false,
-      "console": "integratedTerminal"
+      "environment": [],
+      "externalConsole": false,
+      "preLaunchTask": "CMake: build"
     }
   ]
 }

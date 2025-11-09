@@ -9,7 +9,7 @@ enum TileID
     WATER = 4
 };
 
-struct TyleType {
+struct TileType {
     int id;
     sf::RectangleShape tileRect;
     bool solid;

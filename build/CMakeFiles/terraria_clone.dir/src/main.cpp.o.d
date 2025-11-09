@@ -871,10 +871,12 @@ CMakeFiles/terraria_clone.dir/src/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/Game.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/World.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Map.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Tile.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/Collider.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/TileConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/Player.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/Animation.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/PlayerState.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/Collider.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Map.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/Platform.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/View.h

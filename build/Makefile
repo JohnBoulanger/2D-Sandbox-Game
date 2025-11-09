@@ -380,30 +380,6 @@ src/entities/Collider.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.s
 .PHONY : src/entities/Collider.cpp.s
 
-src/entities/Platform.o: src/entities/Platform.cpp.o
-.PHONY : src/entities/Platform.o
-
-# target to build an object file
-src/entities/Platform.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/entities/Platform.cpp.o
-.PHONY : src/entities/Platform.cpp.o
-
-src/entities/Platform.i: src/entities/Platform.cpp.i
-.PHONY : src/entities/Platform.i
-
-# target to preprocess a source file
-src/entities/Platform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/entities/Platform.cpp.i
-.PHONY : src/entities/Platform.cpp.i
-
-src/entities/Platform.s: src/entities/Platform.cpp.s
-.PHONY : src/entities/Platform.s
-
-# target to generate assembly for a file
-src/entities/Platform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/entities/Platform.cpp.s
-.PHONY : src/entities/Platform.cpp.s
-
 src/entities/Player.o: src/entities/Player.cpp.o
 .PHONY : src/entities/Player.o
 
@@ -476,6 +452,54 @@ src/world/Map.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/world/Map.cpp.s
 .PHONY : src/world/Map.cpp.s
 
+src/world/Tile.o: src/world/Tile.cpp.o
+.PHONY : src/world/Tile.o
+
+# target to build an object file
+src/world/Tile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o
+.PHONY : src/world/Tile.cpp.o
+
+src/world/Tile.i: src/world/Tile.cpp.i
+.PHONY : src/world/Tile.i
+
+# target to preprocess a source file
+src/world/Tile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.i
+.PHONY : src/world/Tile.cpp.i
+
+src/world/Tile.s: src/world/Tile.cpp.s
+.PHONY : src/world/Tile.s
+
+# target to generate assembly for a file
+src/world/Tile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.s
+.PHONY : src/world/Tile.cpp.s
+
+src/world/World.o: src/world/World.cpp.o
+.PHONY : src/world/World.o
+
+# target to build an object file
+src/world/World.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/world/World.cpp.o
+.PHONY : src/world/World.cpp.o
+
+src/world/World.i: src/world/World.cpp.i
+.PHONY : src/world/World.i
+
+# target to preprocess a source file
+src/world/World.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/world/World.cpp.i
+.PHONY : src/world/World.cpp.i
+
+src/world/World.s: src/world/World.cpp.s
+.PHONY : src/world/World.s
+
+# target to generate assembly for a file
+src/world/World.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/world/World.cpp.s
+.PHONY : src/world/World.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -511,9 +535,6 @@ help:
 	@echo "... src/entities/Collider.o"
 	@echo "... src/entities/Collider.i"
 	@echo "... src/entities/Collider.s"
-	@echo "... src/entities/Platform.o"
-	@echo "... src/entities/Platform.i"
-	@echo "... src/entities/Platform.s"
 	@echo "... src/entities/Player.o"
 	@echo "... src/entities/Player.i"
 	@echo "... src/entities/Player.s"
@@ -523,6 +544,12 @@ help:
 	@echo "... src/world/Map.o"
 	@echo "... src/world/Map.i"
 	@echo "... src/world/Map.s"
+	@echo "... src/world/Tile.o"
+	@echo "... src/world/Tile.i"
+	@echo "... src/world/Tile.s"
+	@echo "... src/world/World.o"
+	@echo "... src/world/World.i"
+	@echo "... src/world/World.s"
 .PHONY : help
 
 

@@ -13,10 +13,11 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/core/TextureUtils.cpp" "CMakeFiles/terraria_clone.dir/src/core/TextureUtils.cpp.o" "gcc" "CMakeFiles/terraria_clone.dir/src/core/TextureUtils.cpp.o.d"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/core/View.cpp" "CMakeFiles/terraria_clone.dir/src/core/View.cpp.o" "gcc" "CMakeFiles/terraria_clone.dir/src/core/View.cpp.o.d"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/entities/Collider.cpp" "CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.o" "gcc" "CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.o.d"
-  "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/entities/Platform.cpp" "CMakeFiles/terraria_clone.dir/src/entities/Platform.cpp.o" "gcc" "CMakeFiles/terraria_clone.dir/src/entities/Platform.cpp.o.d"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/entities/Player.cpp" "CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.o" "gcc" "CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.o.d"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/main.cpp" "CMakeFiles/terraria_clone.dir/src/main.cpp.o" "gcc" "CMakeFiles/terraria_clone.dir/src/main.cpp.o.d"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/Map.cpp" "CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o" "gcc" "CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o.d"
+  "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/Tile.cpp" "CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o" "gcc" "CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o.d"
+  "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/World.cpp" "CMakeFiles/terraria_clone.dir/src/world/World.cpp.o" "gcc" "CMakeFiles/terraria_clone.dir/src/world/World.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
