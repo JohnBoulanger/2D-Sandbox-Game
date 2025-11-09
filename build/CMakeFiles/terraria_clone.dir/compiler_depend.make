@@ -6992,6 +6992,7 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o: /Users/johnboulanger/Desktop/
   _deps/sfml-src/include/SFML/Window/WindowBase.hpp \
   _deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
   _deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/MapConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/Collider.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Map.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Tile.h \
@@ -8739,7 +8740,7 @@ CMakeFiles/terraria_clone.dir/src/world/World.cpp.o: /Users/johnboulanger/Deskto
   _deps/sfml-src/include/SFML/Window/WindowBase.hpp \
   _deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
   _deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/GameConstants.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/MapConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/PhysicsConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/PlayerConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/Animation.h \
@@ -8756,6 +8757,8 @@ CMakeFiles/terraria_clone.dir/src/world/World.cpp.o: /Users/johnboulanger/Deskto
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/PlayerConstants.h:
 
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/World.cpp:
+
+/Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/MapConstants.h:
 
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/Map.cpp:
 

@@ -5,13 +5,13 @@
 class Map
 {
 public:
-    Map(int size);
+    Map();
     ~Map();
 
     void PrintMap();
     void Draw(sf::RenderWindow& window);
     void Update();
-    Tile GetTile(int i, int j) { return map[i][j]; }
+    Tile GetTile(int y, int x);
 
 private:
     std::vector<std::vector<Tile>> map;

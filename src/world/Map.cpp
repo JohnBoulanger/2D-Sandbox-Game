@@ -1,15 +1,15 @@
 #include "world/Map.h"
 #include "world/Tile.h"
+#include "config/MapConstants.h"
 
-
-Map::Map(int size) {
+Map::Map() {
     std::srand(static_cast<unsigned>(std::time(nullptr)));
     tileset.loadFromFile("textures/Tileset.png");
 
-    map.resize(size);
-    for (int y = 0; y < size; ++y) {
-        map[y].reserve(size);
-        for (int x = 0; x < size; ++x) {
+    map.resize(MAP_HEIGHT);
+    for (int y = 0; y < MAP_HEIGHT; ++y) {
+        map[y].reserve(MAP_WIDTH);
+        for (int x = 0; x < MAP_WIDTH; ++x) {
 
             // choose a TileID
             TileID id;
@@ -39,9 +39,11 @@ Map::~Map()
 
 void Map::Draw(sf::RenderWindow& window)
 {
-    for (auto& row : map)
-        for (auto& tile : row)
-            tile.Draw(window);
+    for (int y = 0; y < MAP_HEIGHT; y++) {
+        for (int x = 0; x < MAP_WIDTH; x++) {
+            map[y][x].Draw(window);
+        }
+    }
 }
 
 void Map::Update()
@@ -58,4 +60,9 @@ void Map::PrintMap()
         }
         //printf("\n");
     }
+}
+
+Tile Map::GetTile(int y, int x)
+{
+    return map[y][x];
 }

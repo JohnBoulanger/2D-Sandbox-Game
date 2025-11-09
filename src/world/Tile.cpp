@@ -14,6 +14,7 @@ Tile::Tile(sf::Texture& texture, TileID id, sf::Vector2f size, sf::Vector2f posi
     hitbox.setSize(size);
     hitbox.setOrigin(size / 2.f);
     hitbox.setPosition(position);
+    hitbox.setFillColor(sf::Color::White);
 }
 
 Tile::~Tile() {}
@@ -21,4 +22,5 @@ Tile::~Tile() {}
 void Tile::Draw(sf::RenderWindow& window)
 {
     window.draw(body);
+    //window.draw(hitbox);
 }

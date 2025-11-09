@@ -876,7 +876,7 @@ CMakeFiles/terraria_clone.dir/src/world/World.cpp.o: \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/Player.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/Animation.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/PlayerState.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/GameConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/PhysicsConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/PlayerConstants.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/MapConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/TextureUtils.h

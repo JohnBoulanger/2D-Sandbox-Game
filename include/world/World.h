@@ -11,7 +11,8 @@ public:
 
     void Update(float deltaTime);
     void Draw(sf::RenderWindow& window);
-    sf::Vector2f GetPlayerPosition() { return player.GetPosition();}
+    sf::Vector2f GetPlayerPosition() { return player.GetPosition(); }
+    sf::Vector2i PixelToTileCoords(float p_x, float p_y);
 
 private:
     //player
