@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoiselite-subbuild/CMakeFiles/fastnoiselite-populate"
+		},
+		{
+			"file" : "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoiselite-subbuild/CMakeFiles/fastnoiselite-populate.rule"
+		},
+		{
+			"file" : "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoiselite-subbuild/CMakeFiles/fastnoiselite-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoiselite-subbuild/fastnoiselite-populate-prefix/src/fastnoiselite-populate-stamp/fastnoiselite-populate-build.rule"
+		},
+		{
+			"file" : "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoiselite-subbuild/fastnoiselite-populate-prefix/src/fastnoiselite-populate-stamp/fastnoiselite-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoiselite-subbuild/fastnoiselite-populate-prefix/src/fastnoiselite-populate-stamp/fastnoiselite-populate-download.rule"
+		},
+		{
+			"file" : "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoiselite-subbuild/fastnoiselite-populate-prefix/src/fastnoiselite-populate-stamp/fastnoiselite-populate-install.rule"
+		},
+		{
+			"file" : "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoiselite-subbuild/fastnoiselite-populate-prefix/src/fastnoiselite-populate-stamp/fastnoiselite-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoiselite-subbuild/fastnoiselite-populate-prefix/src/fastnoiselite-populate-stamp/fastnoiselite-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoiselite-subbuild/fastnoiselite-populate-prefix/src/fastnoiselite-populate-stamp/fastnoiselite-populate-test.rule"
+		},
+		{
+			"file" : "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoiselite-subbuild/fastnoiselite-populate-prefix/src/fastnoiselite-populate-stamp/fastnoiselite-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"fastnoiselite-populate"
+		],
+		"name" : "fastnoiselite-populate"
+	}
+}

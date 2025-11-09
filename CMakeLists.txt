@@ -6,6 +6,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_BUILD_TYPE Debug)
 
 include(FetchContent)
+
+# SFML dependency
 FetchContent_Declare(
     SFML
     GIT_REPOSITORY https://github.com/SFML/SFML.git
@@ -13,7 +15,14 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(SFML)
 
-# Gather all .cpp sources under src/ so missing files won't break configuration
+# FastNoiseLite dependency (header-only)
+FetchContent_Declare(
+    FastNoiseLite
+    GIT_REPOSITORY https://github.com/Auburn/FastNoiseLite.git
+    GIT_TAG master
+)
+FetchContent_MakeAvailable(FastNoiseLite)
+
 file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS
     "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
 )
@@ -22,6 +31,9 @@ add_executable(terraria_clone ${SRC_FILES})
 
 target_include_directories(terraria_clone PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${fastnoiselite_SOURCE_DIR}
 )
 
-target_link_libraries(terraria_clone PRIVATE sfml-graphics)
+target_link_libraries(terraria_clone PRIVATE
+    sfml-graphics
+)

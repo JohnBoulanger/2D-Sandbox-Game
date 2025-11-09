@@ -9,7 +9,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "CMakeFiles/4.1.2/CMakeSystem.cmake"
   "CMakeLists.txt"
-  "sfml-populate-prefix/tmp/sfml-populate-mkdirs.cmake"
+  "fastnoiselite-populate-prefix/tmp/fastnoiselite-populate-mkdirs.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
@@ -36,17 +36,17 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "sfml-populate-prefix/tmp/sfml-populate-mkdirs.cmake"
-  "sfml-populate-prefix/tmp/sfml-populate-gitclone.cmake"
-  "sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-gitinfo.txt"
-  "sfml-populate-prefix/tmp/sfml-populate-gitupdate.cmake"
-  "sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update-info.txt"
-  "sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch-info.txt"
-  "sfml-populate-prefix/tmp/sfml-populate-cfgcmd.txt"
+  "fastnoiselite-populate-prefix/tmp/fastnoiselite-populate-mkdirs.cmake"
+  "fastnoiselite-populate-prefix/tmp/fastnoiselite-populate-gitclone.cmake"
+  "fastnoiselite-populate-prefix/src/fastnoiselite-populate-stamp/fastnoiselite-populate-gitinfo.txt"
+  "fastnoiselite-populate-prefix/tmp/fastnoiselite-populate-gitupdate.cmake"
+  "fastnoiselite-populate-prefix/src/fastnoiselite-populate-stamp/fastnoiselite-populate-update-info.txt"
+  "fastnoiselite-populate-prefix/src/fastnoiselite-populate-stamp/fastnoiselite-populate-patch-info.txt"
+  "fastnoiselite-populate-prefix/tmp/fastnoiselite-populate-cfgcmd.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/sfml-populate.dir/DependInfo.cmake"
+  "CMakeFiles/fastnoiselite-populate.dir/DependInfo.cmake"
   )
