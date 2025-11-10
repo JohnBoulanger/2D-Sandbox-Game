@@ -48,53 +48,13 @@ void Player::Draw(sf::RenderWindow& window)
 // update the players state and position based on user input
 void Player::Update(float deltaTime)
 {
-    // keep track of old player state
-    static PlayerState previousPlayerState = playerState;
-
-    // initial x velocity to 0 if nothing pressed
-    velocity.x = 0.0f;
-
-    // get user input and update movement speed
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-        velocity.x -= speed;
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
-        velocity.x += speed;
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && canJump)
-    {
-        canJump = false;
-        velocity.y = -sqrtf(GRAVITY * jumpHeight);
-    }
-
-    velocity.y += GRAVITY * deltaTime;
-    // clamp max velocity in the y direction
-    velocity.y = std::clamp(velocity.y, -MAX_Y, MAX_Y);
-
-    // determine state based on player movement which determines what sprite to render
-    if (canJump && velocity.x == 0.0f)
-        playerState = IDLE;
-    if (abs(velocity.x) > 0.0f)
-    {
-        playerState = WALK;
-        faceLeft = (velocity.x < 0.0f);
-    }
-    if (!canJump)
-    {
-        playerState = JUMP;
-    } 
-
-    // if the player has changed states, use sprite frame 0 of the new state by calling reset
-    if (previousPlayerState != playerState)
-    {
-        animation.Reset();
-        previousPlayerState = playerState;
-    }
+    // update movement and player state
+    UpdateMovement(deltaTime);
+    UpdateState();
 
     // update animation and move body depending on state and direction
     animation.Update(playerState, deltaTime, NUM_FRAMES[playerState], faceLeft);
     body.setTextureRect(animation.uvRect);
-    // move the sprite by an "offset" defined in the vector2f movement
-    body.move(velocity * deltaTime);
-    hitbox.setPosition(body.getPosition() + hitboxOffset);
 }
 
 void Player::OnCollision(sf::Vector2f direction)
@@ -123,4 +83,54 @@ void Player::OnCollision(sf::Vector2f direction)
     // collision moves the hitbox itself, not the player
     // so snap the player back to hits hitbox after the collision is handled
     body.setPosition(hitbox.getPosition() - hitboxOffset);
+}
+
+void Player::UpdateMovement(float deltaTime)
+{
+    // initial x velocity to 0 if nothing pressed
+    velocity.x = 0.0f;
+
+    // get user input and update movement speed
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+        velocity.x -= speed;
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+        velocity.x += speed;
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && canJump)
+    {
+        canJump = false;
+        velocity.y = -sqrtf(GRAVITY * jumpHeight);
+    }
+
+    velocity.y += GRAVITY * deltaTime;
+    // clamp max velocity in the y direction
+    velocity.y = std::clamp(velocity.y, -MAX_Y, MAX_Y);
+    // move the sprite by an "offset" defined in the vector2f movement
+    body.move(velocity * deltaTime);
+    hitbox.setPosition(body.getPosition() + hitboxOffset);
+}
+
+void Player::UpdateState()
+{
+    // keep track of old player state
+    static PlayerState previousPlayerState = playerState;
+
+    // determine state based on player movement which determines what sprite to render
+    if (canJump && velocity.x == 0.0f)
+        playerState = IDLE;
+    if (abs(velocity.x) > 0.0f)
+    {
+        playerState = WALK;
+        faceLeft = (velocity.x < 0.0f);
+    }
+    if (!canJump)
+    {
+        playerState = JUMP;
+    } 
+
+    // if the player has changed states, use sprite frame 0 of the new state by calling reset
+    if (previousPlayerState != playerState)
+    {
+        animation.Reset();
+        previousPlayerState = playerState;
+    }
 }

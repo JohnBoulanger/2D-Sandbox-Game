@@ -10,6 +10,8 @@ public:
     ~Player();
 
     void Update(float deltaTime);
+    void UpdateMovement(float deltaTime);
+    void UpdateState();
     void Draw(sf::RenderWindow& window);
     void OnCollision(sf::Vector2f direction);
 

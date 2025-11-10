@@ -18,14 +18,40 @@ World::~World()
 }
 
 void World::Update(sf::RenderWindow& window, float deltaTime)
-{        
-    player.Update(deltaTime);
+{   
+    // update map
 
+    // update player
+    player.Update(deltaTime);
+    HandleCollisions();
+}
+
+void World::Draw(sf::RenderWindow& window, sf::View& view)
+{
+    // draw map
+    map.Draw(window, view);
+
+    // draw player
+    player.Draw(window);
+}
+
+static sf::Vector2i pixelToTileCoords(float p_x, float p_y)
+{
+    int t_x = static_cast<int>(p_x / TILE_SIZE);
+    int t_y = static_cast<int>(p_y / TILE_SIZE);
+    return {t_x, t_y};
+}
+
+void World::HandleCollisions()
+{
     sf::Vector2f direction;
-    sf::Vector2i playerCoords = PixelToTileCoords(
+
+    // todo: fix this after world gen applied
+    sf::Vector2i playerCoords = pixelToTileCoords(
         player.GetPosition().x, 
         player.GetPosition().y
     );
+
     // check nearby tiles for collisions
     for (int y = playerCoords.y; y < playerCoords.y + 3; ++y)
     {
@@ -49,16 +75,3 @@ void World::Update(sf::RenderWindow& window, float deltaTime)
     }
 }
 
-
-void World::Draw(sf::RenderWindow& window, sf::View& view)
-{
-    map.Draw(window, view);
-    player.Draw(window);
-}
-
-sf::Vector2i World::PixelToTileCoords(float p_x, float p_y)
-{
-    int t_x = static_cast<int>(p_x / TILE_SIZE);
-    int t_y = static_cast<int>(p_y / TILE_SIZE);
-    return {t_x, t_y};
-}
