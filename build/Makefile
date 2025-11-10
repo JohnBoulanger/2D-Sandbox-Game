@@ -260,6 +260,19 @@ sfml-audio/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
 .PHONY : sfml-audio/fast
 
+#=============================================================================
+# Target rules for targets named FastNoise
+
+# Build rule for target.
+FastNoise: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FastNoise
+.PHONY : FastNoise
+
+# fast build rule for target.
+FastNoise/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/build
+.PHONY : FastNoise/fast
+
 src/core/Animation.o: src/core/Animation.cpp.o
 .PHONY : src/core/Animation.o
 
@@ -514,6 +527,7 @@ help:
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... rebuild_cache"
+	@echo "... FastNoise"
 	@echo "... sfml-audio"
 	@echo "... sfml-graphics"
 	@echo "... sfml-network"

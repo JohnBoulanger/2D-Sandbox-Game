@@ -202,6 +202,21 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=terraria_clone
 
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=0.10.0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=10
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
+
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
 
@@ -321,6 +336,12 @@ CPACK_SOURCE_TZ:BOOL=ON
 //Enable to build ZIP source packages
 CPACK_SOURCE_ZIP:BOOL=OFF
 
+//Build NoiseTool application
+FASTNOISE2_NOISETOOL:BOOL=OFF
+
+//Build tests
+FASTNOISE2_TESTS:BOOL=OFF
+
 //Directory under which to collect all populated content
 FETCHCONTENT_BASE_DIR:PATH=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps
 
@@ -332,6 +353,10 @@ FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
 FETCHCONTENT_QUIET:BOOL=ON
 
 //When not empty, overrides where to find pre-populated content
+// for FastNoise2
+FETCHCONTENT_SOURCE_DIR_FASTNOISE2:PATH=
+
+//When not empty, overrides where to find pre-populated content
 // for FastNoiseLite
 FETCHCONTENT_SOURCE_DIR_FASTNOISELITE:PATH=
 
@@ -341,6 +366,9 @@ FETCHCONTENT_SOURCE_DIR_SFML:PATH=
 
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of FastNoise2
+FETCHCONTENT_UPDATES_DISCONNECTED_FASTNOISE2:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of FastNoiseLite
 FETCHCONTENT_UPDATES_DISCONNECTED_FASTNOISELITE:BOOL=OFF
@@ -362,6 +390,15 @@ FREETYPE_INCLUDE_DIR_ft2build:PATH=/Library/Frameworks/Mono.framework/Headers
 
 //Path to a library.
 FREETYPE_LIBRARY:FILEPATH=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/freetype.framework
+
+//Value Computed by CMake
+FastNoise2_BINARY_DIR:STATIC=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build
+
+//Value Computed by CMake
+FastNoise2_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+FastNoise2_SOURCE_DIR:STATIC=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src
 
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
@@ -616,7 +653,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -240,6 +240,7 @@ bin/terraria_clone: CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o
 bin/terraria_clone: CMakeFiles/terraria_clone.dir/src/world/World.cpp.o
 bin/terraria_clone: CMakeFiles/terraria_clone.dir/build.make
 bin/terraria_clone: _deps/sfml-build/lib/libsfml-graphics-d.2.6.2.dylib
+bin/terraria_clone: _deps/fastnoise2-build/src/libFastNoiseD.dylib
 bin/terraria_clone: _deps/sfml-build/lib/libsfml-window-d.2.6.2.dylib
 bin/terraria_clone: _deps/sfml-build/lib/libsfml-system-d.2.6.2.dylib
 bin/terraria_clone: CMakeFiles/terraria_clone.dir/link.txt

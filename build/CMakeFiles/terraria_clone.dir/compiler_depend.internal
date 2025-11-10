@@ -6141,6 +6141,7 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/__wctype.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/__xlocale.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_abort.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_assert.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_bounds.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_ctermid.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_ctype.h
@@ -6148,6 +6149,7 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_locale_posix2008.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_mb_cur_max.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_printf.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_static_assert.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdlib.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_string.h
@@ -6176,6 +6178,7 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/arm/limits.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/arm/signal.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/arm/types.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/assert.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/all_of.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/any_of.h
@@ -6715,6 +6718,7 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bit
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/climits
@@ -6924,6 +6928,24 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o
  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h
  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h
  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/FastNoise.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/FastNoise_Config.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/FastNoise_Export.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/BasicGenerators.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/Blends.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/Cellular.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/DomainWarp.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/DomainWarpFractal.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/Fractal.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/Generator.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/Modifiers.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/Perlin.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/Simplex.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/Value.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/SmartNode.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastSIMD/FastSIMD.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastSIMD/FastSIMD_Config.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastSIMD/FastSIMD_Export.h
  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Config.hpp
  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics.hpp
  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/BlendMode.hpp

@@ -1,0 +1,154 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"build/_deps/fastnoise2-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 117,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 127,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 131,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 135,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 143,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 150,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"_deps/fastnoise2-build/src/libFastNoiseD.dylib"
+			],
+			"targetId" : "FastNoise::@6b1bf7fc44025bd8098e",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/FastSIMD",
+			"paths" : 
+			[
+				"build/_deps/fastnoise2-src/src/../include/FastSIMD/FastSIMD.h",
+				"build/_deps/fastnoise2-src/src/../include/FastSIMD/FastSIMD_Config.h",
+				"build/_deps/fastnoise2-src/src/../include/FastSIMD/FastSIMD_Export.h",
+				"build/_deps/fastnoise2-src/src/../include/FastSIMD/FunctionList.h",
+				"build/_deps/fastnoise2-src/src/../include/FastSIMD/InlInclude.h",
+				"build/_deps/fastnoise2-src/src/../include/FastSIMD/SIMDTypeList.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/FastNoise",
+			"paths" : 
+			[
+				"build/_deps/fastnoise2-src/src/../include/FastNoise/FastNoise.h",
+				"build/_deps/fastnoise2-src/src/../include/FastNoise/FastNoise_C.h",
+				"build/_deps/fastnoise2-src/src/../include/FastNoise/FastNoise_Config.h",
+				"build/_deps/fastnoise2-src/src/../include/FastNoise/FastNoise_Export.h",
+				"build/_deps/fastnoise2-src/src/../include/FastNoise/Metadata.h",
+				"build/_deps/fastnoise2-src/src/../include/FastNoise/SmartNode.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "include/FastNoise/Generators",
+			"paths" : 
+			[
+				"build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/BasicGenerators.h",
+				"build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/Blends.h",
+				"build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/Cellular.h",
+				"build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/DomainWarp.h",
+				"build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/DomainWarpFractal.h",
+				"build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/Fractal.h",
+				"build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/Generator.h",
+				"build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/Modifiers.h",
+				"build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/Perlin.h",
+				"build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/Simplex.h",
+				"build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/Value.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/FastNoise2",
+			"paths" : 
+			[
+				"build/_deps/fastnoise2-build/generated/FastNoise2Config.cmake",
+				"build/_deps/fastnoise2-build/generated/FastNoise2ConfigVersion.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/FastNoise2",
+			"exportName" : "FastNoise2Targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "FastNoise::@6b1bf7fc44025bd8098e",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"_deps/fastnoise2-build/CMakeFiles/Export/685b7b2fe36c8f3a2e6ec6f0a6279b14/FastNoise2Targets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/fastnoise2-build",
+		"source" : "build/_deps/fastnoise2-src"
+	}
+}

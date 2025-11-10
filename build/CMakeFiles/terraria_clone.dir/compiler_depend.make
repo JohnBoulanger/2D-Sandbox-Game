@@ -6133,6 +6133,7 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o: /Users/johnboulanger/Desktop/
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/__wctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/__xlocale.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_abort.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_assert.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_bounds.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_ctermid.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_ctype.h \
@@ -6140,6 +6141,7 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o: /Users/johnboulanger/Desktop/
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_locale_posix2008.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_mb_cur_max.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_printf.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdlib.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_string.h \
@@ -6168,6 +6170,7 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o: /Users/johnboulanger/Desktop/
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/arm/limits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/arm/signal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/arm/types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/assert.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/all_of.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/any_of.h \
@@ -6707,6 +6710,7 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o: /Users/johnboulanger/Desktop/
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bit \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/climits \
@@ -6916,6 +6920,24 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o: /Users/johnboulanger/Desktop/
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  _deps/fastnoise2-src/include/FastNoise/FastNoise.h \
+  _deps/fastnoise2-src/include/FastNoise/FastNoise_Config.h \
+  _deps/fastnoise2-src/include/FastNoise/FastNoise_Export.h \
+  _deps/fastnoise2-src/include/FastNoise/Generators/BasicGenerators.h \
+  _deps/fastnoise2-src/include/FastNoise/Generators/Blends.h \
+  _deps/fastnoise2-src/include/FastNoise/Generators/Cellular.h \
+  _deps/fastnoise2-src/include/FastNoise/Generators/DomainWarp.h \
+  _deps/fastnoise2-src/include/FastNoise/Generators/DomainWarpFractal.h \
+  _deps/fastnoise2-src/include/FastNoise/Generators/Fractal.h \
+  _deps/fastnoise2-src/include/FastNoise/Generators/Generator.h \
+  _deps/fastnoise2-src/include/FastNoise/Generators/Modifiers.h \
+  _deps/fastnoise2-src/include/FastNoise/Generators/Perlin.h \
+  _deps/fastnoise2-src/include/FastNoise/Generators/Simplex.h \
+  _deps/fastnoise2-src/include/FastNoise/Generators/Value.h \
+  _deps/fastnoise2-src/include/FastNoise/SmartNode.h \
+  _deps/fastnoise2-src/include/FastSIMD/FastSIMD.h \
+  _deps/fastnoise2-src/include/FastSIMD/FastSIMD_Config.h \
+  _deps/fastnoise2-src/include/FastSIMD/FastSIMD_Export.h \
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics.hpp \
   _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
@@ -8760,6 +8782,30 @@ CMakeFiles/terraria_clone.dir/src/world/World.cpp.o: /Users/johnboulanger/Deskto
 
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/MapConstants.h:
 
+_deps/fastnoise2-src/include/FastSIMD/FastSIMD_Export.h:
+
+_deps/fastnoise2-src/include/FastSIMD/FastSIMD_Config.h:
+
+_deps/fastnoise2-src/include/FastSIMD/FastSIMD.h:
+
+_deps/fastnoise2-src/include/FastNoise/Generators/Modifiers.h:
+
+_deps/fastnoise2-src/include/FastNoise/Generators/Fractal.h:
+
+_deps/fastnoise2-src/include/FastNoise/Generators/DomainWarp.h:
+
+_deps/fastnoise2-src/include/FastNoise/Generators/Cellular.h:
+
+_deps/fastnoise2-src/include/FastNoise/FastNoise_Config.h:
+
+_deps/fastnoise2-src/include/FastNoise/FastNoise.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/assert.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_assert.h:
+
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/Map.cpp:
 
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/PhysicsConstants.h:
@@ -8832,9 +8878,13 @@ _deps/sfml-src/include/SFML/System/Mutex.hpp:
 
 _deps/sfml-src/include/SFML/System/MemoryInputStream.hpp:
 
+_deps/fastnoise2-src/include/FastNoise/Generators/Value.h:
+
 _deps/sfml-src/include/SFML/System/Lock.hpp:
 
 _deps/sfml-src/include/SFML/System/Export.hpp:
+
+_deps/fastnoise2-src/include/FastNoise/FastNoise_Export.h:
 
 _deps/sfml-src/include/SFML/System/Err.hpp:
 
@@ -9250,11 +9300,15 @@ _deps/sfml-src/include/SFML/System/Clock.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/convert_to_integral.h:
 
+_deps/fastnoise2-src/include/FastNoise/Generators/Perlin.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_pointer.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ctime:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/empty.h:
+
+_deps/fastnoise2-src/include/FastNoise/Generators/DomainWarpFractal.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/errno.h:
 
@@ -9275,6 +9329,8 @@ _deps/sfml-src/include/SFML/System/Clock.hpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/time_point.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_identity.h:
+
+_deps/fastnoise2-src/include/FastNoise/Generators/Blends.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/strip_signature.h:
 
@@ -9341,6 +9397,8 @@ _deps/sfml-src/include/SFML/System/Clock.hpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/char_traits.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h:
+
+_deps/fastnoise2-src/include/FastNoise/Generators/Generator.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_uint32_t.h:
 
@@ -9534,6 +9592,8 @@ _deps/sfml-src/include/SFML/Graphics/RectangleShape.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/subrange.h:
 
+_deps/fastnoise2-src/include/FastNoise/SmartNode.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/movable_box.h:
@@ -9547,6 +9607,8 @@ _deps/sfml-src/include/SFML/Graphics/RectangleShape.hpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/data.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_static_assert.h:
 
 _deps/sfml-src/include/SFML/System/ThreadLocalPtr.hpp:
 
@@ -9747,6 +9809,8 @@ _deps/sfml-src/include/SFML/Window/WindowBase.hpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/mem_fn.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/access.h:
+
+_deps/fastnoise2-src/include/FastNoise/Generators/BasicGenerators.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/machine/_endian.h:
 
@@ -10371,6 +10435,8 @@ _deps/sfml-src/include/SFML/System/InputStream.hpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/fill.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_blksize_t.h:
+
+_deps/fastnoise2-src/include/FastNoise/Generators/Simplex.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/compressed_pair.h:
 

@@ -10,7 +10,7 @@ public:
     ~World();
 
     void Update(sf::RenderWindow& window, float deltaTime);
-    void HandleCollisions();
+    void HandleCollisions(sf::RenderWindow& window);
     void Draw(sf::RenderWindow& window, sf::View& view);
 
     // getters

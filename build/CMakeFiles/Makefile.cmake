@@ -13,6 +13,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.1.2/CMakeSystem.cmake"
   "CMakeFiles/VerifyGlobs.cmake"
   "CMakeFiles/cmake.verify_globs"
+  "_deps/fastnoise2-src/CMakeLists.txt"
+  "_deps/fastnoise2-src/cmake/Config.cmake.in"
+  "_deps/fastnoise2-src/src/CMakeLists.txt"
   "_deps/sfml-src/CMakeLists.txt"
   "_deps/sfml-src/cmake/CompilerOptionsOverride.cmake"
   "_deps/sfml-src/cmake/CompilerWarnings.cmake"
@@ -86,7 +89,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/sfml-subbuild/CMakeLists.txt"
-  "_deps/fastnoiselite-subbuild/CMakeLists.txt"
+  "_deps/fastnoise2-subbuild/CMakeLists.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/sfml-build/SFMLConfigVersion.cmake"
   "_deps/sfml-build/SFMLConfig.cmake"
@@ -100,6 +103,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/sfml-build/src/SFML/Network/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/sfml-build/src/SFML/Graphics/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/sfml-build/src/SFML/Audio/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/fastnoise2-build/generated/FastNoise2ConfigVersion.cmake"
+  "_deps/fastnoise2-build/generated/FastNoise2Config.cmake"
+  "_deps/fastnoise2-build/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/fastnoise2-build/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -110,4 +117,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/DependInfo.cmake"
   "_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/DependInfo.cmake"
   "_deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/DependInfo.cmake"
+  "_deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/DependInfo.cmake"
   )

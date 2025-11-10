@@ -23,7 +23,7 @@ void World::Update(sf::RenderWindow& window, float deltaTime)
 
     // update player
     player.Update(deltaTime);
-    HandleCollisions();
+    HandleCollisions(window);
 }
 
 void World::Draw(sf::RenderWindow& window, sf::View& view)
@@ -39,10 +39,10 @@ static sf::Vector2i pixelToTileCoords(float p_x, float p_y)
 {
     int t_x = static_cast<int>(p_x / TILE_SIZE);
     int t_y = static_cast<int>(p_y / TILE_SIZE);
-    return {t_x, t_y};
+    return {t_x-1, t_y-1};
 }
 
-void World::HandleCollisions()
+void World::HandleCollisions(sf::RenderWindow& window)
 {
     sf::Vector2f direction;
 
@@ -53,20 +53,18 @@ void World::HandleCollisions()
     );
 
     // check nearby tiles for collisions
-    for (int y = playerCoords.y; y < playerCoords.y + 3; ++y)
-    {
-        for (int x = playerCoords.x; x < playerCoords.x + 3; ++x)
-        {
+    for (int y = playerCoords.y; y < playerCoords.y + 4; ++y) {
+        for (int x = playerCoords.x; x < playerCoords.x + 4; ++x) {
             if (x < 0 || y < 0 || x >= MAP_WIDTH || y >= MAP_HEIGHT)
-                continue;   
+                continue;
 
-            // debugging for collision later
+            // one square per tile in loop range
             // sf::RectangleShape blocksToCheck({TILE_SIZE, TILE_SIZE});
-            // float px = static_cast<float>(playerCoords.x * 16);
-            // float py = static_cast<float>(playerCoords.y * 16);
+            // float px = static_cast<float>(x * TILE_SIZE);
+            // float py = static_cast<float>(y * TILE_SIZE);
             // blocksToCheck.setPosition({px, py});
             // blocksToCheck.setFillColor(sf::Color::Blue);
-            // window.draw(blocksToCheck);
+            //window.draw(blocksToCheck);
 
             Tile tile = map.GetTile(y, x);
             if (tile.GetCollider().CheckCollision(player.GetCollider(), direction, 1.0f))

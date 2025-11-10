@@ -11,10 +11,13 @@ Tile::Tile(sf::Texture& texture, TileID id, sf::Vector2f size, sf::Vector2f posi
     body.setPosition(position);
 
     // hitbox matches logical tile size
-    hitbox.setSize(size);
-    hitbox.setOrigin(size / 2.f);
-    hitbox.setPosition(position);
-    hitbox.setFillColor(sf::Color::White);
+    if (id > 0)
+    {
+        hitbox.setSize(size);
+        hitbox.setOrigin(size / 2.f);
+        hitbox.setPosition(position);
+        hitbox.setFillColor(sf::Color::White);
+    }
 }
 
 Tile::~Tile() {}
