@@ -1,3 +1,4 @@
+#include "FastNoiseLite.h"
 #include "core/Game.h"
 #include "config/GameConstants.h"
 
@@ -16,6 +17,20 @@ Game::~Game()
 
 void Game::Run()
 {
+    // Create and configure FastNoise object
+    FastNoiseLite noise;
+    noise.SetNoiseType(FastNoiseLite::NoiseType_OpenSimplex2);
+    // Gather noise data
+    std::vector<float> noiseData(128 * 128);
+    int index = 0;
+
+    for (int y = 0; y < 128; y++)
+    {
+        for (int x = 0; x < 128; x++)
+        {
+            noiseData[index++] = noise.GetNoise((float)x, (float)y);
+        }
+    }
     // core game loop
     while (window.isOpen())
     {

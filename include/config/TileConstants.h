@@ -2,11 +2,12 @@
 
 enum TileID
 {
-    DIRT = 0,
-    STONE = 1,
-    GRASS = 2,
-    GOLD = 3,
-    WATER = 4
+    AIR = 0,
+    DIRT = 1,
+    STONE = 2,
+    GRASS = 3,
+    GOLD = 4,
+    WATER = 5
 };
 
 struct TileType {

@@ -7,7 +7,7 @@ Tile::Tile(sf::Texture& texture, TileID id, sf::Vector2f size, sf::Vector2f posi
     // sprite setup
     body.setOrigin(size / 2.f);
     body.setTexture(texture);
-    body.setTextureRect(sf::IntRect(id * (texture.getSize().x / 5), 0, texture.getSize().x / 5, texture.getSize().y));
+    body.setTextureRect(sf::IntRect(id * (texture.getSize().x / 6), 0, texture.getSize().x / 6, texture.getSize().y));
     body.setPosition(position);
 
     // hitbox matches logical tile size
