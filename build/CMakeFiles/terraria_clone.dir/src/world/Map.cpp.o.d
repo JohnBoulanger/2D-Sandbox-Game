@@ -871,5 +871,5 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o: \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Tile.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/Collider.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/TileConstants.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/TileConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/MapConstants.h

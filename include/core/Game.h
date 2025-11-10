@@ -12,12 +12,12 @@ public:
 
     void Run();
     
-
 private:
     // game
     sf::RenderWindow window;
     sf::View view;
     sf::Clock clock;
+
     // world
     World world;
 };

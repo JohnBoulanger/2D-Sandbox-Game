@@ -10,7 +10,7 @@ Animation::Animation(sf::Texture* texture, sf::Vector2u imageCount, float switch
     // starting animation frame
     currentImage.x = 0;
 
-    // calculate the width of the sprite based on the dimensions of the sprite sheet
+    // calculate the width of the sprite based on the dimensions of the sprite sheet and number of images
     uvRect.width = texture->getSize().x / float(imageCount.x);
     uvRect.height = texture->getSize().y / float(imageCount.y);
 }
@@ -28,7 +28,7 @@ void Animation::Update(int row, float deltaTime, int numFrames, bool faceLeft)
     currentImage.y = row;
     totalTime += deltaTime;
 
-    // if the time passed since last frame is greater than the animation speed, change frames
+    // if the time passed since last frame is greater than the animation speed, change animation frames
     if (totalTime >= switchTime)
     {
         totalTime -= switchTime;

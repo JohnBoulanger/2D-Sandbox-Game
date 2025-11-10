@@ -8,8 +8,9 @@ public:
     ~Collider();
 
     void Move(float dx, float dy) { body.move(dx, dy); }
+    bool CheckCollision(Collider& other, sf::Vector2f& direction, float pushFactor);
 
-    bool CheckCollision(Collider& other, sf::Vector2f& direction, float push);
+    // getters
     sf::Vector2f GetPosition() { return body.getPosition(); }
     sf::Vector2f GetHalfSize() { return body.getSize() / 2.0f; }
 

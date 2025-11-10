@@ -1,7 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "entities/Collider.h"
-#include "world/TileConstants.h"
+#include "config/TileConstants.h"
 
 class Tile
 {
@@ -10,6 +10,8 @@ public:
     ~Tile();
 
     void Draw(sf::RenderWindow& window);
+
+    // getters
     Collider& GetCollider() { return collider; }
 
 private:

@@ -1,7 +1,6 @@
 #include "core/Game.h"
 #include "config/GameConstants.h"
 
-
 Game::Game()
     : window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), WINDOW_NAME, sf::Style::Close | sf::Style::Resize),
       view({0.0f, 0.0f}, {VIEW_WIDTH, VIEW_HEIGHT})   
@@ -41,9 +40,9 @@ void Game::Run()
         }
         window.clear();
         window.setView(view);
-        world.Update(deltaTime);
+        world.Update(window, deltaTime);
         view.setCenter(world.GetPlayerPosition());
-        world.Draw(window);
+        world.Draw(window, view);
         window.display();
     }
 }

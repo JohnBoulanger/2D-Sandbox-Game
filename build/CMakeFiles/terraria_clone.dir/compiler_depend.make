@@ -1742,6 +1742,7 @@ CMakeFiles/terraria_clone.dir/src/core/Game.cpp.o: /Users/johnboulanger/Desktop/
   _deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
   _deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/GameConstants.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/TileConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/Animation.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/Game.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/View.h \
@@ -1750,7 +1751,6 @@ CMakeFiles/terraria_clone.dir/src/core/Game.cpp.o: /Users/johnboulanger/Desktop/
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/PlayerState.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Map.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Tile.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/TileConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/World.h
 
 CMakeFiles/terraria_clone.dir/src/core/TextureUtils.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/core/TextureUtils.cpp \
@@ -6112,6 +6112,7 @@ CMakeFiles/terraria_clone.dir/src/main.cpp.o: /Users/johnboulanger/Desktop/Games
   _deps/sfml-src/include/SFML/Window/WindowBase.hpp \
   _deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
   _deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/TileConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/Animation.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/Game.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/View.h \
@@ -6120,7 +6121,6 @@ CMakeFiles/terraria_clone.dir/src/main.cpp.o: /Users/johnboulanger/Desktop/Games
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/PlayerState.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Map.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Tile.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/TileConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/World.h
 
 CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/Map.cpp \
@@ -6993,10 +6993,10 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o: /Users/johnboulanger/Desktop/
   _deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
   _deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/MapConstants.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/TileConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/Collider.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Map.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Tile.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/TileConstants.h
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Tile.h
 
 CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/Tile.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
@@ -7867,9 +7867,9 @@ CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o: /Users/johnboulanger/Desktop
   _deps/sfml-src/include/SFML/Window/WindowBase.hpp \
   _deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
   _deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/TileConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/Collider.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Tile.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/TileConstants.h
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Tile.h
 
 CMakeFiles/terraria_clone.dir/src/world/World.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/World.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
@@ -8743,6 +8743,7 @@ CMakeFiles/terraria_clone.dir/src/world/World.cpp.o: /Users/johnboulanger/Deskto
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/MapConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/PhysicsConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/PlayerConstants.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/TileConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/Animation.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/TextureUtils.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/Collider.h \
@@ -8750,7 +8751,6 @@ CMakeFiles/terraria_clone.dir/src/world/World.cpp.o: /Users/johnboulanger/Deskto
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/PlayerState.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Map.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Tile.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/TileConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/World.h
 
 
@@ -8772,11 +8772,11 @@ CMakeFiles/terraria_clone.dir/src/world/World.cpp.o: /Users/johnboulanger/Deskto
 
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/World.h:
 
-/Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/TileConstants.h:
-
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Map.h:
 
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/View.h:
+
+/Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/TileConstants.h:
 
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/Tile.cpp:
 

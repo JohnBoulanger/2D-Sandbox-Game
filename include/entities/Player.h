@@ -13,6 +13,7 @@ public:
     void Draw(sf::RenderWindow& window);
     void OnCollision(sf::Vector2f direction);
 
+    // getters
     sf::Vector2f GetPosition() { return body.getPosition(); }
     Collider& GetCollider() { return collider; }
 

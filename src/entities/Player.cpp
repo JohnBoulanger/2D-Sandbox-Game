@@ -21,14 +21,15 @@ Player::Player(PlayerState playerState, sf::Texture& texture, sf::Vector2u image
     sf::FloatRect bounds = body.getLocalBounds();
     body.setOrigin(bounds.width / 2.0f, bounds.height / 2.0f);
     body.setScale(1.5f, 1.5f);
-    // initial world positon
+
+    // initial positon in the world
     body.setPosition(300.0f, -100.0f);
 
     // initialize the hitbox for the player
     hitbox.setSize(sf::Vector2f(bounds.width, bounds.height));
     hitbox.setOrigin(hitbox.getSize() / 2.0f);
     hitbox.setScale(0.75f, 0.75f);
-    hitbox.setPosition(300.0f, -100.0f);
+    hitbox.setPosition(body.getPosition());
     hitbox.setFillColor(sf::Color::Red);
 }
 
@@ -41,7 +42,7 @@ Player::~Player()
 void Player::Draw(sf::RenderWindow& window)
 {
     window.draw(body);
-    window.draw(hitbox);
+    //window.draw(hitbox);
 }
 
 // update the players state and position based on user input
@@ -52,7 +53,6 @@ void Player::Update(float deltaTime)
 
     // initial x velocity to 0 if nothing pressed
     velocity.x = 0.0f;
-
 
     // get user input and update movement speed
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
@@ -67,7 +67,7 @@ void Player::Update(float deltaTime)
 
     velocity.y += GRAVITY * deltaTime;
     // clamp max velocity in the y direction
-    velocity.y = std::min(std::max(-MAX_Y, velocity.y), MAX_Y);
+    velocity.y = std::clamp(velocity.y, -MAX_Y, MAX_Y);
 
     // determine state based on player movement which determines what sprite to render
     if (canJump && velocity.x == 0.0f)
@@ -121,6 +121,6 @@ void Player::OnCollision(sf::Vector2f direction)
         velocity.y = 0;
     }
     // collision moves the hitbox itself, not the player
-    // so snap the player back to hits hitbox
+    // so snap the player back to hits hitbox after the collision is handled
     body.setPosition(hitbox.getPosition() - hitboxOffset);
 }

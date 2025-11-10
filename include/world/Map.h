@@ -9,11 +9,13 @@ public:
     ~Map();
 
     void PrintMap();
-    void Draw(sf::RenderWindow& window);
+    void Draw(sf::RenderWindow& window, sf::View& view);
     void Update();
+
+    // getters
     Tile GetTile(int y, int x);
 
 private:
-    std::vector<std::vector<Tile>> map;
     sf::Texture tileset;
+    std::vector<std::vector<Tile>> map;
 };
