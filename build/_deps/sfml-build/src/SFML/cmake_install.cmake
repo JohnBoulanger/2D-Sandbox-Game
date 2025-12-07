@@ -43,7 +43,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Window/cmake_install.cmake")
   include("/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Network/cmake_install.cmake")
   include("/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Graphics/cmake_install.cmake")
-  include("/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Audio/cmake_install.cmake")
 
 endif()
 

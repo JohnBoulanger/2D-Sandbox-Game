@@ -274,7 +274,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_STRIP:FILEPATH=/usr/bin/strip
 
 //Path to a program.
-CMAKE_TAPI:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/tapi
+CMAKE_TAPI:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/tapi
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -357,10 +357,6 @@ FETCHCONTENT_QUIET:BOOL=ON
 FETCHCONTENT_SOURCE_DIR_FASTNOISE2:PATH=
 
 //When not empty, overrides where to find pre-populated content
-// for FastNoiseLite
-FETCHCONTENT_SOURCE_DIR_FASTNOISELITE:PATH=
-
-//When not empty, overrides where to find pre-populated content
 // for SFML
 FETCHCONTENT_SOURCE_DIR_SFML:PATH=
 
@@ -370,17 +366,8 @@ FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 //Enables UPDATE_DISCONNECTED behavior just for population of FastNoise2
 FETCHCONTENT_UPDATES_DISCONNECTED_FASTNOISE2:BOOL=OFF
 
-//Enables UPDATE_DISCONNECTED behavior just for population of FastNoiseLite
-FETCHCONTENT_UPDATES_DISCONNECTED_FASTNOISELITE:BOOL=OFF
-
 //Enables UPDATE_DISCONNECTED behavior just for population of SFML
 FETCHCONTENT_UPDATES_DISCONNECTED_SFML:BOOL=OFF
-
-//Path to a file.
-FLAC_INCLUDE_DIR:PATH=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers
-
-//Path to a library.
-FLAC_LIBRARY:FILEPATH=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/FLAC.framework
 
 //Path to a file.
 FREETYPE_INCLUDE_DIR_freetype2:PATH=/opt/homebrew/include/freetype2
@@ -403,38 +390,23 @@ FastNoise2_SOURCE_DIR:STATIC=/Users/johnboulanger/Desktop/Games/Terraria-Clone/b
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 
-//Path to a file.
-OGG_INCLUDE_DIR:PATH=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers
-
-//Path to a library.
-OGG_LIBRARY:FILEPATH=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/ogg.framework
-
-//Path to a file.
-OPENAL_FULL_PATH:FILEPATH=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/OpenAL.framework/OpenAL
-
-//Path to a file.
-OPENAL_INCLUDE_DIR:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenAL.framework/Headers
-
-//Path to a library.
-OPENAL_LIBRARY:FILEPATH=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/OpenAL.framework
-
 //Include for the OpenGL GLU library
-OPENGL_GLU_INCLUDE_DIR:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
+OPENGL_GLU_INCLUDE_DIR:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
 
 //Include for OpenGL
-OPENGL_INCLUDE_DIR:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
+OPENGL_INCLUDE_DIR:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
 
 //OpenGL GL library
-OPENGL_gl_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
+OPENGL_gl_LIBRARY:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
 
 //OpenGL GLU library
-OPENGL_glu_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
+OPENGL_glu_LIBRARY:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
 
 //Value Computed by CMake
 SFML_BINARY_DIR:STATIC=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build
 
 //TRUE to build SFML's Audio module.
-SFML_BUILD_AUDIO:BOOL=TRUE
+SFML_BUILD_AUDIO:BOOL=OFF
 
 //TRUE to generate the API documentation, FALSE to ignore it
 SFML_BUILD_DOC:BOOL=FALSE
@@ -479,25 +451,10 @@ SFML_OPENGL_ES:BOOL=0
 SFML_SOURCE_DIR:STATIC=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src
 
 //TRUE to use system dependencies, FALSE to use the bundled ones.
-SFML_USE_SYSTEM_DEPS:BOOL=FALSE
-
-//Path to a library.
-VORBISENC_LIBRARY:FILEPATH=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/vorbisenc.framework
-
-//Path to a library.
-VORBISFILE_LIBRARY:FILEPATH=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/vorbisfile.framework
-
-//Path to a file.
-VORBIS_INCLUDE_DIR:PATH=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers
-
-//Path to a library.
-VORBIS_LIBRARY:FILEPATH=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/vorbis.framework
+SFML_USE_SYSTEM_DEPS:BOOL=OFF
 
 //Treat compiler warnings as errors
 WARNINGS_AS_ERRORS:BOOL=OFF
-
-//Dependencies for the target
-sfml-audio_LIB_DEPENDS:STATIC=general;OpenAL::OpenAL;general;sfml-system;
 
 //Dependencies for the target
 sfml-graphics_LIB_DEPENDS:STATIC=general;sfml-window;
@@ -653,7 +610,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -734,18 +691,8 @@ CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
 CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_SOURCE_ZIP
 CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
-//Details about finding FLAC
-FIND_PACKAGE_MESSAGE_DETAILS_FLAC:INTERNAL=[/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/FLAC.framework][/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers][v()]
-//Details about finding OpenAL
-FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/OpenAL.framework][/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenAL.framework/Headers][v()]
 //Details about finding OpenGL
-FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework][/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework][ ][v()]
-//Details about finding VORBIS
-FIND_PACKAGE_MESSAGE_DETAILS_VORBIS:INTERNAL=[/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/vorbisenc.framework;/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/vorbisfile.framework;/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/vorbis.framework;/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/ogg.framework][/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers][/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers][v()]
-//ADVANCED property for variable: FLAC_INCLUDE_DIR
-FLAC_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: FLAC_LIBRARY
-FLAC_LIBRARY-ADVANCED:INTERNAL=1
+FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework][/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework][ ][v()]
 //ADVANCED property for variable: FREETYPE_INCLUDE_DIR_freetype2
 FREETYPE_INCLUDE_DIR_freetype2-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: FREETYPE_INCLUDE_DIR_ft2build
@@ -754,14 +701,6 @@ FREETYPE_INCLUDE_DIR_ft2build-ADVANCED:INTERNAL=1
 FREETYPE_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OGG_INCLUDE_DIR
-OGG_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OGG_LIBRARY
-OGG_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OPENAL_INCLUDE_DIR
-OPENAL_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OPENAL_LIBRARY
-OPENAL_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_GLU_INCLUDE_DIR
 OPENGL_GLU_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_INCLUDE_DIR
@@ -770,14 +709,6 @@ OPENGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_glu_LIBRARY
 OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: VORBISENC_LIBRARY
-VORBISENC_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: VORBISFILE_LIBRARY
-VORBISFILE_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: VORBIS_INCLUDE_DIR
-VORBIS_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: VORBIS_LIBRARY
-VORBIS_LIBRARY-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 

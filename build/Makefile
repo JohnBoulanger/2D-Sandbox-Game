@@ -248,19 +248,6 @@ sfml-graphics/fast:
 .PHONY : sfml-graphics/fast
 
 #=============================================================================
-# Target rules for targets named sfml-audio
-
-# Build rule for target.
-sfml-audio: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sfml-audio
-.PHONY : sfml-audio
-
-# fast build rule for target.
-sfml-audio/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
-.PHONY : sfml-audio/fast
-
-#=============================================================================
 # Target rules for targets named FastNoise
 
 # Build rule for target.
@@ -528,7 +515,6 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... FastNoise"
-	@echo "... sfml-audio"
 	@echo "... sfml-graphics"
 	@echo "... sfml-network"
 	@echo "... sfml-system"

@@ -59,15 +59,6 @@
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Graphics/CMakeFiles/install.dir
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Graphics/CMakeFiles/install/local.dir
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Graphics/CMakeFiles/install/strip.dir
-/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Audio/CMakeFiles/package.dir
-/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Audio/CMakeFiles/package_source.dir
-/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Audio/CMakeFiles/edit_cache.dir
-/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Audio/CMakeFiles/rebuild_cache.dir
-/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Audio/CMakeFiles/list_install_components.dir
-/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Audio/CMakeFiles/install.dir
-/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Audio/CMakeFiles/install/local.dir
-/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Audio/CMakeFiles/install/strip.dir
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/CMakeFiles/package.dir
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/CMakeFiles/package_source.dir
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/CMakeFiles/edit_cache.dir

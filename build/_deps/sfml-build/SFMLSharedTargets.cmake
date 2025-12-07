@@ -19,7 +19,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_cmake_targets_defined "")
 set(_cmake_targets_not_defined "")
 set(_cmake_expected_targets "")
-foreach(_cmake_expected_target IN ITEMS sfml-system sfml-window OpenGL sfml-network sfml-graphics Freetype VORBIS FLAC sfml-audio)
+foreach(_cmake_expected_target IN ITEMS sfml-system sfml-window OpenGL sfml-network sfml-graphics Freetype)
   list(APPEND _cmake_expected_targets "${_cmake_expected_target}")
   if(TARGET "${_cmake_expected_target}")
     list(APPEND _cmake_targets_defined "${_cmake_expected_target}")
@@ -65,8 +65,8 @@ set_target_properties(sfml-window PROPERTIES
 add_library(OpenGL INTERFACE IMPORTED)
 
 set_target_properties(OpenGL PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework"
-  INTERFACE_LINK_LIBRARIES "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework"
+  INTERFACE_INCLUDE_DIRECTORIES "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework"
+  INTERFACE_LINK_LIBRARIES "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework"
 )
 
 # Create imported target sfml-network
@@ -91,32 +91,6 @@ add_library(Freetype INTERFACE IMPORTED)
 set_target_properties(Freetype PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "/Library/Frameworks/Mono.framework/Headers;/opt/homebrew/include/freetype2"
   INTERFACE_LINK_LIBRARIES "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/freetype.framework"
-)
-
-# Create imported target VORBIS
-add_library(VORBIS INTERFACE IMPORTED)
-
-set_target_properties(VORBIS PROPERTIES
-  INTERFACE_COMPILE_DEFINITIONS "OV_EXCLUDE_STATIC_CALLBACKS"
-  INTERFACE_INCLUDE_DIRECTORIES "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers;/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers"
-  INTERFACE_LINK_LIBRARIES "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/vorbisenc.framework;/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/vorbisfile.framework;/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/vorbis.framework;/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/ogg.framework"
-)
-
-# Create imported target FLAC
-add_library(FLAC INTERFACE IMPORTED)
-
-set_target_properties(FLAC PROPERTIES
-  INTERFACE_COMPILE_DEFINITIONS "FLAC__NO_DLL"
-  INTERFACE_INCLUDE_DIRECTORIES "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/headers"
-  INTERFACE_LINK_LIBRARIES "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/extlibs/libs-osx/Frameworks/FLAC.framework"
-)
-
-# Create imported target sfml-audio
-add_library(sfml-audio SHARED IMPORTED)
-
-set_target_properties(sfml-audio PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include"
-  INTERFACE_LINK_LIBRARIES "sfml-system"
 )
 
 # Import target "sfml-system" for configuration "Debug"
@@ -145,14 +119,6 @@ set_property(TARGET sfml-graphics APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(sfml-graphics PROPERTIES
   IMPORTED_LOCATION_DEBUG "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/lib/libsfml-graphics-d.2.6.2.dylib"
   IMPORTED_SONAME_DEBUG "@rpath/libsfml-graphics-d.2.6.dylib"
-  )
-
-# Import target "sfml-audio" for configuration "Debug"
-set_property(TARGET sfml-audio APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
-set_target_properties(sfml-audio PROPERTIES
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "OpenAL::OpenAL"
-  IMPORTED_LOCATION_DEBUG "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/lib/libsfml-audio-d.2.6.2.dylib"
-  IMPORTED_SONAME_DEBUG "@rpath/libsfml-audio-d.2.6.dylib"
   )
 
 # This file does not depend on other imported targets which have

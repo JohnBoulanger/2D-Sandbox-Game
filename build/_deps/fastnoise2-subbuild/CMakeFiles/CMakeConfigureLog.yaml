@@ -30,9 +30,12 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/johnboulanger/.cargo/bin/"
+      - "/Users/johnboulanger/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/Library/Frameworks/Python.framework/Versions/3.11/bin/uname"
       - "/usr/local/bin/uname"
@@ -50,16 +53,20 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/Users/johnboulanger/.cargo/bin"
+        - "/Users/johnboulanger/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "message-v1"
     backtrace:
       - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
       - "CMakeLists.txt:16 (project)"
     message: |
-      The system is: Darwin - 25.0.0 - arm64
+      The system is: Darwin - 25.1.0 - arm64
   -
     kind: "find-v1"
     backtrace:
@@ -90,9 +97,12 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/johnboulanger/.cargo/bin/"
+      - "/Users/johnboulanger/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/Library/Frameworks/Python.framework/Versions/3.11/bin/install_name_tool"
       - "/usr/local/bin/install_name_tool"
@@ -110,8 +120,12 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/Users/johnboulanger/.cargo/bin"
+        - "/Users/johnboulanger/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
       CMAKE_INSTALL_PREFIX: "/usr/local"
 ...
