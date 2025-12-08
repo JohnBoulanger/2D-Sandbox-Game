@@ -872,4 +872,6 @@ CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.o: \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/Animation.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/PlayerState.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/Collider.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/PhysicsConstants.h
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/PhysicsConstants.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/TileConstants.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/MapConstants.h

@@ -1,5 +1,6 @@
 #include "core/Game.h"
 #include "config/GameConstants.h"
+#include <config/MapConstants.h>
 
 Game::Game()
     : window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), WINDOW_NAME, sf::Style::Close | sf::Style::Resize),
@@ -16,7 +17,6 @@ Game::~Game()
 
 void Game::Run()
 {
-    // core game loop
     while (window.isOpen())
     {
         // create maximum delta time so resizing doesnt cause collision issues
@@ -41,7 +41,12 @@ void Game::Run()
         window.clear(sf::Color(59, 186, 255));
         window.setView(view);
         world.Update(window, deltaTime);
-        view.setCenter(world.GetPlayerPosition());
+
+        // clamp view width to map size
+        // todo: fix right world bounds due to player width offset
+        sf::Vector2f view_bounds(std::clamp(world.GetPlayerPosition().x, VIEW_WIDTH * 0.5f, MAP_WIDTH * TILE_SIZE - VIEW_WIDTH * 0.5f ), world.GetPlayerPosition().y); 
+
+        view.setCenter(view_bounds);
         world.Draw(window, view);
         window.display();
     }

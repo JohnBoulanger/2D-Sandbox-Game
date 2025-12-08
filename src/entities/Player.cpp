@@ -1,9 +1,11 @@
 #include "entities/Player.h"
 #include "config/PhysicsConstants.h"
+#include <config/TileConstants.h>
+#include <config/MapConstants.h>
 
 // initialize player
 // use reference to texture to signify that the player owns that sprite texture and directly depends on being valid and uses it
-// construct the animation before the constructor body executes
+// construct the animation before the constructor playerBody executes
 Player::Player(PlayerState playerState, sf::Texture& texture, sf::Vector2u imageCount, float switchTime, float speed, float jumpHeight) :
     animation(&texture, imageCount, switchTime),
     collider(hitbox)
@@ -15,21 +17,20 @@ Player::Player(PlayerState playerState, sf::Texture& texture, sf::Vector2u image
     playerState = IDLE;
 
     // set the texture for the player to the playerTexture reference
-    body.setTexture(texture);
-    body.setTextureRect(animation.uvRect);
+    playerBody.setTexture(texture);
+    playerBody.setTextureRect(animation.uvRect);
     // set the players origin
-    sf::FloatRect bounds = body.getLocalBounds();
-    body.setOrigin(bounds.width / 2.0f, bounds.height / 2.0f);
-    body.setScale(1.5f, 1.5f);
+    sf::FloatRect bounds = playerBody.getLocalBounds();
+    playerBody.setOrigin(bounds.width / 2.0f, bounds.height / 2.0f);
+    playerBody.setScale(1.5f, 1.5f);
 
     // initial positon in the world
-    body.setPosition(300.0f, -100.0f);
+    playerBody.setPosition(MAP_WIDTH * TILE_SIZE * 0.5, (GROUND_TO_TOP - 10) * TILE_SIZE);
 
     // initialize the hitbox for the player
     hitbox.setSize(sf::Vector2f(bounds.width, bounds.height));
     hitbox.setOrigin(hitbox.getSize() / 2.0f);
-    hitbox.setScale(0.75f, 0.75f);
-    hitbox.setPosition(body.getPosition());
+    hitbox.setPosition(playerBody.getPosition());
     hitbox.setFillColor(sf::Color::Red);
 }
 
@@ -38,10 +39,10 @@ Player::~Player()
 
 }
 
-// draw the body of the player on the window
+// draw the playerBody of the player on the window
 void Player::Draw(sf::RenderWindow& window)
 {
-    window.draw(body);
+    window.draw(playerBody);
     // window.draw(hitbox);
 }
 
@@ -52,9 +53,9 @@ void Player::Update(float deltaTime)
     UpdateMovement(deltaTime);
     UpdateState();
 
-    // update animation and move body depending on state and direction
+    // update animation and move playerBody depending on state and direction
     animation.Update(playerState, deltaTime, NUM_FRAMES[playerState], faceLeft);
-    body.setTextureRect(animation.uvRect);
+    playerBody.setTextureRect(animation.uvRect);
 }
 
 void Player::OnCollision(sf::Vector2f direction)
@@ -82,7 +83,7 @@ void Player::OnCollision(sf::Vector2f direction)
     }
     // collision moves the hitbox itself, not the player
     // so snap the player back to hits hitbox after the collision is handled
-    body.setPosition(hitbox.getPosition() - hitboxOffset);
+    playerBody.setPosition(hitbox.getPosition() - hitboxOffset);
 }
 
 void Player::UpdateMovement(float deltaTime)
@@ -105,8 +106,8 @@ void Player::UpdateMovement(float deltaTime)
     // clamp max velocity in the y direction
     velocity.y = std::clamp(velocity.y, -MAX_Y, MAX_Y);
     // move the sprite by an "offset" defined in the vector2f movement
-    body.move(velocity * deltaTime);
-    hitbox.setPosition(body.getPosition() + hitboxOffset);
+    playerBody.move(velocity * deltaTime);
+    hitbox.setPosition(playerBody.getPosition() + hitboxOffset);
 }
 
 void Player::UpdateState()

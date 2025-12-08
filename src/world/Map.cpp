@@ -3,17 +3,19 @@
 #include "world/Tile.h"
 #include "config/MapConstants.h"
 
-static void generateNoise(std::vector<float>& noiseOutput, int width, int height);
+static void generateHeightMap(std::vector<float>& noiseOutput, int width);
+static void generateWorldNoise(std::vector<float>& noiseOutput, int width, int height);
+
 
 Map::Map() {
     std::srand(static_cast<unsigned>(std::time(nullptr)));
     tileset.loadFromFile("textures/Tileset.png");
-
-    // use perlin noise to generate the map
     const int width = MAP_WIDTH;
     const int height = MAP_HEIGHT;
-    std::vector<float> noiseOutput(width * height);
-    generateNoise(noiseOutput, width, height);
+    std::vector<float> heightMap(width);
+    std::vector<float> worldNoise(width * height);
+    generateHeightMap(heightMap, width);
+    generateWorldNoise(worldNoise, width, height);
 
     map.resize(MAP_WIDTH);
     for (int x = 0; x < MAP_WIDTH; x++) 
@@ -22,7 +24,7 @@ Map::Map() {
         for (int y = 0; y < MAP_HEIGHT; y++) 
         {
             TileID id = AIR;
-            int sample = static_cast<int>((fabs(noiseOutput[x]) * 5) + 10);
+            int sample = static_cast<int>((fabs(heightMap[x]) * 30) + GROUND_TO_TOP);
             if (sample <= y)
             {
                 if(sample == y)
@@ -46,11 +48,7 @@ Map::Map() {
                     }
                 }
             }
-                
-            // world position (in pixels)
             sf::Vector2f position(x * TILE_SIZE, y * TILE_SIZE);
-
-            // construct directly in-place
             map[x].emplace_back(tileset, id, sf::Vector2f(TILE_SIZE, TILE_SIZE), position);
         }
     }
@@ -95,26 +93,49 @@ Tile& Map::GetTile(int x, int y)
     return map[x][y];
 }
 
-static void generateNoise(std::vector<float>& noiseOutput, int width, int height)
+static void generateHeightMap(std::vector<float>& noiseOutput, int width)
 {
     // Create and configure FastNoise generator
     FastNoise::SmartNode<> fnGenerator = FastNoise::NewFromEncodedNodeTree("DQAFAAAAAAAAQAgAAAAAAD8AAAAAAA==");
 
     fnGenerator->GenUniformGrid2D(
         noiseOutput.data(),
-        0.5f, 0.5f,
+        0, 0,
+        width, 1,
+        0.005f,
+        rand()
+    );
+
+    FILE* fp = fopen("heightmap.txt", "w");
+    if (!fp) return;
+
+    for (int i = 0; i < width; i++) {
+        fprintf(fp, "%f ", noiseOutput[i]);
+    }
+
+    fclose(fp);
+}
+
+static void generateWorldNoise(std::vector<float>& noiseOutput, int width, int height)
+{
+    // Create and configure FastNoise generator
+    FastNoise::SmartNode<> fnGenerator = FastNoise::NewFromEncodedNodeTree("DQAFAAAAAAAAQAgAAAAAAD8AAAAAAA==");
+
+    fnGenerator->GenUniformGrid2D(
+        noiseOutput.data(),
+        0, 0,
         width, height,
         0.05f,
         rand()
     );
 
-    FILE* fp = fopen("noise_output.txt", "w");
+    FILE* fp = fopen("worldnoise.txt", "w");
     if (!fp) return;
 
     for (int i = 0; i < height; i++) {
         for (int j = 0; j < width; j++) {
             int index = i * width + j;
-            fprintf(fp, "%f ", fabs(noiseOutput[index]) * 10);
+            fprintf(fp, "%f ", noiseOutput[index]);
         }
         fprintf(fp, "\n");
     }

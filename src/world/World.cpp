@@ -51,14 +51,6 @@ void World::HandleCollisions(sf::RenderWindow& window)
             if (x < 0 || y < 0 || x >= MAP_WIDTH || y >= MAP_HEIGHT)
                 continue;
 
-            // one square per tile in loop range
-            sf::RectangleShape blocksToCheck({TILE_SIZE, TILE_SIZE});
-            float px = static_cast<float>(x * TILE_SIZE);
-            float py = static_cast<float>(y * TILE_SIZE);
-            blocksToCheck.setPosition({px, py});
-            blocksToCheck.setFillColor(sf::Color::Blue);
-            window.draw(blocksToCheck);
-
             Tile& tile = map.GetTile(x, y);
             if (tile.GetCollider().CheckCollision(player.GetCollider(), direction, 1.0f))
                 player.OnCollision(direction);

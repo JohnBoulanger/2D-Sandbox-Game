@@ -16,13 +16,13 @@ public:
     void OnCollision(sf::Vector2f direction);
 
     // getters
-    sf::Vector2f GetPosition() { return body.getPosition(); }
+    sf::Vector2f GetPosition() { return playerBody.getPosition(); }
     Collider& GetCollider() { return collider; }
 
 private:
     // player
     PlayerState playerState;
-    sf::Sprite body;
+    sf::Sprite playerBody;
     float speed;
     sf::Vector2f velocity;
     bool canJump;

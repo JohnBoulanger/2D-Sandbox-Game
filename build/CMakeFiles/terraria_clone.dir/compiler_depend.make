@@ -1742,6 +1742,7 @@ CMakeFiles/terraria_clone.dir/src/core/Game.cpp.o: /Users/johnboulanger/Desktop/
   _deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
   _deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/GameConstants.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/MapConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/TileConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/Animation.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/Game.h \
@@ -5235,7 +5236,9 @@ CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.o: /Users/johnboulanger/De
   _deps/sfml-src/include/SFML/Window/WindowBase.hpp \
   _deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
   _deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/MapConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/PhysicsConstants.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/TileConstants.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/Animation.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/Collider.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/Player.h \
@@ -8780,8 +8783,6 @@ CMakeFiles/terraria_clone.dir/src/world/World.cpp.o: /Users/johnboulanger/Deskto
 
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/World.cpp:
 
-/Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/MapConstants.h:
-
 _deps/fastnoise2-src/include/FastNoise/Generators/Simplex.h:
 
 _deps/fastnoise2-src/include/FastNoise/Generators/Perlin.h:
@@ -8827,6 +8828,8 @@ _deps/fastnoise2-src/include/FastNoise/FastNoise_Config.h:
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/Game.h:
 
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/TileConstants.h:
+
+/Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/MapConstants.h:
 
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/core/Game.cpp:
 
