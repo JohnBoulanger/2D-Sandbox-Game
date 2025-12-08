@@ -7,9 +7,6 @@ set(CMAKE_BUILD_TYPE Debug)
 
 include(FetchContent)
 
-set(SFML_BUILD_AUDIO OFF CACHE BOOL "" FORCE)
-set(SFML_USE_SYSTEM_DEPS OFF CACHE BOOL "" FORCE)
-
 # SFML
 FetchContent_Declare(
   SFML

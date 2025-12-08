@@ -42,7 +42,7 @@ Player::~Player()
 void Player::Draw(sf::RenderWindow& window)
 {
     window.draw(body);
-    //window.draw(hitbox);
+    // window.draw(hitbox);
 }
 
 // update the players state and position based on user input

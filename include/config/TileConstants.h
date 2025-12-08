@@ -18,4 +18,4 @@ struct TileType {
 };
 
 // all tiles 16px x 16px
-constexpr float TILE_SIZE = 16.0f;
+constexpr int TILE_SIZE = 16;

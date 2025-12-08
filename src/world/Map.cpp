@@ -15,11 +15,11 @@ Map::Map() {
     std::vector<float> noiseOutput(width * height);
     generateNoise(noiseOutput, width, height);
 
-    map.resize(MAP_HEIGHT);
-    for (int y = 0; y < MAP_HEIGHT; ++y) 
+    map.resize(MAP_WIDTH);
+    for (int x = 0; x < MAP_WIDTH; x++) 
     {
-        map[y].reserve(MAP_WIDTH);
-        for (int x = 0; x < MAP_WIDTH; ++x) 
+        map[x].reserve(MAP_HEIGHT);
+        for (int y = 0; y < MAP_HEIGHT; y++) 
         {
             TileID id = AIR;
             int sample = static_cast<int>((fabs(noiseOutput[x]) * 5) + 10);
@@ -51,9 +51,7 @@ Map::Map() {
             sf::Vector2f position(x * TILE_SIZE, y * TILE_SIZE);
 
             // construct directly in-place
-            map[y].emplace_back(tileset, id,
-                                sf::Vector2f(TILE_SIZE, TILE_SIZE),
-                                position);
+            map[x].emplace_back(tileset, id, sf::Vector2f(TILE_SIZE, TILE_SIZE), position);
         }
     }
 }
@@ -66,19 +64,18 @@ Map::~Map()
 
 void Map::Draw(sf::RenderWindow& window, sf::View& view)
 {
-    sf::Vector2f centre = view.getCenter();
+    sf::Vector2f center = view.getCenter();
     sf::Vector2f size = view.getSize();
 
     // only draw tiles within the view
-    int leftTile   = std::clamp(static_cast<int>(floor((centre.x - size.x / 2.f) / TILE_SIZE)), 0, MAP_WIDTH  - 1);
-    int rightTile  = std::clamp(static_cast<int>(ceil((centre.x + size.x / 2.f) / TILE_SIZE) + 1), 0, MAP_WIDTH  - 1);
-    int topTile    = std::clamp(static_cast<int>(floor((centre.y - size.y / 2.f) / TILE_SIZE)), 0, MAP_HEIGHT - 1);
-    int bottomTile = std::clamp(static_cast<int>(ceil((centre.y + size.y / 2.f) / TILE_SIZE) + 1), 0, MAP_HEIGHT - 1);
+    int leftTile = std::clamp(static_cast<int>(floor((center.x - size.x / 2.f) / TILE_SIZE)), 0, MAP_WIDTH - 1);
+    int rightTile = std::clamp(static_cast<int>(ceil((center.x + size.x / 2.f) / TILE_SIZE) + 1), 0, MAP_WIDTH - 1);
+    int topTile = std::clamp(static_cast<int>(floor((center.y - size.y / 2.f) / TILE_SIZE)), 0, MAP_HEIGHT - 1);
+    int bottomTile = std::clamp(static_cast<int>(ceil((center.y + size.y / 2.f) / TILE_SIZE) + 1), 0, MAP_HEIGHT - 1);
     
-    for (int y = topTile; y < bottomTile; y++) {
-        // iterate over each "y-layer"
-        for (int x = leftTile; x < rightTile; x++) {
-            map[y][x].Draw(window);
+    for (int x = leftTile; x < rightTile; x++) {
+        for (int y = topTile; y < bottomTile; y++) {
+            map[x][y].Draw(window);
         }
     }
 }
@@ -93,9 +90,9 @@ void Map::PrintMap()
     return;
 }
 
-Tile Map::GetTile(int y, int x)
+Tile& Map::GetTile(int x, int y)
 {
-    return map[y][x];
+    return map[x][y];
 }
 
 static void generateNoise(std::vector<float>& noiseOutput, int width, int height)

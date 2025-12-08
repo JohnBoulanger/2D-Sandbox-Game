@@ -13,7 +13,7 @@ public:
     void Update();
 
     // getters
-    Tile GetTile(int y, int x);
+    Tile& GetTile(int y, int x);
 
 private:
     sf::Texture tileset;
