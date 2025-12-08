@@ -16,7 +16,9 @@ Tile::Tile(sf::Texture& texture, TileID id, sf::Vector2f size, sf::Vector2f posi
         hitbox.setSize(size);
         hitbox.setOrigin(size / 2.f);
         hitbox.setPosition(position);
-        hitbox.setFillColor(sf::Color::White);
+        hitbox.setOutlineThickness(1.0f);
+        hitbox.setOutlineColor(sf::Color::Blue);
+        hitbox.setFillColor(sf::Color::Transparent);
     }
 }
 

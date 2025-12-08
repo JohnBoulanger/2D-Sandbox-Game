@@ -31,7 +31,9 @@ Player::Player(PlayerState playerState, sf::Texture& texture, sf::Vector2u image
     hitbox.setSize(sf::Vector2f(bounds.width, bounds.height));
     hitbox.setOrigin(hitbox.getSize() / 2.0f);
     hitbox.setPosition(playerBody.getPosition());
-    hitbox.setFillColor(sf::Color::Red);
+    hitbox.setOutlineThickness(1.0f);
+    hitbox.setOutlineColor(sf::Color::Red);
+    hitbox.setFillColor(sf::Color::Transparent);
 }
 
 Player::~Player()
@@ -43,7 +45,7 @@ Player::~Player()
 void Player::Draw(sf::RenderWindow& window)
 {
     window.draw(playerBody);
-    // window.draw(hitbox);
+    //window.draw(hitbox);
 }
 
 // update the players state and position based on user input
