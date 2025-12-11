@@ -873,4 +873,5 @@ CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.o: \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/PlayerState.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/systems/Collider.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/GameConstants.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/TileConstants.h
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/TileConstants.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/TextureUtils.h

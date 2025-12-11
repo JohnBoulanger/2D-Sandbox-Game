@@ -4,8 +4,7 @@
 
 World::World() :
     map(),
-    playerTexture(loadTexture(PLAYER_PATH)),
-    player(DEFAULT_PLAYER_STATE, playerTexture, {13, 4}, PLAYER_ANIMATION_SPEED, SPEED, JUMP_HEIGHT)
+    player(DEFAULT_PLAYER_STATE, {13, 4}, PLAYER_ANIMATION_SPEED, SPEED, JUMP_HEIGHT)
 {
     map.printMap();
 }
@@ -18,6 +17,7 @@ World::~World()
 void World::update(sf::RenderWindow& window, float deltaTime)
 {   
     // update map
+    map.update(deltaTime);
 
     // update player
     player.update(deltaTime);

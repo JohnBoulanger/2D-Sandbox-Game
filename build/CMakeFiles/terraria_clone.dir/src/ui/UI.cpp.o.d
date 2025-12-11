@@ -868,4 +868,7 @@ CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.o: \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Glsl.inl \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Sprite.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Text.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/ui/HealthBar.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/ui/Inventory.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/ui/PauseMenu.h

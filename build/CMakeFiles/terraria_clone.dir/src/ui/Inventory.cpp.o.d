@@ -1,6 +1,6 @@
-CMakeFiles/terraria_clone.dir/src/world/World.cpp.o: \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/World.cpp \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/World.h \
+CMakeFiles/terraria_clone.dir/src/ui/Inventory.cpp.o: \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/ui/Inventory.cpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/ui/Inventory.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System.hpp \
@@ -868,17 +868,4 @@ CMakeFiles/terraria_clone.dir/src/world/World.cpp.o: \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Glsl.inl \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Sprite.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Text.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Map.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Tile.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/systems/Collider.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/TileConstants.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/ui/UI.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/ui/HealthBar.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/ui/Inventory.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/ui/PauseMenu.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/Player.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/Animation.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/PlayerState.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/GameConstants.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/TextureUtils.h
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp

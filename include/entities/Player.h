@@ -6,7 +6,7 @@
 class Player
 {
 public:
-    Player(PlayerState playerState, sf::Texture& texture, sf::Vector2u imageCount, float switchTime, float speed, float jumpHeight);
+    Player(PlayerState playerState, sf::Vector2u imageCount, float switchTime, float speed, float jumpHeight);
     ~Player();
 
     void update(float deltaTime);
@@ -22,6 +22,7 @@ public:
 private:
     // player
     PlayerState playerState;
+    sf::Texture texture;
     sf::Sprite playerBody;
     float speed;
     sf::Vector2f velocity;

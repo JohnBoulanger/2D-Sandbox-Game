@@ -1,11 +1,13 @@
 #include "entities/Player.h"
 #include "config/GameConstants.h"
 #include <config/TileConstants.h>
+#include <core/TextureUtils.h>
 
 // initialize player
 // use reference to texture to signify that the player owns that sprite texture and directly depends on being valid and uses it
 // construct the animation before the constructor playerBody executes
-Player::Player(PlayerState playerState, sf::Texture& texture, sf::Vector2u imageCount, float switchTime, float speed, float jumpHeight) :
+Player::Player(PlayerState playerState, sf::Vector2u imageCount, float switchTime, float speed, float jumpHeight) :
+    texture(loadTexture(PLAYER_TEXTURE_PATH)),
     animation(&texture, imageCount, switchTime),
     collider(hitbox)
 {

@@ -10,7 +10,7 @@ public:
 
     void printMap();
     void draw(sf::RenderWindow& window, sf::View& view);
-    void update();
+    void update(float deltaTime);
     void loadTileset();
     void generateHeightMap(std::vector<float>& noiseOutput, int width);
     void generateWorldNoise(std::vector<float>& noiseOutput, int width, int height);

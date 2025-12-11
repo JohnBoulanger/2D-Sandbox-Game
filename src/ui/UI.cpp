@@ -9,3 +9,13 @@ UI::~UI()
 {
 
 }
+
+void UI::update()
+{
+
+}
+
+void UI::draw(sf::RenderWindow& window)
+{
+    
+}

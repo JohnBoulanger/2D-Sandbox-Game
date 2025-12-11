@@ -19,7 +19,6 @@ public:
 
 private:
     // player
-    sf::Texture playerTexture;
     Player player;
     // map
     Map map;

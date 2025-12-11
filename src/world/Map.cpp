@@ -93,7 +93,7 @@ void Map::draw(sf::RenderWindow& window, sf::View& view)
     }
 }
 
-void Map::update()
+void Map::update(float deltaTime)
 {
 
 }

@@ -1,4 +1,8 @@
+#pragma once
 #include <SFML/Graphics.hpp>
+#include "HealthBar.h"
+#include "Inventory.h"
+#include "PauseMenu.h"
 
 class UI
 {
@@ -11,8 +15,7 @@ public:
 
 private:
     sf::Font font;
-    // HealthBar healthBar;
-    // Inventory inventory;
-    // PauseMenu pauseMenu;
-
+    HealthBar healthBar;
+    Inventory inventory;
+    PauseMenu pauseMenu;
 };

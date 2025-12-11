@@ -428,6 +428,78 @@ src/systems/Collider.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.s
 .PHONY : src/systems/Collider.cpp.s
 
+src/ui/HealthBar.o: src/ui/HealthBar.cpp.o
+.PHONY : src/ui/HealthBar.o
+
+# target to build an object file
+src/ui/HealthBar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/ui/HealthBar.cpp.o
+.PHONY : src/ui/HealthBar.cpp.o
+
+src/ui/HealthBar.i: src/ui/HealthBar.cpp.i
+.PHONY : src/ui/HealthBar.i
+
+# target to preprocess a source file
+src/ui/HealthBar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/ui/HealthBar.cpp.i
+.PHONY : src/ui/HealthBar.cpp.i
+
+src/ui/HealthBar.s: src/ui/HealthBar.cpp.s
+.PHONY : src/ui/HealthBar.s
+
+# target to generate assembly for a file
+src/ui/HealthBar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/ui/HealthBar.cpp.s
+.PHONY : src/ui/HealthBar.cpp.s
+
+src/ui/Inventory.o: src/ui/Inventory.cpp.o
+.PHONY : src/ui/Inventory.o
+
+# target to build an object file
+src/ui/Inventory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/ui/Inventory.cpp.o
+.PHONY : src/ui/Inventory.cpp.o
+
+src/ui/Inventory.i: src/ui/Inventory.cpp.i
+.PHONY : src/ui/Inventory.i
+
+# target to preprocess a source file
+src/ui/Inventory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/ui/Inventory.cpp.i
+.PHONY : src/ui/Inventory.cpp.i
+
+src/ui/Inventory.s: src/ui/Inventory.cpp.s
+.PHONY : src/ui/Inventory.s
+
+# target to generate assembly for a file
+src/ui/Inventory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/ui/Inventory.cpp.s
+.PHONY : src/ui/Inventory.cpp.s
+
+src/ui/PauseMenu.o: src/ui/PauseMenu.cpp.o
+.PHONY : src/ui/PauseMenu.o
+
+# target to build an object file
+src/ui/PauseMenu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/ui/PauseMenu.cpp.o
+.PHONY : src/ui/PauseMenu.cpp.o
+
+src/ui/PauseMenu.i: src/ui/PauseMenu.cpp.i
+.PHONY : src/ui/PauseMenu.i
+
+# target to preprocess a source file
+src/ui/PauseMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/ui/PauseMenu.cpp.i
+.PHONY : src/ui/PauseMenu.cpp.i
+
+src/ui/PauseMenu.s: src/ui/PauseMenu.cpp.s
+.PHONY : src/ui/PauseMenu.s
+
+# target to generate assembly for a file
+src/ui/PauseMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/ui/PauseMenu.cpp.s
+.PHONY : src/ui/PauseMenu.cpp.s
+
 src/ui/UI.o: src/ui/UI.cpp.o
 .PHONY : src/ui/UI.o
 
@@ -565,6 +637,15 @@ help:
 	@echo "... src/systems/Collider.o"
 	@echo "... src/systems/Collider.i"
 	@echo "... src/systems/Collider.s"
+	@echo "... src/ui/HealthBar.o"
+	@echo "... src/ui/HealthBar.i"
+	@echo "... src/ui/HealthBar.s"
+	@echo "... src/ui/Inventory.o"
+	@echo "... src/ui/Inventory.i"
+	@echo "... src/ui/Inventory.s"
+	@echo "... src/ui/PauseMenu.o"
+	@echo "... src/ui/PauseMenu.i"
+	@echo "... src/ui/PauseMenu.s"
 	@echo "... src/ui/UI.o"
 	@echo "... src/ui/UI.i"
 	@echo "... src/ui/UI.s"
