@@ -128,24 +128,10 @@ CMakeFiles/terraria_clone.dir/src/core/View.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/terraria_clone.dir/src/core/View.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/core/View.cpp -o CMakeFiles/terraria_clone.dir/src/core/View.cpp.s
 
-CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.o: CMakeFiles/terraria_clone.dir/flags.make
-CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/entities/Collider.cpp
-CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.o: CMakeFiles/terraria_clone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.o -MF CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.o.d -o CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/entities/Collider.cpp
-
-CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/entities/Collider.cpp > CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.i
-
-CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/entities/Collider.cpp -o CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.s
-
 CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.o: CMakeFiles/terraria_clone.dir/flags.make
 CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/entities/Player.cpp
 CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.o: CMakeFiles/terraria_clone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.o -MF CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.o.d -o CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/entities/Player.cpp
 
 CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.i: cmake_force
@@ -159,7 +145,7 @@ CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.s: cmake_force
 CMakeFiles/terraria_clone.dir/src/main.cpp.o: CMakeFiles/terraria_clone.dir/flags.make
 CMakeFiles/terraria_clone.dir/src/main.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/main.cpp
 CMakeFiles/terraria_clone.dir/src/main.cpp.o: CMakeFiles/terraria_clone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/terraria_clone.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/terraria_clone.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/terraria_clone.dir/src/main.cpp.o -MF CMakeFiles/terraria_clone.dir/src/main.cpp.o.d -o CMakeFiles/terraria_clone.dir/src/main.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/main.cpp
 
 CMakeFiles/terraria_clone.dir/src/main.cpp.i: cmake_force
@@ -170,10 +156,38 @@ CMakeFiles/terraria_clone.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/terraria_clone.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/main.cpp -o CMakeFiles/terraria_clone.dir/src/main.cpp.s
 
+CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.o: CMakeFiles/terraria_clone.dir/flags.make
+CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/systems/Collider.cpp
+CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.o: CMakeFiles/terraria_clone.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.o -MF CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.o.d -o CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/systems/Collider.cpp
+
+CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/systems/Collider.cpp > CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.i
+
+CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/systems/Collider.cpp -o CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.s
+
+CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.o: CMakeFiles/terraria_clone.dir/flags.make
+CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/ui/UI.cpp
+CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.o: CMakeFiles/terraria_clone.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.o -MF CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.o.d -o CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/ui/UI.cpp
+
+CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/ui/UI.cpp > CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.i
+
+CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/ui/UI.cpp -o CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.s
+
 CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o: CMakeFiles/terraria_clone.dir/flags.make
 CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/Map.cpp
 CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o: CMakeFiles/terraria_clone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o -MF CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o.d -o CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/Map.cpp
 
 CMakeFiles/terraria_clone.dir/src/world/Map.cpp.i: cmake_force
@@ -187,7 +201,7 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.s: cmake_force
 CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o: CMakeFiles/terraria_clone.dir/flags.make
 CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/Tile.cpp
 CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o: CMakeFiles/terraria_clone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o -MF CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o.d -o CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/Tile.cpp
 
 CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.i: cmake_force
@@ -201,7 +215,7 @@ CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.s: cmake_force
 CMakeFiles/terraria_clone.dir/src/world/World.cpp.o: CMakeFiles/terraria_clone.dir/flags.make
 CMakeFiles/terraria_clone.dir/src/world/World.cpp.o: /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/World.cpp
 CMakeFiles/terraria_clone.dir/src/world/World.cpp.o: CMakeFiles/terraria_clone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/terraria_clone.dir/src/world/World.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/terraria_clone.dir/src/world/World.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/terraria_clone.dir/src/world/World.cpp.o -MF CMakeFiles/terraria_clone.dir/src/world/World.cpp.o.d -o CMakeFiles/terraria_clone.dir/src/world/World.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/World.cpp
 
 CMakeFiles/terraria_clone.dir/src/world/World.cpp.i: cmake_force
@@ -218,9 +232,10 @@ terraria_clone_OBJECTS = \
 "CMakeFiles/terraria_clone.dir/src/core/Game.cpp.o" \
 "CMakeFiles/terraria_clone.dir/src/core/TextureUtils.cpp.o" \
 "CMakeFiles/terraria_clone.dir/src/core/View.cpp.o" \
-"CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.o" \
 "CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.o" \
 "CMakeFiles/terraria_clone.dir/src/main.cpp.o" \
+"CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.o" \
+"CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.o" \
 "CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o" \
 "CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o" \
 "CMakeFiles/terraria_clone.dir/src/world/World.cpp.o"
@@ -232,9 +247,10 @@ bin/terraria_clone: CMakeFiles/terraria_clone.dir/src/core/Animation.cpp.o
 bin/terraria_clone: CMakeFiles/terraria_clone.dir/src/core/Game.cpp.o
 bin/terraria_clone: CMakeFiles/terraria_clone.dir/src/core/TextureUtils.cpp.o
 bin/terraria_clone: CMakeFiles/terraria_clone.dir/src/core/View.cpp.o
-bin/terraria_clone: CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.o
 bin/terraria_clone: CMakeFiles/terraria_clone.dir/src/entities/Player.cpp.o
 bin/terraria_clone: CMakeFiles/terraria_clone.dir/src/main.cpp.o
+bin/terraria_clone: CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.o
+bin/terraria_clone: CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.o
 bin/terraria_clone: CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o
 bin/terraria_clone: CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o
 bin/terraria_clone: CMakeFiles/terraria_clone.dir/src/world/World.cpp.o
@@ -244,7 +260,7 @@ bin/terraria_clone: _deps/fastnoise2-build/src/libFastNoiseD.dylib
 bin/terraria_clone: _deps/sfml-build/lib/libsfml-window-d.2.6.2.dylib
 bin/terraria_clone: _deps/sfml-build/lib/libsfml-system-d.2.6.2.dylib
 bin/terraria_clone: CMakeFiles/terraria_clone.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable bin/terraria_clone"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable bin/terraria_clone"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/terraria_clone.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

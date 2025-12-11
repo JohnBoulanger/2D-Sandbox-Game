@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "Map.h"
+#include "ui/UI.h"
 #include "entities/Player.h"
 
 class World
@@ -17,9 +18,11 @@ public:
     sf::Vector2f getPlayerPosition() { return player.getPosition(); }
 
 private:
-    //player
+    // player
     sf::Texture playerTexture;
     Player player;
-    //map
+    // map
     Map map;
+    // ui
+    UI ui;
 };

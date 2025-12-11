@@ -356,30 +356,6 @@ src/core/View.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/core/View.cpp.s
 .PHONY : src/core/View.cpp.s
 
-src/entities/Collider.o: src/entities/Collider.cpp.o
-.PHONY : src/entities/Collider.o
-
-# target to build an object file
-src/entities/Collider.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.o
-.PHONY : src/entities/Collider.cpp.o
-
-src/entities/Collider.i: src/entities/Collider.cpp.i
-.PHONY : src/entities/Collider.i
-
-# target to preprocess a source file
-src/entities/Collider.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.i
-.PHONY : src/entities/Collider.cpp.i
-
-src/entities/Collider.s: src/entities/Collider.cpp.s
-.PHONY : src/entities/Collider.s
-
-# target to generate assembly for a file
-src/entities/Collider.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/entities/Collider.cpp.s
-.PHONY : src/entities/Collider.cpp.s
-
 src/entities/Player.o: src/entities/Player.cpp.o
 .PHONY : src/entities/Player.o
 
@@ -427,6 +403,54 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/systems/Collider.o: src/systems/Collider.cpp.o
+.PHONY : src/systems/Collider.o
+
+# target to build an object file
+src/systems/Collider.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.o
+.PHONY : src/systems/Collider.cpp.o
+
+src/systems/Collider.i: src/systems/Collider.cpp.i
+.PHONY : src/systems/Collider.i
+
+# target to preprocess a source file
+src/systems/Collider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.i
+.PHONY : src/systems/Collider.cpp.i
+
+src/systems/Collider.s: src/systems/Collider.cpp.s
+.PHONY : src/systems/Collider.s
+
+# target to generate assembly for a file
+src/systems/Collider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.s
+.PHONY : src/systems/Collider.cpp.s
+
+src/ui/UI.o: src/ui/UI.cpp.o
+.PHONY : src/ui/UI.o
+
+# target to build an object file
+src/ui/UI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.o
+.PHONY : src/ui/UI.cpp.o
+
+src/ui/UI.i: src/ui/UI.cpp.i
+.PHONY : src/ui/UI.i
+
+# target to preprocess a source file
+src/ui/UI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.i
+.PHONY : src/ui/UI.cpp.i
+
+src/ui/UI.s: src/ui/UI.cpp.s
+.PHONY : src/ui/UI.s
+
+# target to generate assembly for a file
+src/ui/UI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.s
+.PHONY : src/ui/UI.cpp.s
 
 src/world/Map.o: src/world/Map.cpp.o
 .PHONY : src/world/Map.o
@@ -532,15 +556,18 @@ help:
 	@echo "... src/core/View.o"
 	@echo "... src/core/View.i"
 	@echo "... src/core/View.s"
-	@echo "... src/entities/Collider.o"
-	@echo "... src/entities/Collider.i"
-	@echo "... src/entities/Collider.s"
 	@echo "... src/entities/Player.o"
 	@echo "... src/entities/Player.i"
 	@echo "... src/entities/Player.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/systems/Collider.o"
+	@echo "... src/systems/Collider.i"
+	@echo "... src/systems/Collider.s"
+	@echo "... src/ui/UI.o"
+	@echo "... src/ui/UI.i"
+	@echo "... src/ui/UI.s"
 	@echo "... src/world/Map.o"
 	@echo "... src/world/Map.i"
 	@echo "... src/world/Map.s"

@@ -1,4 +1,4 @@
-#include "entities/Collider.h"
+#include "systems/Collider.h"
 
 Collider::Collider(sf::RectangleShape& body) 
 : body(body) 

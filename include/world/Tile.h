@@ -1,6 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include "entities/Collider.h"
+#include "systems/Collider.h"
 #include "config/TileConstants.h"
 
 class Tile

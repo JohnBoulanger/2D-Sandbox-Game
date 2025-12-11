@@ -1,7 +1,5 @@
 #include "world/World.h"
-#include "config/PhysicsConstants.h"
-#include "config/PlayerConstants.h"
-#include "config/MapConstants.h"
+#include "config/GameConstants.h"
 #include "core/TextureUtils.h"
 
 World::World() :

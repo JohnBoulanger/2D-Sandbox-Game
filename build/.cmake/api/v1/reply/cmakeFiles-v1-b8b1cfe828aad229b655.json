@@ -9,9 +9,10 @@
 				"/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/core/Game.cpp",
 				"/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/core/TextureUtils.cpp",
 				"/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/core/View.cpp",
-				"/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/entities/Collider.cpp",
 				"/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/entities/Player.cpp",
 				"/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/main.cpp",
+				"/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/systems/Collider.cpp",
+				"/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/ui/UI.cpp",
 				"/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/Map.cpp",
 				"/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/Tile.cpp",
 				"/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/World.cpp"

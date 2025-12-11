@@ -1,5 +1,5 @@
 #include "world/Tile.h"
-#include "entities/Collider.h"
+#include "systems/Collider.h"
 
 Tile::Tile(sf::Texture& texture, TileID id, sf::Vector2f size, sf::Vector2f position) :
     collider(hitbox)

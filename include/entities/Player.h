@@ -1,7 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include "core/Animation.h"
 #include "entities/PlayerState.h"
-#include "entities/Collider.h"
+#include "systems/Collider.h"
 
 class Player
 {

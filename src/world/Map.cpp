@@ -1,7 +1,7 @@
 #include <FastNoise/FastNoise.h>
 #include "world/Map.h"
 #include "world/Tile.h"
-#include "config/MapConstants.h"
+#include "config/GameConstants.h"
 
 Map::Map() {
     std::srand(static_cast<unsigned>(std::time(nullptr)));
@@ -56,6 +56,7 @@ Map::~Map()
 
 }
 
+// todo: move bitmask logic to map::update eventually
 void Map::draw(sf::RenderWindow& window, sf::View& view)
 {
     sf::Vector2f center = view.getCenter();

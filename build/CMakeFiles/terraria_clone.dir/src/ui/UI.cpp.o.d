@@ -1,6 +1,6 @@
-CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o: \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/Tile.cpp \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/world/Tile.h \
+CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.o: \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/ui/UI.cpp \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/ui/UI.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Window.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/System.hpp \
@@ -868,6 +868,4 @@ CMakeFiles/terraria_clone.dir/src/world/Tile.cpp.o: \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Glsl.inl \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Sprite.hpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/Text.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/systems/Collider.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/config/TileConstants.h
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp

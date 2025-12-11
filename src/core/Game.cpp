@@ -1,6 +1,5 @@
 #include "core/Game.h"
 #include "config/GameConstants.h"
-#include <config/MapConstants.h>
 
 Game::Game()
     : window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), WINDOW_NAME, sf::Style::Close | sf::Style::Resize),

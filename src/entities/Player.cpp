@@ -1,7 +1,6 @@
 #include "entities/Player.h"
-#include "config/PhysicsConstants.h"
+#include "config/GameConstants.h"
 #include <config/TileConstants.h>
-#include <config/MapConstants.h>
 
 // initialize player
 // use reference to texture to signify that the player owns that sprite texture and directly depends on being valid and uses it
