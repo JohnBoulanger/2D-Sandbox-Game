@@ -6,6 +6,9 @@ Tile::Tile(sf::Texture& texture, TileID id, sf::Vector2f size, sf::Vector2f posi
 {
     this->id = id;
 
+    // todo: change this eventually
+    this->option = rand() % 3;
+
     // sprite setup
     body.setOrigin(size / 2.f);
     body.setTexture(texture);
@@ -27,10 +30,10 @@ Tile::~Tile() {}
 
 void Tile::draw(sf::RenderWindow& window, int bitmask)
 {
-    std::pair<int, int> spriteCoordinates = bitmaskToTile.at(bitmask);
+    std::pair<int, int> spriteCoordinates = bitmaskToTile.at(bitmask)[option];
     sf::IntRect tileSprite(
-        spriteCoordinates.first * TILE_SIZE,
-        spriteCoordinates.second * TILE_SIZE,
+        spriteCoordinates.first * TILE_SIZE + 2 * spriteCoordinates.first,
+        spriteCoordinates.second * TILE_SIZE + 2 * spriteCoordinates.second,
         TILE_SIZE,
         TILE_SIZE
     );

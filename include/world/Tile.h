@@ -19,5 +19,6 @@ private:
     sf::RectangleShape hitbox;
     Collider collider;
     TileID id;
+    int option;
     TileType type;
 };

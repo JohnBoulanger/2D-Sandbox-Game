@@ -36,7 +36,7 @@ Map::Map() {
                     int r = (std::rand() % 15);
                     if (r == 0)
                     {
-                        id = CLAY;
+                        id = IRON;
                     }
                     else
                     {
@@ -110,12 +110,12 @@ Tile& Map::getTile(int x, int y)
 void Map::loadTileset()
 {
     tileset.resize(10);
-    tileset[0].loadFromFile("textures/Tiles/Air.png");
-    tileset[1].loadFromFile("textures/Tiles/Grass.png");
-    tileset[2].loadFromFile("textures/Tiles/Dirt.png");
-    tileset[3].loadFromFile("textures/Tiles/Cobblestone.png");
-    tileset[4].loadFromFile("textures/Tiles/Red Clay.png");
-    tileset[5].loadFromFile("textures/Tiles/Water.png");
+    tileset[0].loadFromFile("terrariaTextures/Air.png");
+    tileset[1].loadFromFile("terrariaTextures/Grass.png");
+    tileset[2].loadFromFile("terrariaTextures/Dirt.png");
+    tileset[3].loadFromFile("terrariaTextures/Stone.png");
+    tileset[4].loadFromFile("terrariaTextures/Iron.png");
+
 }
 
 void Map::generateHeightMap(std::vector<float>& noiseOutput, int width)
