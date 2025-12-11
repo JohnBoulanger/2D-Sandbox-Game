@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/systems/Collider.cpp" "CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.o" "gcc" "CMakeFiles/terraria_clone.dir/src/systems/Collider.cpp.o.d"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/ui/HealthBar.cpp" "CMakeFiles/terraria_clone.dir/src/ui/HealthBar.cpp.o" "gcc" "CMakeFiles/terraria_clone.dir/src/ui/HealthBar.cpp.o.d"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/ui/Inventory.cpp" "CMakeFiles/terraria_clone.dir/src/ui/Inventory.cpp.o" "gcc" "CMakeFiles/terraria_clone.dir/src/ui/Inventory.cpp.o.d"
+  "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/ui/InventorySlot.cpp" "CMakeFiles/terraria_clone.dir/src/ui/InventorySlot.cpp.o" "gcc" "CMakeFiles/terraria_clone.dir/src/ui/InventorySlot.cpp.o.d"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/ui/PauseMenu.cpp" "CMakeFiles/terraria_clone.dir/src/ui/PauseMenu.cpp.o" "gcc" "CMakeFiles/terraria_clone.dir/src/ui/PauseMenu.cpp.o.d"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/ui/UI.cpp" "CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.o" "gcc" "CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.o.d"
   "/Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/Map.cpp" "CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o" "gcc" "CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o.d"

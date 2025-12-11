@@ -18,8 +18,8 @@ constexpr float MAX_Y = 500.0f;
 constexpr float JUMP_HEIGHT = 300.0f;
 const std::string PLAYER_TEXTURE_PATH = "textures/player.png";
 constexpr PlayerState DEFAULT_PLAYER_STATE = IDLE;
-constexpr unsigned int PLAYER_SPRITESHEET_WIDTH = 13;
-constexpr unsigned int PLAYER_SPRITESHEET_HEIGHT = 4;
+constexpr unsigned int PLAYER_ANIM_FRAMES = 13;
+constexpr unsigned int PLAYER_NUM_ANIMS = 4;
 constexpr float PLAYER_ANIMATION_SPEED = 0.1f;
 
 

@@ -15,7 +15,8 @@ public:
 private:
     // game
     sf::RenderWindow window;
-    sf::View view;
+    sf::View camera;
+    sf::View uiView;
     sf::Clock clock;
 
     // world

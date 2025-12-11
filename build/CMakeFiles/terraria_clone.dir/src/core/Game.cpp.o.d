@@ -877,6 +877,7 @@ CMakeFiles/terraria_clone.dir/src/core/Game.cpp.o: \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/ui/UI.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/ui/HealthBar.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/ui/Inventory.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/ui/InventorySlot.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/ui/PauseMenu.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/entities/Player.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/include/core/Animation.h \

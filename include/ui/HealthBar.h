@@ -7,8 +7,13 @@ public:
     HealthBar();
     ~HealthBar();
 
+    void update();
+    void draw(sf::RenderWindow& window);
+
 private:
     int health;
-    sf::Texture healthTexture;
-
+    int maxHealth;
+    sf::Texture heartTexture;
+    sf::Texture emptyHeartTexture;
+    std::vector<sf::RectangleShape> healthBody;
 };

@@ -12,7 +12,7 @@ public:
 
     void update(sf::RenderWindow& window, float deltaTime);
     void handleCollisions(sf::RenderWindow& window);
-    void draw(sf::RenderWindow& window, sf::View& view);
+    void draw(sf::RenderWindow& window, sf::View& camera, sf::View& uiView);
 
     // getters
     sf::Vector2f getPlayerPosition() { return player.getPosition(); }
@@ -24,4 +24,5 @@ private:
     Map map;
     // ui
     UI ui;
+    bool paused;
 };

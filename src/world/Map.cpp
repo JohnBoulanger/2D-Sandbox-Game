@@ -57,12 +57,12 @@ Map::~Map()
 }
 
 // todo: move bitmask logic to map::update eventually
-void Map::draw(sf::RenderWindow& window, sf::View& view)
+void Map::draw(sf::RenderWindow& window, sf::View& camera)
 {
-    sf::Vector2f center = view.getCenter();
-    sf::Vector2f size = view.getSize();
+    sf::Vector2f center = camera.getCenter();
+    sf::Vector2f size = camera.getSize();
 
-    // only draw tiles within the view
+    // only draw tiles within the camera
     int leftTile = std::clamp(static_cast<int>(floor((center.x - size.x / 2.f) / TILE_SIZE)), 0, MAP_WIDTH - 1);
     int rightTile = std::clamp(static_cast<int>(ceil((center.x + size.x / 2.f) / TILE_SIZE) + 1), 0, MAP_WIDTH - 1);
     int topTile = std::clamp(static_cast<int>(floor((center.y - size.y / 2.f) / TILE_SIZE)), 0, MAP_HEIGHT - 1);

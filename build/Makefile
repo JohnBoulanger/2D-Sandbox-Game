@@ -476,6 +476,30 @@ src/ui/Inventory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/ui/Inventory.cpp.s
 .PHONY : src/ui/Inventory.cpp.s
 
+src/ui/InventorySlot.o: src/ui/InventorySlot.cpp.o
+.PHONY : src/ui/InventorySlot.o
+
+# target to build an object file
+src/ui/InventorySlot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/ui/InventorySlot.cpp.o
+.PHONY : src/ui/InventorySlot.cpp.o
+
+src/ui/InventorySlot.i: src/ui/InventorySlot.cpp.i
+.PHONY : src/ui/InventorySlot.i
+
+# target to preprocess a source file
+src/ui/InventorySlot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/ui/InventorySlot.cpp.i
+.PHONY : src/ui/InventorySlot.cpp.i
+
+src/ui/InventorySlot.s: src/ui/InventorySlot.cpp.s
+.PHONY : src/ui/InventorySlot.s
+
+# target to generate assembly for a file
+src/ui/InventorySlot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/terraria_clone.dir/build.make CMakeFiles/terraria_clone.dir/src/ui/InventorySlot.cpp.s
+.PHONY : src/ui/InventorySlot.cpp.s
+
 src/ui/PauseMenu.o: src/ui/PauseMenu.cpp.o
 .PHONY : src/ui/PauseMenu.o
 
@@ -643,6 +667,9 @@ help:
 	@echo "... src/ui/Inventory.o"
 	@echo "... src/ui/Inventory.i"
 	@echo "... src/ui/Inventory.s"
+	@echo "... src/ui/InventorySlot.o"
+	@echo "... src/ui/InventorySlot.i"
+	@echo "... src/ui/InventorySlot.s"
 	@echo "... src/ui/PauseMenu.o"
 	@echo "... src/ui/PauseMenu.i"
 	@echo "... src/ui/PauseMenu.s"

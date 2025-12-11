@@ -10,15 +10,15 @@ Tile::Tile(sf::Texture& texture, TileID id, sf::Vector2f size, sf::Vector2f posi
     this->option = rand() % 3;
 
     // sprite setup
-    body.setOrigin(size / 2.f);
+    body.setOrigin(size * 0.5f);
     body.setTexture(texture);
     body.setTextureRect(sf::IntRect(0, 0, TILE_SIZE, TILE_SIZE));
-    body.setPosition(position);
+    body.setPosition({floor(position.x), floor(position.y)});
 
     if (id > 0)
     {
         hitbox.setSize(size);
-        hitbox.setOrigin(size / 2.f);
+        hitbox.setOrigin(size * 0.5f);
         hitbox.setPosition(position);
         hitbox.setOutlineThickness(1.0f);
         hitbox.setOutlineColor(sf::Color::Blue);

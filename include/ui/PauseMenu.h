@@ -7,6 +7,9 @@ public:
     PauseMenu();
     ~PauseMenu();
 
+    void update();
+    void draw(sf::RenderWindow& window);
+
 private:
 
 };

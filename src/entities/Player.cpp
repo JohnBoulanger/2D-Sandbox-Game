@@ -22,7 +22,7 @@ Player::Player(PlayerState playerState, sf::Vector2u imageCount, float switchTim
     playerBody.setTextureRect(animation.uvRect);
     // set the players origin
     sf::FloatRect bounds = playerBody.getLocalBounds();
-    playerBody.setOrigin(bounds.width / 2.0f, bounds.height / 2.0f);
+    playerBody.setOrigin(bounds.width * 0.5f, bounds.height * 0.5f);
     playerBody.setScale(1.5f, 1.5f);
 
     // initial positon in the world
@@ -30,7 +30,7 @@ Player::Player(PlayerState playerState, sf::Vector2u imageCount, float switchTim
 
     // initialize the hitbox for the player
     hitbox.setSize(sf::Vector2f(bounds.width, bounds.height));
-    hitbox.setOrigin(hitbox.getSize() / 2.0f);
+    hitbox.setOrigin(hitbox.getSize() * 0.5f);
     hitbox.setPosition(playerBody.getPosition());
     hitbox.setOutlineThickness(1.0f);
     hitbox.setOutlineColor(sf::Color::Red);

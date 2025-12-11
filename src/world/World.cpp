@@ -4,9 +4,9 @@
 
 World::World() :
     map(),
-    player(DEFAULT_PLAYER_STATE, {13, 4}, PLAYER_ANIMATION_SPEED, SPEED, JUMP_HEIGHT)
+    player(DEFAULT_PLAYER_STATE, {PLAYER_ANIM_FRAMES, PLAYER_NUM_ANIMS}, PLAYER_ANIMATION_SPEED, SPEED, JUMP_HEIGHT)
 {
-    map.printMap();
+
 }
 
 World::~World()
@@ -24,13 +24,18 @@ void World::update(sf::RenderWindow& window, float deltaTime)
     handleCollisions(window);
 }
 
-void World::draw(sf::RenderWindow& window, sf::View& view)
+void World::draw(sf::RenderWindow& window, sf::View& camera, sf::View& uiView)
 {
     // draw map
-    map.draw(window, view);
+    window.setView(camera);
+    map.draw(window, camera);
 
     // draw player
     player.draw(window);
+
+    // draw UI
+    window.setView(uiView);
+    ui.draw(window);
 }
 
 void World::handleCollisions(sf::RenderWindow& window)

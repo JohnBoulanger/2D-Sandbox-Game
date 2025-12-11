@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/terraria_clone.dir/src/ui/HealthBar.cpp.o.d"
   "CMakeFiles/terraria_clone.dir/src/ui/Inventory.cpp.o"
   "CMakeFiles/terraria_clone.dir/src/ui/Inventory.cpp.o.d"
+  "CMakeFiles/terraria_clone.dir/src/ui/InventorySlot.cpp.o"
+  "CMakeFiles/terraria_clone.dir/src/ui/InventorySlot.cpp.o.d"
   "CMakeFiles/terraria_clone.dir/src/ui/PauseMenu.cpp.o"
   "CMakeFiles/terraria_clone.dir/src/ui/PauseMenu.cpp.o.d"
   "CMakeFiles/terraria_clone.dir/src/ui/UI.cpp.o"
