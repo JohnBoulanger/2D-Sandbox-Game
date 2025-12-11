@@ -22,7 +22,7 @@ Animation::~Animation()
 }
 
 // Update the animation object every frame
-void Animation::Update(int row, float deltaTime, int numFrames, bool faceLeft) 
+void Animation::update(int row, float deltaTime, int numFrames, bool faceLeft) 
 {
     // set spritesheet row and time passed since the most recent frame
     currentImage.y = row;
@@ -56,7 +56,7 @@ void Animation::Update(int row, float deltaTime, int numFrames, bool faceLeft)
 }
 
 // if the user switches state, use the first sprite in the animation and reset the total time for that frame back to 0
-void Animation::Reset()
+void Animation::reset()
 {
     currentImage.x = 0;
     totalTime = 0;

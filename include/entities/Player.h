@@ -9,15 +9,15 @@ public:
     Player(PlayerState playerState, sf::Texture& texture, sf::Vector2u imageCount, float switchTime, float speed, float jumpHeight);
     ~Player();
 
-    void Update(float deltaTime);
-    void UpdateMovement(float deltaTime);
-    void UpdateState();
-    void Draw(sf::RenderWindow& window);
-    void OnCollision(sf::Vector2f direction);
+    void update(float deltaTime);
+    void updateMovement(float deltaTime);
+    void updateState();
+    void draw(sf::RenderWindow& window);
+    void onCollision(sf::Vector2f direction);
 
     // getters
-    sf::Vector2f GetPosition() { return playerBody.getPosition(); }
-    Collider& GetCollider() { return collider; }
+    sf::Vector2f getPosition() { return playerBody.getPosition(); }
+    Collider& getCollider() { return collider; }
 
 private:
     // player

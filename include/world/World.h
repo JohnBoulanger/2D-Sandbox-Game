@@ -9,12 +9,12 @@ public:
     World();
     ~World();
 
-    void Update(sf::RenderWindow& window, float deltaTime);
-    void HandleCollisions(sf::RenderWindow& window);
-    void Draw(sf::RenderWindow& window, sf::View& view);
+    void update(sf::RenderWindow& window, float deltaTime);
+    void handleCollisions(sf::RenderWindow& window);
+    void draw(sf::RenderWindow& window, sf::View& view);
 
     // getters
-    sf::Vector2f GetPlayerPosition() { return player.GetPosition(); }
+    sf::Vector2f getPlayerPosition() { return player.getPosition(); }
 
 private:
     //player

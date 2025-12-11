@@ -15,7 +15,7 @@ Game::~Game()
 
 }
 
-void Game::Run()
+void Game::run()
 {
     while (window.isOpen())
     {
@@ -33,21 +33,21 @@ void Game::Run()
                     window.close();
                     break;
                 case sf::Event::Resized:
-                    ResizeView(window, view);
+                    resizeView(window, view);
                 default:
                     break;
             }
         }
         window.clear(sf::Color(59, 186, 255));
         window.setView(view);
-        world.Update(window, deltaTime);
+        world.update(window, deltaTime);
 
         // clamp view width to map size
         // todo: fix right world bounds due to player width offset
-        sf::Vector2f view_bounds(std::clamp(world.GetPlayerPosition().x, VIEW_WIDTH * 0.5f, MAP_WIDTH * TILE_SIZE - VIEW_WIDTH * 0.5f ), world.GetPlayerPosition().y); 
+        sf::Vector2f view_bounds(std::clamp(world.getPlayerPosition().x, VIEW_WIDTH * 0.5f, MAP_WIDTH * TILE_SIZE - VIEW_WIDTH * 0.5f ), world.getPlayerPosition().y); 
 
         view.setCenter(view_bounds);
-        world.Draw(window, view);
+        world.draw(window, view);
         window.display();
     }
 }

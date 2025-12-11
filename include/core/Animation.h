@@ -7,8 +7,8 @@ public:
     Animation(sf::Texture* texture, sf::Vector2u imageCount, float switchTime);
     ~Animation();
 
-    void Update(int row, float deltaTime, int numFrames, bool faceLeft);
-    void Reset();
+    void update(int row, float deltaTime, int numFrames, bool faceLeft);
+    void reset();
     
 public:
     sf::IntRect uvRect;

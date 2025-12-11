@@ -24,7 +24,7 @@ Tile::Tile(sf::Texture& texture, TileID id, sf::Vector2f size, sf::Vector2f posi
 
 Tile::~Tile() {}
 
-void Tile::Draw(sf::RenderWindow& window)
+void Tile::draw(sf::RenderWindow& window)
 {
     window.draw(body);
     //window.draw(hitbox);

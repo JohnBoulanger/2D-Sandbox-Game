@@ -6,10 +6,10 @@
 
 World::World() :
     map(),
-    playerTexture(LoadTexture(PLAYER_PATH)),
+    playerTexture(loadTexture(PLAYER_PATH)),
     player(DEFAULT_PLAYER_STATE, playerTexture, {13, 4}, PLAYER_ANIMATION_SPEED, SPEED, JUMP_HEIGHT)
 {
-    map.PrintMap();
+    map.printMap();
 }
 
 World::~World()
@@ -17,32 +17,32 @@ World::~World()
 
 }
 
-void World::Update(sf::RenderWindow& window, float deltaTime)
+void World::update(sf::RenderWindow& window, float deltaTime)
 {   
     // update map
 
     // update player
-    player.Update(deltaTime);
-    HandleCollisions(window);
+    player.update(deltaTime);
+    handleCollisions(window);
 }
 
-void World::Draw(sf::RenderWindow& window, sf::View& view)
+void World::draw(sf::RenderWindow& window, sf::View& view)
 {
     // draw map
-    map.Draw(window, view);
+    map.draw(window, view);
 
     // draw player
-    player.Draw(window);
+    player.draw(window);
 }
 
-void World::HandleCollisions(sf::RenderWindow& window)
+void World::handleCollisions(sf::RenderWindow& window)
 {
     sf::Vector2f direction;
 
     // todo: fix this after world gen applied
     sf::Vector2i playerCoords = {
-        ((int)player.GetPosition().x / TILE_SIZE) - 1,
-        ((int)player.GetPosition().y / TILE_SIZE) - 1
+        ((int)player.getPosition().x / TILE_SIZE) - 1,
+        ((int)player.getPosition().y / TILE_SIZE) - 1
     };
 
     // check nearby tiles for collisions
@@ -51,9 +51,9 @@ void World::HandleCollisions(sf::RenderWindow& window)
             if (x < 0 || y < 0 || x >= MAP_WIDTH || y >= MAP_HEIGHT)
                 continue;
 
-            Tile& tile = map.GetTile(x, y);
-            if (tile.GetCollider().CheckCollision(player.GetCollider(), direction, 1.0f))
-                player.OnCollision(direction);
+            Tile& tile = map.getTile(x, y);
+            if (tile.getCollider().checkCollision(player.getCollider(), direction, 1.0f))
+                player.onCollision(direction);
         }
     }
 }

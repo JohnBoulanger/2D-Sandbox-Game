@@ -60,7 +60,7 @@ Map::~Map()
 
 }
 
-void Map::Draw(sf::RenderWindow& window, sf::View& view)
+void Map::draw(sf::RenderWindow& window, sf::View& view)
 {
     sf::Vector2f center = view.getCenter();
     sf::Vector2f size = view.getSize();
@@ -73,22 +73,22 @@ void Map::Draw(sf::RenderWindow& window, sf::View& view)
     
     for (int x = leftTile; x < rightTile; x++) {
         for (int y = topTile; y < bottomTile; y++) {
-            map[x][y].Draw(window);
+            map[x][y].draw(window);
         }
     }
 }
 
-void Map::Update()
+void Map::update()
 {
 
 }
 
-void Map::PrintMap()
+void Map::printMap()
 {
     return;
 }
 
-Tile& Map::GetTile(int x, int y)
+Tile& Map::getTile(int x, int y)
 {
     return map[x][y];
 }

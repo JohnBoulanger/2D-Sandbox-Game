@@ -42,25 +42,25 @@ Player::~Player()
 }
 
 // draw the playerBody of the player on the window
-void Player::Draw(sf::RenderWindow& window)
+void Player::draw(sf::RenderWindow& window)
 {
     window.draw(playerBody);
     //window.draw(hitbox);
 }
 
 // update the players state and position based on user input
-void Player::Update(float deltaTime)
+void Player::update(float deltaTime)
 {
     // update movement and player state
-    UpdateMovement(deltaTime);
-    UpdateState();
+    updateMovement(deltaTime);
+    updateState();
 
     // update animation and move playerBody depending on state and direction
-    animation.Update(playerState, deltaTime, NUM_FRAMES[playerState], faceLeft);
+    animation.update(playerState, deltaTime, NUM_FRAMES[playerState], faceLeft);
     playerBody.setTextureRect(animation.uvRect);
 }
 
-void Player::OnCollision(sf::Vector2f direction)
+void Player::onCollision(sf::Vector2f direction)
 {
     // colliding with something to the left
     if (direction.x < 0.0f)
@@ -88,7 +88,7 @@ void Player::OnCollision(sf::Vector2f direction)
     playerBody.setPosition(hitbox.getPosition() - hitboxOffset);
 }
 
-void Player::UpdateMovement(float deltaTime)
+void Player::updateMovement(float deltaTime)
 {
     // initial x velocity to 0 if nothing pressed
     velocity.x = 0.0f;
@@ -112,7 +112,7 @@ void Player::UpdateMovement(float deltaTime)
     hitbox.setPosition(playerBody.getPosition() + hitboxOffset);
 }
 
-void Player::UpdateState()
+void Player::updateState()
 {
     // keep track of old player state
     static PlayerState previousPlayerState = playerState;
@@ -133,7 +133,7 @@ void Player::UpdateState()
     // if the player has changed states, use sprite frame 0 of the new state by calling reset
     if (previousPlayerState != playerState)
     {
-        animation.Reset();
+        animation.reset();
         previousPlayerState = playerState;
     }
 }

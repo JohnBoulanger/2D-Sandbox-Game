@@ -2,4 +2,4 @@
 #include <SFML/Graphics.hpp>
 #include <string>
 
-sf::Texture LoadTexture(const std::string& path);
+sf::Texture loadTexture(const std::string& path);

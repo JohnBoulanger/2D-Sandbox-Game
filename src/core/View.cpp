@@ -1,6 +1,6 @@
 #include "core/View.h"
 
-void ResizeView(const sf::RenderWindow& window, sf::View& view)
+void resizeView(const sf::RenderWindow& window, sf::View& view)
 {
     float aspectRatio = static_cast<float>(window.getSize().x) / static_cast<float>(window.getSize().y);
     float targetRatio = VIEW_WIDTH / VIEW_HEIGHT;

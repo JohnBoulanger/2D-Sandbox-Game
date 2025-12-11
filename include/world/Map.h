@@ -8,12 +8,12 @@ public:
     Map();
     ~Map();
 
-    void PrintMap();
-    void Draw(sf::RenderWindow& window, sf::View& view);
-    void Update();
+    void printMap();
+    void draw(sf::RenderWindow& window, sf::View& view);
+    void update();
 
     // getters
-    Tile& GetTile(int y, int x);
+    Tile& getTile(int y, int x);
 
 private:
     sf::Texture tileset;

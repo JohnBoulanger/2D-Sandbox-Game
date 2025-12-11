@@ -6,6 +6,6 @@ int main()
 {
     // init game and run
     Game game;
-    game.Run();
+    game.run();
     return 0;
 }

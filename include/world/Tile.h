@@ -9,10 +9,10 @@ public:
     Tile(sf::Texture& texture, TileID id, sf::Vector2f size, sf::Vector2f positon);
     ~Tile();
 
-    void Draw(sf::RenderWindow& window);
+    void draw(sf::RenderWindow& window);
 
     // getters
-    Collider& GetCollider() { return collider; }
+    Collider& getCollider() { return collider; }
 
 private:
     sf::Sprite body;

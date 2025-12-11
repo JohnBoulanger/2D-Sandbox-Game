@@ -11,13 +11,13 @@ Collider::~Collider()
 
 }
 
-bool Collider::CheckCollision(Collider& other, sf::Vector2f& direction, float pushFactor)
+bool Collider::checkCollision(Collider& other, sf::Vector2f& direction, float pushFactor)
 {
     // "other" is player in this case
-    sf::Vector2f otherPosition = other.GetPosition();
-    sf::Vector2f otherHalfSize = other.GetHalfSize();
-    sf::Vector2f thisPosition = GetPosition();
-    sf::Vector2f thisHalfSize = GetHalfSize();
+    sf::Vector2f otherPosition = other.getPosition();
+    sf::Vector2f otherHalfSize = other.getHalfSize();
+    sf::Vector2f thisPosition = getPosition();
+    sf::Vector2f thisHalfSize = getHalfSize();
 
     // find distance between the two objects
     float dx = otherPosition.x - thisPosition.x;
@@ -40,8 +40,8 @@ bool Collider::CheckCollision(Collider& other, sf::Vector2f& direction, float pu
             if (dx > 0.0f)
             {
                 // colliding with something to the right of us
-                Move(intersectX * (1.0f - pushFactor), 0.0f);
-                other.Move(-intersectX * pushFactor, 0.0f);
+                move(intersectX * (1.0f - pushFactor), 0.0f);
+                other.move(-intersectX * pushFactor, 0.0f);
 
                 direction.x = 1.0f;
                 direction.y = 0.0f;
@@ -49,8 +49,8 @@ bool Collider::CheckCollision(Collider& other, sf::Vector2f& direction, float pu
             else 
             {
                 // colliding with something to the left of us
-                Move(-intersectX * (1.0f - pushFactor), 0.0f);
-                other.Move(intersectX * pushFactor, 0.0f);
+                move(-intersectX * (1.0f - pushFactor), 0.0f);
+                other.move(intersectX * pushFactor, 0.0f);
 
                 direction.x = -1.0f;
                 direction.y = 0.0f;
@@ -61,8 +61,8 @@ bool Collider::CheckCollision(Collider& other, sf::Vector2f& direction, float pu
             if (dy > 0.0f)
             {
                 // colliding with something underneath us
-                Move(0.0f, intersectY * (1.0f - pushFactor));
-                other.Move(0.0f, -intersectY * pushFactor);
+                move(0.0f, intersectY * (1.0f - pushFactor));
+                other.move(0.0f, -intersectY * pushFactor);
 
                 direction.x = 0.0f;
                 direction.y = 1.0f;
@@ -70,8 +70,8 @@ bool Collider::CheckCollision(Collider& other, sf::Vector2f& direction, float pu
             else 
             {
                 // colliding with something above us
-                Move(0.0f, -intersectY * (1.0f - pushFactor));
-                other.Move(0.0f, intersectY * pushFactor);
+                move(0.0f, -intersectY * (1.0f - pushFactor));
+                other.move(0.0f, intersectY * pushFactor);
 
                 direction.x = 0.0f;
                 direction.y = -1.0f;

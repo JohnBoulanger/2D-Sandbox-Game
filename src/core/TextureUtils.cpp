@@ -1,7 +1,7 @@
 #include "core/TextureUtils.h"
 #include <stdexcept>
 
-sf::Texture LoadTexture(const std::string& path)
+sf::Texture loadTexture(const std::string& path)
 {
     sf::Texture texture;
     if (!texture.loadFromFile(path))
