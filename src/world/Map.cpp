@@ -3,13 +3,9 @@
 #include "world/Tile.h"
 #include "config/MapConstants.h"
 
-static void generateHeightMap(std::vector<float>& noiseOutput, int width);
-static void generateWorldNoise(std::vector<float>& noiseOutput, int width, int height);
-
-
 Map::Map() {
     std::srand(static_cast<unsigned>(std::time(nullptr)));
-    tileset.loadFromFile("textures/Tileset.png");
+    loadTileset();
     const int width = MAP_WIDTH;
     const int height = MAP_HEIGHT;
     std::vector<float> heightMap(width);
@@ -40,7 +36,7 @@ Map::Map() {
                     int r = (std::rand() % 15);
                     if (r == 0)
                     {
-                        id = GOLD;
+                        id = CLAY;
                     }
                     else
                     {
@@ -49,7 +45,7 @@ Map::Map() {
                 }
             }
             sf::Vector2f position(x * TILE_SIZE, y * TILE_SIZE);
-            map[x].emplace_back(tileset, id, sf::Vector2f(TILE_SIZE, TILE_SIZE), position);
+            map[x].emplace_back(tileset[id], id, sf::Vector2f(TILE_SIZE, TILE_SIZE), position);
         }
     }
 }
@@ -73,7 +69,25 @@ void Map::draw(sf::RenderWindow& window, sf::View& view)
     
     for (int x = leftTile; x < rightTile; x++) {
         for (int y = topTile; y < bottomTile; y++) {
-            map[x][y].draw(window);
+            int bitmask = 0b0000;
+            // north
+            if (y - 1 >= 0 && getTile(x, y - 1).getTileID() > 0) {
+                bitmask = bitmask | 0b0001;
+            }
+            // east
+            if (x + 1 < MAP_WIDTH && getTile(x + 1, y).getTileID() > 0) {
+                bitmask = bitmask | 0b0010;                
+            }
+            // south
+            if (y + 1 < MAP_HEIGHT && getTile(x, y + 1).getTileID() > 0) {
+                bitmask = bitmask | 0b0100;                
+            }
+            // west
+            if (x - 1 >= 0 && getTile(x - 1, y).getTileID() > 0) {
+                bitmask = bitmask | 0b1000;                
+            }
+
+            map[x][y].draw(window, bitmask);
         }
     }
 }
@@ -93,7 +107,18 @@ Tile& Map::getTile(int x, int y)
     return map[x][y];
 }
 
-static void generateHeightMap(std::vector<float>& noiseOutput, int width)
+void Map::loadTileset()
+{
+    tileset.resize(10);
+    tileset[0].loadFromFile("textures/Tiles/Air.png");
+    tileset[1].loadFromFile("textures/Tiles/Grass.png");
+    tileset[2].loadFromFile("textures/Tiles/Dirt.png");
+    tileset[3].loadFromFile("textures/Tiles/Cobblestone.png");
+    tileset[4].loadFromFile("textures/Tiles/Red Clay.png");
+    tileset[5].loadFromFile("textures/Tiles/Water.png");
+}
+
+void Map::generateHeightMap(std::vector<float>& noiseOutput, int width)
 {
     // Create and configure FastNoise generator
     FastNoise::SmartNode<> fnGenerator = FastNoise::NewFromEncodedNodeTree("DQAFAAAAAAAAQAgAAAAAAD8AAAAAAA==");
@@ -116,7 +141,7 @@ static void generateHeightMap(std::vector<float>& noiseOutput, int width)
     fclose(fp);
 }
 
-static void generateWorldNoise(std::vector<float>& noiseOutput, int width, int height)
+void Map::generateWorldNoise(std::vector<float>& noiseOutput, int width, int height)
 {
     // Create and configure FastNoise generator
     FastNoise::SmartNode<> fnGenerator = FastNoise::NewFromEncodedNodeTree("DQAFAAAAAAAAQAgAAAAAAD8AAAAAAA==");

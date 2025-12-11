@@ -4,13 +4,14 @@
 Tile::Tile(sf::Texture& texture, TileID id, sf::Vector2f size, sf::Vector2f position) :
     collider(hitbox)
 {
+    this->id = id;
+
     // sprite setup
     body.setOrigin(size / 2.f);
     body.setTexture(texture);
-    body.setTextureRect(sf::IntRect(id * (texture.getSize().x / 6), 0, texture.getSize().x / 6, texture.getSize().y));
+    body.setTextureRect(sf::IntRect(0, 0, TILE_SIZE, TILE_SIZE));
     body.setPosition(position);
 
-    // hitbox matches logical tile size
     if (id > 0)
     {
         hitbox.setSize(size);
@@ -24,8 +25,16 @@ Tile::Tile(sf::Texture& texture, TileID id, sf::Vector2f size, sf::Vector2f posi
 
 Tile::~Tile() {}
 
-void Tile::draw(sf::RenderWindow& window)
+void Tile::draw(sf::RenderWindow& window, int bitmask)
 {
+    std::pair<int, int> spriteCoordinates = bitmaskToTile.at(bitmask);
+    sf::IntRect tileSprite(
+        spriteCoordinates.first * TILE_SIZE,
+        spriteCoordinates.second * TILE_SIZE,
+        TILE_SIZE,
+        TILE_SIZE
+    );
+    body.setTextureRect(tileSprite);
     window.draw(body);
     //window.draw(hitbox);
 }
