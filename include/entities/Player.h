@@ -36,5 +36,5 @@ private:
     // player hitbox
     sf::RectangleShape hitbox;
     Collider collider;
-    sf::Vector2f hitboxOffset = {0.0f, 2.0f};
+    sf::Vector2f hitboxOffset = {0.0f, 1.5f};
 };

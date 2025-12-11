@@ -45,9 +45,9 @@ void World::handleCollisions(sf::RenderWindow& window)
         ((int)player.getPosition().y / TILE_SIZE) - 1
     };
 
-    // check nearby tiles for collisions
-    for (int x = playerCoords.x; x < playerCoords.x + 4; x++) {
-        for (int y = playerCoords.y; y < playerCoords.y + 4; y++) {
+    // check nearby tiles for collisions todo
+    for (int x = playerCoords.x; x < playerCoords.x + 8; x++) {
+        for (int y = playerCoords.y; y < playerCoords.y + 8; y++) {
             if (x < 0 || y < 0 || x >= MAP_WIDTH || y >= MAP_HEIGHT)
                 continue;
 

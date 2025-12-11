@@ -9,11 +9,11 @@ public:
     Tile(sf::Texture& texture, TileID id, sf::Vector2f size, sf::Vector2f positon);
     ~Tile();
 
-    void draw(sf::RenderWindow& window);
+    void draw(sf::RenderWindow& window, int bitmask);
 
     // getters
     Collider& getCollider() { return collider; }
-
+    TileID getTileID() { return id; }
 private:
     sf::Sprite body;
     sf::RectangleShape hitbox;

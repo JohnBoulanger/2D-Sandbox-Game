@@ -22,13 +22,13 @@ Player::Player(PlayerState playerState, sf::Texture& texture, sf::Vector2u image
     // set the players origin
     sf::FloatRect bounds = playerBody.getLocalBounds();
     playerBody.setOrigin(bounds.width / 2.0f, bounds.height / 2.0f);
-    playerBody.setScale(1.5f, 1.5f);
+    playerBody.setScale(0.75f, 0.75f);
 
     // initial positon in the world
     playerBody.setPosition(MAP_WIDTH * TILE_SIZE * 0.5, (GROUND_TO_TOP - 10) * TILE_SIZE);
 
     // initialize the hitbox for the player
-    hitbox.setSize(sf::Vector2f(bounds.width, bounds.height));
+    hitbox.setSize(sf::Vector2f(bounds.width / 2.0f, bounds.height / 2.0f));
     hitbox.setOrigin(hitbox.getSize() / 2.0f);
     hitbox.setPosition(playerBody.getPosition());
     hitbox.setOutlineThickness(1.0f);
