@@ -5,12 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/FastNoise.dir/FastNoise/Metadata.cpp.o.d"
   "CMakeFiles/FastNoise.dir/FastNoise/SmartNode.cpp.o"
   "CMakeFiles/FastNoise.dir/FastNoise/SmartNode.cpp.o.d"
-  "CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.o"
-  "CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.o.d"
-  "CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.o"
-  "CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.o.d"
-  "CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.o"
-  "CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.o.d"
   "libFastNoiseD.dylib"
   "libFastNoiseD.pdb"
 )

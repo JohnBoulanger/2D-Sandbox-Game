@@ -14,8 +14,16 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/VerifyGlobs.cmake"
   "CMakeFiles/cmake.verify_globs"
   "_deps/fastnoise2-src/CMakeLists.txt"
+  "_deps/fastnoise2-src/cmake/CPM.cmake"
   "_deps/fastnoise2-src/cmake/Config.cmake.in"
   "_deps/fastnoise2-src/src/CMakeLists.txt"
+  "_deps/fastsimd-src/CMakeLists.txt"
+  "_deps/fastsimd-src/cmake/ArchDetect.cmake"
+  "_deps/fastsimd-src/cmake/ArchDetect.cpp"
+  "_deps/fastsimd-src/dispatch/CMakeLists.txt"
+  "_deps/fastsimd-src/dispatch/cmake/ClassSIMD.cmake"
+  "_deps/fastsimd-src/dispatch/cmake/feature_set_source.cpp.in"
+  "_deps/fastsimd-src/dispatch/cmake/simd_lib_config.h.in"
   "_deps/sfml-src/CMakeLists.txt"
   "_deps/sfml-src/cmake/CompilerOptionsOverride.cmake"
   "_deps/sfml-src/cmake/CompilerWarnings.cmake"
@@ -101,7 +109,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/fastnoise2-build/generated/FastNoise2ConfigVersion.cmake"
   "_deps/fastnoise2-build/generated/FastNoise2Config.cmake"
   "_deps/fastnoise2-build/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/fastsimd-subbuild/CMakeLists.txt"
+  "_deps/fastnoise2-build/src/fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.cpp"
+  "_deps/fastnoise2-build/src/fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.cpp"
+  "_deps/fastnoise2-build/src/fastsimd/FastSIMD_FastNoise/include/FastSIMD/FastSIMD_FastNoise_config.h"
   "_deps/fastnoise2-build/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/fastsimd-build/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/fastsimd-build/dispatch/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -112,4 +126,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/DependInfo.cmake"
   "_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/DependInfo.cmake"
   "_deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/DependInfo.cmake"
+  "_deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/DependInfo.cmake"
+  "_deps/fastsimd-build/CMakeFiles/FastSIMD.dir/DependInfo.cmake"
   )

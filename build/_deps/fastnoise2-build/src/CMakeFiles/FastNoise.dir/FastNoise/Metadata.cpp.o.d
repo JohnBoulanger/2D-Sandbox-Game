@@ -781,12 +781,12 @@ _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastNoise/Metadata.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Metadata.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/FastNoise_Config.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastSIMD/FastSIMD.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastSIMD/FastSIMD_Config.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastSIMD/FastSIMD_Export.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/FastNoise_Export.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/SmartNode.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Utility/Config.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Utility/Export.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/include/FastSIMD/DispatchClass.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/include/FastSIMD/Utility/FeatureEnums.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/include/FastSIMD/Utility/Export.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Utility/SmartNode.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/FastNoise.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/BasicGenerators.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/Generator.h \
@@ -800,4 +800,5 @@ _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastNoise/Metadata.cpp.o: \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/Modifiers.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/Blends.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/FastNoise/Base64.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/FastNoise_BuildList.inl
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/FastNoise/FastSIMD_Build.inl \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/DomainWarpSimplex.h

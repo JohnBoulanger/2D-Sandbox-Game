@@ -20,7 +20,7 @@ Map::Map() {
         for (int y = 0; y < MAP_HEIGHT; y++) 
         {
             TileID id = AIR;
-            int sample = static_cast<int>((fabs(heightMap[x]) * 30) + GROUND_TO_TOP);
+            int sample = static_cast<int>((fabs(heightMap[x]) * 50) + GROUND_TO_TOP);
             if (sample <= y)
             {
                 if(sample == y)
@@ -121,14 +121,19 @@ void Map::loadTileset()
 
 void Map::generateHeightMap(std::vector<float>& noiseOutput, int width)
 {
-    // Create and configure FastNoise generator
-    FastNoise::SmartNode<> fnGenerator = FastNoise::NewFromEncodedNodeTree("DQAFAAAAAAAAQAgAAAAAAD8AAAAAAA==");
+    auto fnPerlin = FastNoise::New<FastNoise::Perlin>();
 
-    fnGenerator->GenUniformGrid2D(
+    auto fnFractal = FastNoise::New<FastNoise::FractalFBm>();
+    fnFractal->SetSource(fnPerlin);
+    fnFractal->SetOctaveCount(8);
+    fnFractal->SetGain(0.5f);
+    fnFractal->SetLacunarity(2.0f);
+
+    fnFractal->GenUniformGrid2D(
         noiseOutput.data(),
         0, 0,
         width, 1,
-        0.005f,
+        0.3f, 0.3f,
         rand()
     );
 
@@ -144,15 +149,20 @@ void Map::generateHeightMap(std::vector<float>& noiseOutput, int width)
 
 void Map::generateWorldNoise(std::vector<float>& noiseOutput, int width, int height)
 {
-    // Create and configure FastNoise generator
-    FastNoise::SmartNode<> fnGenerator = FastNoise::NewFromEncodedNodeTree("DQAFAAAAAAAAQAgAAAAAAD8AAAAAAA==");
+    auto fnPerlin = FastNoise::New<FastNoise::Perlin>();
 
-    fnGenerator->GenUniformGrid2D(
+    auto fnFractal = FastNoise::New<FastNoise::FractalFBm>();
+    fnFractal->SetSource(fnPerlin);
+    fnFractal->SetOctaveCount(5);      // More octaves = more detail
+    fnFractal->SetGain(0.5f);          // How much each octave contributes
+    fnFractal->SetLacunarity(2.0f);    // Frequency increase per octave
+
+    fnFractal->GenUniformGrid2D(
         noiseOutput.data(),
         0, 0,
         width, height,
-        0.05f,
-        rand()
+        0.005f, 0.005f,
+        1337
     );
 
     FILE* fp = fopen("worldnoise.txt", "w");

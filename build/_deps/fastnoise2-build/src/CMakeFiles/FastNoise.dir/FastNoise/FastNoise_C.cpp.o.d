@@ -1,11 +1,12 @@
 _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastNoise/FastNoise_C.cpp.o: \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/FastNoise/FastNoise_C.cpp \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/FastNoise_C.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/FastNoise_Export.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Utility/Export.h \
   /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/FastNoise.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/FastNoise_Config.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastSIMD/FastSIMD.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastSIMD/FastSIMD_Config.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Utility/Config.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/include/FastSIMD/DispatchClass.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/include/FastSIMD/Utility/FeatureEnums.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/include/FastSIMD/Utility/Export.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -61,8 +62,7 @@ _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastNoise/FastNoise_C.cpp.o:
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastSIMD/FastSIMD_Export.h \
-  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/SmartNode.h \
+  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Utility/SmartNode.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h \

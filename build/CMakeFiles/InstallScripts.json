@@ -9,7 +9,9 @@
 		"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Network/cmake_install.cmake",
 		"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-build/src/SFML/Graphics/cmake_install.cmake",
 		"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/cmake_install.cmake",
-		"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/src/cmake_install.cmake"
+		"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/src/cmake_install.cmake",
+		"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-build/cmake_install.cmake",
+		"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-build/dispatch/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

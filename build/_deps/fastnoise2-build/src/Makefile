@@ -196,6 +196,20 @@ FastNoise/fast:
 	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/build
 .PHONY : FastNoise/fast
 
+# Convenience name for target.
+_deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/rule:
+	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/rule
+.PHONY : _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/rule
+
+# Convenience name for target.
+FastSIMD_FastNoise: _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/rule
+.PHONY : FastSIMD_FastNoise
+
+# fast build rule for target.
+FastSIMD_FastNoise/fast:
+	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/build
+.PHONY : FastSIMD_FastNoise/fast
+
 FastNoise/FastNoise_C.o: FastNoise/FastNoise_C.cpp.o
 .PHONY : FastNoise/FastNoise_C.o
 
@@ -268,77 +282,53 @@ FastNoise/SmartNode.cpp.s:
 	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastNoise/SmartNode.cpp.s
 .PHONY : FastNoise/SmartNode.cpp.s
 
-FastSIMD/FastSIMD.o: FastSIMD/FastSIMD.cpp.o
-.PHONY : FastSIMD/FastSIMD.o
+fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.o: fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.cpp.o
+.PHONY : fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.o
 
 # target to build an object file
-FastSIMD/FastSIMD.cpp.o:
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.o
-.PHONY : FastSIMD/FastSIMD.cpp.o
+fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.cpp.o:
+	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.cpp.o
+.PHONY : fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.cpp.o
 
-FastSIMD/FastSIMD.i: FastSIMD/FastSIMD.cpp.i
-.PHONY : FastSIMD/FastSIMD.i
+fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.i: fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.cpp.i
+.PHONY : fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.i
 
 # target to preprocess a source file
-FastSIMD/FastSIMD.cpp.i:
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.i
-.PHONY : FastSIMD/FastSIMD.cpp.i
+fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.cpp.i:
+	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.cpp.i
+.PHONY : fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.cpp.i
 
-FastSIMD/FastSIMD.s: FastSIMD/FastSIMD.cpp.s
-.PHONY : FastSIMD/FastSIMD.s
+fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.s: fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.cpp.s
+.PHONY : fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.s
 
 # target to generate assembly for a file
-FastSIMD/FastSIMD.cpp.s:
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.s
-.PHONY : FastSIMD/FastSIMD.cpp.s
+fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.cpp.s:
+	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.cpp.s
+.PHONY : fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.cpp.s
 
-FastSIMD/FastSIMD_Level_NEON.o: FastSIMD/FastSIMD_Level_NEON.cpp.o
-.PHONY : FastSIMD/FastSIMD_Level_NEON.o
+fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.o: fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.cpp.o
+.PHONY : fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.o
 
 # target to build an object file
-FastSIMD/FastSIMD_Level_NEON.cpp.o:
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.o
-.PHONY : FastSIMD/FastSIMD_Level_NEON.cpp.o
+fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.cpp.o:
+	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.cpp.o
+.PHONY : fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.cpp.o
 
-FastSIMD/FastSIMD_Level_NEON.i: FastSIMD/FastSIMD_Level_NEON.cpp.i
-.PHONY : FastSIMD/FastSIMD_Level_NEON.i
-
-# target to preprocess a source file
-FastSIMD/FastSIMD_Level_NEON.cpp.i:
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.i
-.PHONY : FastSIMD/FastSIMD_Level_NEON.cpp.i
-
-FastSIMD/FastSIMD_Level_NEON.s: FastSIMD/FastSIMD_Level_NEON.cpp.s
-.PHONY : FastSIMD/FastSIMD_Level_NEON.s
-
-# target to generate assembly for a file
-FastSIMD/FastSIMD_Level_NEON.cpp.s:
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.s
-.PHONY : FastSIMD/FastSIMD_Level_NEON.cpp.s
-
-FastSIMD/FastSIMD_Level_Scalar.o: FastSIMD/FastSIMD_Level_Scalar.cpp.o
-.PHONY : FastSIMD/FastSIMD_Level_Scalar.o
-
-# target to build an object file
-FastSIMD/FastSIMD_Level_Scalar.cpp.o:
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.o
-.PHONY : FastSIMD/FastSIMD_Level_Scalar.cpp.o
-
-FastSIMD/FastSIMD_Level_Scalar.i: FastSIMD/FastSIMD_Level_Scalar.cpp.i
-.PHONY : FastSIMD/FastSIMD_Level_Scalar.i
+fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.i: fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.cpp.i
+.PHONY : fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.i
 
 # target to preprocess a source file
-FastSIMD/FastSIMD_Level_Scalar.cpp.i:
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.i
-.PHONY : FastSIMD/FastSIMD_Level_Scalar.cpp.i
+fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.cpp.i:
+	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.cpp.i
+.PHONY : fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.cpp.i
 
-FastSIMD/FastSIMD_Level_Scalar.s: FastSIMD/FastSIMD_Level_Scalar.cpp.s
-.PHONY : FastSIMD/FastSIMD_Level_Scalar.s
+fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.s: fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.cpp.s
+.PHONY : fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.s
 
 # target to generate assembly for a file
-FastSIMD/FastSIMD_Level_Scalar.cpp.s:
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.s
-.PHONY : FastSIMD/FastSIMD_Level_Scalar.cpp.s
+fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.cpp.s:
+	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build && $(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.cpp.s
+.PHONY : fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.cpp.s
 
 # Help Target
 help:
@@ -355,6 +345,7 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... FastNoise"
+	@echo "... FastSIMD_FastNoise"
 	@echo "... FastNoise/FastNoise_C.o"
 	@echo "... FastNoise/FastNoise_C.i"
 	@echo "... FastNoise/FastNoise_C.s"
@@ -364,15 +355,12 @@ help:
 	@echo "... FastNoise/SmartNode.o"
 	@echo "... FastNoise/SmartNode.i"
 	@echo "... FastNoise/SmartNode.s"
-	@echo "... FastSIMD/FastSIMD.o"
-	@echo "... FastSIMD/FastSIMD.i"
-	@echo "... FastSIMD/FastSIMD.s"
-	@echo "... FastSIMD/FastSIMD_Level_NEON.o"
-	@echo "... FastSIMD/FastSIMD_Level_NEON.i"
-	@echo "... FastSIMD/FastSIMD_Level_NEON.s"
-	@echo "... FastSIMD/FastSIMD_Level_Scalar.o"
-	@echo "... FastSIMD/FastSIMD_Level_Scalar.i"
-	@echo "... FastSIMD/FastSIMD_Level_Scalar.s"
+	@echo "... fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.o"
+	@echo "... fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.i"
+	@echo "... fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.s"
+	@echo "... fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.o"
+	@echo "... fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.i"
+	@echo "... fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.s"
 .PHONY : help
 
 

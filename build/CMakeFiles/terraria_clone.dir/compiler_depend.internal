@@ -11318,8 +11318,6 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/FastNoise.h
- /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/FastNoise_Config.h
- /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/FastNoise_Export.h
  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/BasicGenerators.h
  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/Blends.h
  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/Cellular.h
@@ -11331,10 +11329,12 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o
  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/Perlin.h
  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/Simplex.h
  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Generators/Value.h
- /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/SmartNode.h
- /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastSIMD/FastSIMD.h
- /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastSIMD/FastSIMD_Config.h
- /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastSIMD/FastSIMD_Export.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Utility/Config.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Utility/Export.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/include/FastNoise/Utility/SmartNode.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/include/FastSIMD/DispatchClass.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/include/FastSIMD/Utility/Export.h
+ /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/include/FastSIMD/Utility/FeatureEnums.h
  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Config.hpp
  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics.hpp
  /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/sfml-src/include/SFML/Graphics/BlendMode.hpp

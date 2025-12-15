@@ -3409,3 +3409,360 @@ events:
         - "/Network/Library/Frameworks"
         - "/System/Library/Frameworks"
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/fastsimd-src/cmake/ArchDetect.cmake:15 (try_compile)"
+      - "build/_deps/fastsimd-src/CMakeLists.txt:22 (target_architecture)"
+    directories:
+      source: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CPM_modules;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5a14b/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5a14b.dir/build.make CMakeFiles/cmTC_5a14b.dir/build
+        Building CXX object CMakeFiles/cmTC_5a14b.dir/ArchDetect.cpp.o
+        /usr/bin/c++   -std=gnu++17 -arch arm64 -MD -MT CMakeFiles/cmTC_5a14b.dir/ArchDetect.cpp.o -MF CMakeFiles/cmTC_5a14b.dir/ArchDetect.cpp.o.d -o CMakeFiles/cmTC_5a14b.dir/ArchDetect.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp:15:16: error: static assertion failed: FASTSIMD_ARCH<ARM=AARCH64>
+           15 | static_assert( 0, "FASTSIMD_ARCH<" TO_LITERAL( FASTSIMD_ARCH_NAME() ) ">" );
+              |                ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp:18:1: error: expected unqualified-id
+           18 | TO_LITERAL( FASTSIMD_ARCH<FASTSIMD_ARCH_NAME()> );
+              | ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp:4:30: note: expanded from macro 'TO_LITERAL'
+            4 | #define TO_LITERAL( string ) TO_LITERAL_( string )
+              |                              ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp:3:31: note: expanded from macro 'TO_LITERAL_'
+            3 | #define TO_LITERAL_( string ) #string
+              |                               ^
+        <scratch space>:5:1: note: expanded from here
+            5 | "FASTSIMD_ARCH<ARM=AARCH64>"
+              | ^
+        2 errors generated.
+        make[2]: *** [CMakeFiles/cmTC_5a14b.dir/ArchDetect.cpp.o] Error 1
+        make[1]: *** [cmTC_5a14b/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/fastsimd-src/dispatch/cmake/ClassSIMD.cmake:145 (try_compile)"
+      - "build/_deps/fastnoise2-src/src/CMakeLists.txt:61 (fastsimd_create_dispatch_library)"
+    directories:
+      source: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CPM_modules;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e9010/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e9010.dir/build.make CMakeFiles/cmTC_e9010.dir/build
+        Building CXX object CMakeFiles/cmTC_e9010.dir/ArchDetect.cpp.o
+        /usr/bin/c++ -DTEST_FEATURE_SET_ACTIVE=SSE2  -std=gnu++17 -arch arm64 -MD -MT CMakeFiles/cmTC_e9010.dir/ArchDetect.cpp.o -MF CMakeFiles/cmTC_e9010.dir/ArchDetect.cpp.o.d -o CMakeFiles/cmTC_e9010.dir/ArchDetect.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp:9:5: error: function-like macro 'FASTSIMD_FEATURE_VALUE_SSE2' is not defined
+            9 | #if FASTSIMD_FEATURE_VALUE( TEST_FEATURE_SET_ACTIVE ) > 0
+              |     ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/../include/FastSIMD/Utility/ArchDetect.h:91:43: note: expanded from macro 'FASTSIMD_FEATURE_VALUE'
+           91 | #define FASTSIMD_FEATURE_VALUE( feature ) FASTSIMD_FEATURE_VALUE_IMPL( feature )
+              |                                           ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/../include/FastSIMD/Utility/ArchDetect.h:92:48: note: expanded from macro 'FASTSIMD_FEATURE_VALUE_IMPL'
+           92 | #define FASTSIMD_FEATURE_VALUE_IMPL( feature ) FASTSIMD_FEATURE_VALUE_##feature()
+              |                                                ^
+        <scratch space>:4:1: note: expanded from here
+            4 | FASTSIMD_FEATURE_VALUE_SSE2
+              | ^
+        1 error generated.
+        make[2]: *** [CMakeFiles/cmTC_e9010.dir/ArchDetect.cpp.o] Error 1
+        make[1]: *** [cmTC_e9010/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/fastsimd-src/dispatch/cmake/ClassSIMD.cmake:145 (try_compile)"
+      - "build/_deps/fastnoise2-src/src/CMakeLists.txt:61 (fastsimd_create_dispatch_library)"
+    directories:
+      source: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CPM_modules;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ac1ce/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ac1ce.dir/build.make CMakeFiles/cmTC_ac1ce.dir/build
+        Building CXX object CMakeFiles/cmTC_ac1ce.dir/ArchDetect.cpp.o
+        /usr/bin/c++ -DTEST_FEATURE_SET_ACTIVE=SSE41  -std=gnu++17 -arch arm64 -MD -MT CMakeFiles/cmTC_ac1ce.dir/ArchDetect.cpp.o -MF CMakeFiles/cmTC_ac1ce.dir/ArchDetect.cpp.o.d -o CMakeFiles/cmTC_ac1ce.dir/ArchDetect.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp:9:5: error: function-like macro 'FASTSIMD_FEATURE_VALUE_SSE41' is not defined
+            9 | #if FASTSIMD_FEATURE_VALUE( TEST_FEATURE_SET_ACTIVE ) > 0
+              |     ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/../include/FastSIMD/Utility/ArchDetect.h:91:43: note: expanded from macro 'FASTSIMD_FEATURE_VALUE'
+           91 | #define FASTSIMD_FEATURE_VALUE( feature ) FASTSIMD_FEATURE_VALUE_IMPL( feature )
+              |                                           ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/../include/FastSIMD/Utility/ArchDetect.h:92:48: note: expanded from macro 'FASTSIMD_FEATURE_VALUE_IMPL'
+           92 | #define FASTSIMD_FEATURE_VALUE_IMPL( feature ) FASTSIMD_FEATURE_VALUE_##feature()
+              |                                                ^
+        <scratch space>:4:1: note: expanded from here
+            4 | FASTSIMD_FEATURE_VALUE_SSE41
+              | ^
+        1 error generated.
+        make[2]: *** [CMakeFiles/cmTC_ac1ce.dir/ArchDetect.cpp.o] Error 1
+        make[1]: *** [cmTC_ac1ce/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/fastsimd-src/dispatch/cmake/ClassSIMD.cmake:145 (try_compile)"
+      - "build/_deps/fastnoise2-src/src/CMakeLists.txt:61 (fastsimd_create_dispatch_library)"
+    directories:
+      source: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CPM_modules;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f6c53/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f6c53.dir/build.make CMakeFiles/cmTC_f6c53.dir/build
+        Building CXX object CMakeFiles/cmTC_f6c53.dir/ArchDetect.cpp.o
+        /usr/bin/c++ -DTEST_FEATURE_SET_ACTIVE=AVX2  -std=gnu++17 -arch arm64 -MD -MT CMakeFiles/cmTC_f6c53.dir/ArchDetect.cpp.o -MF CMakeFiles/cmTC_f6c53.dir/ArchDetect.cpp.o.d -o CMakeFiles/cmTC_f6c53.dir/ArchDetect.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp:9:5: error: function-like macro 'FASTSIMD_FEATURE_VALUE_AVX2' is not defined
+            9 | #if FASTSIMD_FEATURE_VALUE( TEST_FEATURE_SET_ACTIVE ) > 0
+              |     ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/../include/FastSIMD/Utility/ArchDetect.h:91:43: note: expanded from macro 'FASTSIMD_FEATURE_VALUE'
+           91 | #define FASTSIMD_FEATURE_VALUE( feature ) FASTSIMD_FEATURE_VALUE_IMPL( feature )
+              |                                           ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/../include/FastSIMD/Utility/ArchDetect.h:92:48: note: expanded from macro 'FASTSIMD_FEATURE_VALUE_IMPL'
+           92 | #define FASTSIMD_FEATURE_VALUE_IMPL( feature ) FASTSIMD_FEATURE_VALUE_##feature()
+              |                                                ^
+        <scratch space>:4:1: note: expanded from here
+            4 | FASTSIMD_FEATURE_VALUE_AVX2
+              | ^
+        1 error generated.
+        make[2]: *** [CMakeFiles/cmTC_f6c53.dir/ArchDetect.cpp.o] Error 1
+        make[1]: *** [cmTC_f6c53/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/fastsimd-src/dispatch/cmake/ClassSIMD.cmake:145 (try_compile)"
+      - "build/_deps/fastnoise2-src/src/CMakeLists.txt:61 (fastsimd_create_dispatch_library)"
+    directories:
+      source: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CPM_modules;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1aabd/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_1aabd.dir/build.make CMakeFiles/cmTC_1aabd.dir/build
+        Building CXX object CMakeFiles/cmTC_1aabd.dir/ArchDetect.cpp.o
+        /usr/bin/c++ -DTEST_FEATURE_SET_ACTIVE=AVX512  -std=gnu++17 -arch arm64 -MD -MT CMakeFiles/cmTC_1aabd.dir/ArchDetect.cpp.o -MF CMakeFiles/cmTC_1aabd.dir/ArchDetect.cpp.o.d -o CMakeFiles/cmTC_1aabd.dir/ArchDetect.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp:9:5: error: function-like macro 'FASTSIMD_FEATURE_VALUE_AVX512' is not defined
+            9 | #if FASTSIMD_FEATURE_VALUE( TEST_FEATURE_SET_ACTIVE ) > 0
+              |     ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/../include/FastSIMD/Utility/ArchDetect.h:91:43: note: expanded from macro 'FASTSIMD_FEATURE_VALUE'
+           91 | #define FASTSIMD_FEATURE_VALUE( feature ) FASTSIMD_FEATURE_VALUE_IMPL( feature )
+              |                                           ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/../include/FastSIMD/Utility/ArchDetect.h:92:48: note: expanded from macro 'FASTSIMD_FEATURE_VALUE_IMPL'
+           92 | #define FASTSIMD_FEATURE_VALUE_IMPL( feature ) FASTSIMD_FEATURE_VALUE_##feature()
+              |                                                ^
+        <scratch space>:4:1: note: expanded from here
+            4 | FASTSIMD_FEATURE_VALUE_AVX512
+              | ^
+        1 error generated.
+        make[2]: *** [CMakeFiles/cmTC_1aabd.dir/ArchDetect.cpp.o] Error 1
+        make[1]: *** [cmTC_1aabd/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/fastsimd-src/dispatch/cmake/ClassSIMD.cmake:145 (try_compile)"
+      - "build/_deps/fastnoise2-src/src/CMakeLists.txt:61 (fastsimd_create_dispatch_library)"
+    directories:
+      source: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CPM_modules;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7a20e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7a20e.dir/build.make CMakeFiles/cmTC_7a20e.dir/build
+        Building CXX object CMakeFiles/cmTC_7a20e.dir/ArchDetect.cpp.o
+        /usr/bin/c++ -DTEST_FEATURE_SET_ACTIVE=NEON  -std=gnu++17 -arch arm64 -MD -MT CMakeFiles/cmTC_7a20e.dir/ArchDetect.cpp.o -MF CMakeFiles/cmTC_7a20e.dir/ArchDetect.cpp.o.d -o CMakeFiles/cmTC_7a20e.dir/ArchDetect.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp:15:16: error: static assertion failed: FASTSIMD_ARCH<ARM=AARCH64>
+           15 | static_assert( 0, "FASTSIMD_ARCH<" TO_LITERAL( FASTSIMD_ARCH_NAME() ) ">" );
+              |                ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp:18:1: error: expected unqualified-id
+           18 | TO_LITERAL( FASTSIMD_ARCH<FASTSIMD_ARCH_NAME()> );
+              | ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp:4:30: note: expanded from macro 'TO_LITERAL'
+            4 | #define TO_LITERAL( string ) TO_LITERAL_( string )
+              |                              ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp:3:31: note: expanded from macro 'TO_LITERAL_'
+            3 | #define TO_LITERAL_( string ) #string
+              |                               ^
+        <scratch space>:6:1: note: expanded from here
+            6 | "FASTSIMD_ARCH<ARM=AARCH64>"
+              | ^
+        2 errors generated.
+        make[2]: *** [CMakeFiles/cmTC_7a20e.dir/ArchDetect.cpp.o] Error 1
+        make[1]: *** [cmTC_7a20e/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/fastsimd-src/dispatch/cmake/ClassSIMD.cmake:145 (try_compile)"
+      - "build/_deps/fastnoise2-src/src/CMakeLists.txt:61 (fastsimd_create_dispatch_library)"
+    directories:
+      source: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CPM_modules;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9134e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9134e.dir/build.make CMakeFiles/cmTC_9134e.dir/build
+        Building CXX object CMakeFiles/cmTC_9134e.dir/ArchDetect.cpp.o
+        /usr/bin/c++ -DTEST_FEATURE_SET_ACTIVE=AARCH64  -std=gnu++17 -arch arm64 -MD -MT CMakeFiles/cmTC_9134e.dir/ArchDetect.cpp.o -MF CMakeFiles/cmTC_9134e.dir/ArchDetect.cpp.o.d -o CMakeFiles/cmTC_9134e.dir/ArchDetect.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp:15:16: error: static assertion failed: FASTSIMD_ARCH<ARM=AARCH64>
+           15 | static_assert( 0, "FASTSIMD_ARCH<" TO_LITERAL( FASTSIMD_ARCH_NAME() ) ">" );
+              |                ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp:18:1: error: expected unqualified-id
+           18 | TO_LITERAL( FASTSIMD_ARCH<FASTSIMD_ARCH_NAME()> );
+              | ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp:4:30: note: expanded from macro 'TO_LITERAL'
+            4 | #define TO_LITERAL( string ) TO_LITERAL_( string )
+              |                              ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp:3:31: note: expanded from macro 'TO_LITERAL_'
+            3 | #define TO_LITERAL_( string ) #string
+              |                               ^
+        <scratch space>:6:1: note: expanded from here
+            6 | "FASTSIMD_ARCH<ARM=AARCH64>"
+              | ^
+        2 errors generated.
+        make[2]: *** [CMakeFiles/cmTC_9134e.dir/ArchDetect.cpp.o] Error 1
+        make[1]: *** [cmTC_9134e/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/fastsimd-src/dispatch/cmake/ClassSIMD.cmake:145 (try_compile)"
+      - "build/_deps/fastnoise2-src/src/CMakeLists.txt:61 (fastsimd_create_dispatch_library)"
+    directories:
+      source: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CPM_modules;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_beeb5/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_beeb5.dir/build.make CMakeFiles/cmTC_beeb5.dir/build
+        Building CXX object CMakeFiles/cmTC_beeb5.dir/ArchDetect.cpp.o
+        /usr/bin/c++ -DTEST_FEATURE_SET_ACTIVE=WASM  -std=gnu++17 -arch arm64 -MD -MT CMakeFiles/cmTC_beeb5.dir/ArchDetect.cpp.o -MF CMakeFiles/cmTC_beeb5.dir/ArchDetect.cpp.o.d -o CMakeFiles/cmTC_beeb5.dir/ArchDetect.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/ArchDetect.cpp:9:5: error: function-like macro 'FASTSIMD_FEATURE_VALUE_WASM' is not defined
+            9 | #if FASTSIMD_FEATURE_VALUE( TEST_FEATURE_SET_ACTIVE ) > 0
+              |     ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/../include/FastSIMD/Utility/ArchDetect.h:91:43: note: expanded from macro 'FASTSIMD_FEATURE_VALUE'
+           91 | #define FASTSIMD_FEATURE_VALUE( feature ) FASTSIMD_FEATURE_VALUE_IMPL( feature )
+              |                                           ^
+        /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src/cmake/../include/FastSIMD/Utility/ArchDetect.h:92:48: note: expanded from macro 'FASTSIMD_FEATURE_VALUE_IMPL'
+           92 | #define FASTSIMD_FEATURE_VALUE_IMPL( feature ) FASTSIMD_FEATURE_VALUE_##feature()
+              |                                                ^
+        <scratch space>:4:1: note: expanded from here
+            4 | FASTSIMD_FEATURE_VALUE_WASM
+              | ^
+        1 error generated.
+        make[2]: *** [CMakeFiles/cmTC_beeb5.dir/ArchDetect.cpp.o] Error 1
+        make[1]: *** [cmTC_beeb5/fast] Error 2
+        
+      exitCode: 2
+...

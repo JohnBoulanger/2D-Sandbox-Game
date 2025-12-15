@@ -11305,8 +11305,6 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o: /Users/johnboulanger/Desktop/
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   _deps/fastnoise2-src/include/FastNoise/FastNoise.h \
-  _deps/fastnoise2-src/include/FastNoise/FastNoise_Config.h \
-  _deps/fastnoise2-src/include/FastNoise/FastNoise_Export.h \
   _deps/fastnoise2-src/include/FastNoise/Generators/BasicGenerators.h \
   _deps/fastnoise2-src/include/FastNoise/Generators/Blends.h \
   _deps/fastnoise2-src/include/FastNoise/Generators/Cellular.h \
@@ -11318,10 +11316,12 @@ CMakeFiles/terraria_clone.dir/src/world/Map.cpp.o: /Users/johnboulanger/Desktop/
   _deps/fastnoise2-src/include/FastNoise/Generators/Perlin.h \
   _deps/fastnoise2-src/include/FastNoise/Generators/Simplex.h \
   _deps/fastnoise2-src/include/FastNoise/Generators/Value.h \
-  _deps/fastnoise2-src/include/FastNoise/SmartNode.h \
-  _deps/fastnoise2-src/include/FastSIMD/FastSIMD.h \
-  _deps/fastnoise2-src/include/FastSIMD/FastSIMD_Config.h \
-  _deps/fastnoise2-src/include/FastSIMD/FastSIMD_Export.h \
+  _deps/fastnoise2-src/include/FastNoise/Utility/Config.h \
+  _deps/fastnoise2-src/include/FastNoise/Utility/Export.h \
+  _deps/fastnoise2-src/include/FastNoise/Utility/SmartNode.h \
+  _deps/fastsimd-src/include/FastSIMD/DispatchClass.h \
+  _deps/fastsimd-src/include/FastSIMD/Utility/Export.h \
+  _deps/fastsimd-src/include/FastSIMD/Utility/FeatureEnums.h \
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics.hpp \
   _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
@@ -13166,6 +13166,14 @@ CMakeFiles/terraria_clone.dir/src/world/World.cpp.o: /Users/johnboulanger/Deskto
 
 /Users/johnboulanger/Desktop/Games/Terraria-Clone/src/world/World.cpp:
 
+_deps/fastsimd-src/include/FastSIMD/Utility/FeatureEnums.h:
+
+_deps/fastsimd-src/include/FastSIMD/Utility/Export.h:
+
+_deps/fastsimd-src/include/FastSIMD/DispatchClass.h:
+
+_deps/fastnoise2-src/include/FastNoise/Utility/Config.h:
+
 _deps/fastnoise2-src/include/FastNoise/Generators/Simplex.h:
 
 _deps/fastnoise2-src/include/FastNoise/Generators/Perlin.h:
@@ -13181,8 +13189,6 @@ _deps/fastnoise2-src/include/FastNoise/Generators/Cellular.h:
 _deps/fastnoise2-src/include/FastNoise/Generators/Blends.h:
 
 _deps/fastnoise2-src/include/FastNoise/Generators/BasicGenerators.h:
-
-_deps/fastnoise2-src/include/FastNoise/FastNoise_Config.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert:
 
@@ -13275,8 +13281,6 @@ _deps/sfml-src/include/SFML/System/MemoryInputStream.hpp:
 _deps/sfml-src/include/SFML/System/InputStream.hpp:
 
 _deps/sfml-src/include/SFML/System/FileInputStream.hpp:
-
-_deps/fastnoise2-src/include/FastNoise/FastNoise_Export.h:
 
 _deps/sfml-src/include/SFML/System/Err.hpp:
 
@@ -13796,13 +13800,9 @@ _deps/sfml-src/include/SFML/Window/Export.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int.h:
 
-_deps/fastnoise2-src/include/FastNoise/SmartNode.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_core_convertible.h:
-
-_deps/fastnoise2-src/include/FastSIMD/FastSIMD.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_clock_t.h:
 
@@ -14110,6 +14110,8 @@ _deps/fastnoise2-src/include/FastNoise/FastNoise.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/trigonometric_functions.h:
 
+_deps/fastnoise2-src/include/FastNoise/Utility/SmartNode.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/traits.h:
@@ -14285,8 +14287,6 @@ _deps/sfml-src/include/SFML/System/ThreadLocal.hpp:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/default_sentinel.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map:
-
-_deps/fastnoise2-src/include/FastSIMD/FastSIMD_Config.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/data.h:
 
@@ -14488,8 +14488,6 @@ _deps/sfml-src/include/SFML/Graphics/PrimitiveType.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/replace_copy_if.h:
 
-_deps/fastnoise2-src/include/FastSIMD/FastSIMD_Export.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/atomic_init.h:
@@ -14685,6 +14683,8 @@ _deps/fastnoise2-src/include/FastNoise/Generators/Generator.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h:
+
+_deps/fastnoise2-src/include/FastNoise/Utility/Export.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue:
 

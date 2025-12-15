@@ -260,6 +260,32 @@ FastNoise/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/build
 .PHONY : FastNoise/fast
 
+#=============================================================================
+# Target rules for targets named FastSIMD_FastNoise
+
+# Build rule for target.
+FastSIMD_FastNoise: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FastSIMD_FastNoise
+.PHONY : FastSIMD_FastNoise
+
+# fast build rule for target.
+FastSIMD_FastNoise/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/build.make _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/build
+.PHONY : FastSIMD_FastNoise/fast
+
+#=============================================================================
+# Target rules for targets named FastSIMD
+
+# Build rule for target.
+FastSIMD: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FastSIMD
+.PHONY : FastSIMD
+
+# fast build rule for target.
+FastSIMD/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/fastsimd-build/CMakeFiles/FastSIMD.dir/build.make _deps/fastsimd-build/CMakeFiles/FastSIMD.dir/build
+.PHONY : FastSIMD/fast
+
 src/core/Animation.o: src/core/Animation.cpp.o
 .PHONY : src/core/Animation.o
 
@@ -635,6 +661,8 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... FastNoise"
+	@echo "... FastSIMD"
+	@echo "... FastSIMD_FastNoise"
 	@echo "... sfml-graphics"
 	@echo "... sfml-network"
 	@echo "... sfml-system"

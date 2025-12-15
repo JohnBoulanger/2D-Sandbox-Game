@@ -336,11 +336,55 @@ CPACK_SOURCE_TZ:BOOL=ON
 //Enable to build ZIP source packages
 CPACK_SOURCE_ZIP:BOOL=OFF
 
+//Don't create a package lock file in the binary path
+CPM_DONT_CREATE_PACKAGE_LOCK:BOOL=OFF
+
+//Don't update the module path to allow using find_package
+CPM_DONT_UPDATE_MODULE_PATH:BOOL=OFF
+
+//Always download dependencies from source
+CPM_DOWNLOAD_ALL:BOOL=OFF
+
+//Add all packages added through CPM.cmake to the package lock
+CPM_INCLUDE_ALL_IN_PACKAGE_LOCK:BOOL=OFF
+
+//Only use `find_package` to get dependencies
+CPM_LOCAL_PACKAGES_ONLY:BOOL=OFF
+
+//Directory to download CPM dependencies
+CPM_SOURCE_CACHE:PATH=OFF
+
+//Always try to use `find_package` to get dependencies
+CPM_USE_LOCAL_PACKAGES:BOOL=OFF
+
+//Use additional directory of package name in cache on the most
+// nested level.
+CPM_USE_NAMED_CACHE_DIRECTORIES:BOOL=OFF
+
 //Build NoiseTool application
 FASTNOISE2_NOISETOOL:BOOL=OFF
 
+//Enable strict floating point calculations to ensure output from
+// different SIMD feature sets match EXACTLY
+FASTNOISE2_STRICT_FP:BOOL=OFF
+
 //Build tests
 FASTNOISE2_TESTS:BOOL=OFF
+
+//Build "Node Editor" executable
+FASTNOISE2_TOOLS:BOOL=OFF
+
+//Build utility tools
+FASTNOISE2_UTILITY:BOOL=OFF
+
+//Enable FastSIMD Dispatch Classes
+FASTSIMD_DISPATCH_CLASS:BOOL=ON
+
+//Build FastSIMD examples
+FASTSIMD_EXAMPLES:BOOL=OFF
+
+//Build FastSIMD tests
+FASTSIMD_TESTS:BOOL=OFF
 
 //Directory under which to collect all populated content
 FETCHCONTENT_BASE_DIR:PATH=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps
@@ -357,6 +401,10 @@ FETCHCONTENT_QUIET:BOOL=ON
 FETCHCONTENT_SOURCE_DIR_FASTNOISE2:PATH=
 
 //When not empty, overrides where to find pre-populated content
+// for FastSIMD
+FETCHCONTENT_SOURCE_DIR_FASTSIMD:PATH=
+
+//When not empty, overrides where to find pre-populated content
 // for SFML
 FETCHCONTENT_SOURCE_DIR_SFML:PATH=
 
@@ -365,6 +413,9 @@ FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of FastNoise2
 FETCHCONTENT_UPDATES_DISCONNECTED_FASTNOISE2:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of FastSIMD
+FETCHCONTENT_UPDATES_DISCONNECTED_FASTSIMD:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of SFML
 FETCHCONTENT_UPDATES_DISCONNECTED_SFML:BOOL=OFF
@@ -386,6 +437,15 @@ FastNoise2_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 FastNoise2_SOURCE_DIR:STATIC=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src
+
+//Value Computed by CMake
+FastSIMD_BINARY_DIR:STATIC=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-build
+
+//Value Computed by CMake
+FastSIMD_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+FastSIMD_SOURCE_DIR:STATIC=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src
 
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
@@ -610,7 +670,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -691,6 +751,18 @@ CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
 CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_SOURCE_ZIP
 CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
+CPM_DIRECTORY:INTERNAL=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/cmake
+//Don't download or configure dependencies (for testing)
+CPM_DRY_RUN:INTERNAL=OFF
+CPM_FILE:INTERNAL=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/cmake/CPM.cmake
+CPM_INDENT:INTERNAL=CPM:
+CPM_MODULE_PATH:INTERNAL=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CPM_modules
+CPM_PACKAGES:INTERNAL=FastSIMD
+CPM_PACKAGE_FastSIMD_BINARY_DIR:INTERNAL=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-build
+CPM_PACKAGE_FastSIMD_SOURCE_DIR:INTERNAL=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-src
+CPM_PACKAGE_FastSIMD_VERSION:INTERNAL=0
+CPM_PACKAGE_LOCK_FILE:INTERNAL=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/cpm-package-lock.cmake
+CPM_VERSION:INTERNAL=0.40.2
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework][/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework][ ][v()]
 //ADVANCED property for variable: FREETYPE_INCLUDE_DIR_freetype2
@@ -711,4 +783,6 @@ OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
 OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+//Result of TRY_COMPILE
+compile_result_unused:INTERNAL=FALSE
 

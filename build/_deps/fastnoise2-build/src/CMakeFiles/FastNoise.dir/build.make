@@ -114,69 +114,27 @@ _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastNoise/FastNoise_C.cpp.s:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FastNoise.dir/FastNoise/FastNoise_C.cpp.s"
 	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/FastNoise/FastNoise_C.cpp -o CMakeFiles/FastNoise.dir/FastNoise/FastNoise_C.cpp.s
 
-_deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.o: _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/flags.make
-_deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.o: _deps/fastnoise2-src/src/FastSIMD/FastSIMD.cpp
-_deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.o: _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.o"
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.o -MF CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.o.d -o CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/FastSIMD/FastSIMD.cpp
-
-_deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.i"
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/FastSIMD/FastSIMD.cpp > CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.i
-
-_deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.s"
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/FastSIMD/FastSIMD.cpp -o CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.s
-
-_deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.o: _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/flags.make
-_deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.o: _deps/fastnoise2-src/src/FastSIMD/FastSIMD_Level_NEON.cpp
-_deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.o: _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.o"
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.o -MF CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.o.d -o CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/FastSIMD/FastSIMD_Level_NEON.cpp
-
-_deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.i"
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/FastSIMD/FastSIMD_Level_NEON.cpp > CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.i
-
-_deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.s"
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/FastSIMD/FastSIMD_Level_NEON.cpp -o CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.s
-
-_deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.o: _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/flags.make
-_deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.o: _deps/fastnoise2-src/src/FastSIMD/FastSIMD_Level_Scalar.cpp
-_deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.o: _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.o"
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.o -MF CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.o.d -o CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.o -c /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/FastSIMD/FastSIMD_Level_Scalar.cpp
-
-_deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.i"
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/FastSIMD/FastSIMD_Level_Scalar.cpp > CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.i
-
-_deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.s"
-	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/FastSIMD/FastSIMD_Level_Scalar.cpp -o CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.s
-
 # Object files for target FastNoise
 FastNoise_OBJECTS = \
 "CMakeFiles/FastNoise.dir/FastNoise/Metadata.cpp.o" \
 "CMakeFiles/FastNoise.dir/FastNoise/SmartNode.cpp.o" \
-"CMakeFiles/FastNoise.dir/FastNoise/FastNoise_C.cpp.o" \
-"CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.o" \
-"CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.o" \
-"CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.o"
+"CMakeFiles/FastNoise.dir/FastNoise/FastNoise_C.cpp.o"
 
 # External object files for target FastNoise
-FastNoise_EXTERNAL_OBJECTS =
+FastNoise_EXTERNAL_OBJECTS = \
+"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastsimd-build/CMakeFiles/FastSIMD.dir/src/FastSIMD.cpp.o" \
+"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.cpp.o" \
+"/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.cpp.o"
 
 _deps/fastnoise2-build/src/libFastNoiseD.dylib: _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastNoise/Metadata.cpp.o
 _deps/fastnoise2-build/src/libFastNoiseD.dylib: _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastNoise/SmartNode.cpp.o
 _deps/fastnoise2-build/src/libFastNoiseD.dylib: _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastNoise/FastNoise_C.cpp.o
-_deps/fastnoise2-build/src/libFastNoiseD.dylib: _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.o
-_deps/fastnoise2-build/src/libFastNoiseD.dylib: _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.o
-_deps/fastnoise2-build/src/libFastNoiseD.dylib: _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.o
+_deps/fastnoise2-build/src/libFastNoiseD.dylib: _deps/fastsimd-build/CMakeFiles/FastSIMD.dir/src/FastSIMD.cpp.o
+_deps/fastnoise2-build/src/libFastNoiseD.dylib: _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_NEON.cpp.o
+_deps/fastnoise2-build/src/libFastNoiseD.dylib: _deps/fastnoise2-build/src/CMakeFiles/FastSIMD_FastNoise.dir/fastsimd/FastSIMD_FastNoise/FastSIMD_FastNoise_AARCH64.cpp.o
 _deps/fastnoise2-build/src/libFastNoiseD.dylib: _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/build.make
 _deps/fastnoise2-build/src/libFastNoiseD.dylib: _deps/fastnoise2-build/src/CMakeFiles/FastNoise.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libFastNoiseD.dylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libFastNoiseD.dylib"
 	cd /Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FastNoise.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

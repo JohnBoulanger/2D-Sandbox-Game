@@ -51,24 +51,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/FastSIMD" TYPE FILE FILES
-    "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastSIMD/FastSIMD.h"
-    "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastSIMD/FastSIMD_Config.h"
-    "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastSIMD/FastSIMD_Export.h"
-    "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastSIMD/FunctionList.h"
-    "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastSIMD/InlInclude.h"
-    "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastSIMD/SIMDTypeList.h"
-    )
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/FastNoise" TYPE FILE FILES
     "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastNoise/FastNoise.h"
     "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastNoise/FastNoise_C.h"
-    "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastNoise/FastNoise_Config.h"
-    "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastNoise/FastNoise_Export.h"
     "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastNoise/Metadata.h"
-    "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastNoise/SmartNode.h"
     )
 endif()
 
@@ -79,6 +65,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/Cellular.h"
     "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/DomainWarp.h"
     "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/DomainWarpFractal.h"
+    "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/DomainWarpSimplex.h"
     "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/Fractal.h"
     "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/Generator.h"
     "/Users/johnboulanger/Desktop/Games/Terraria-Clone/build/_deps/fastnoise2-src/src/../include/FastNoise/Generators/Modifiers.h"
