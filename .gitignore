@@ -1,47 +1,25 @@
-# ===== Build output =====
+# Build
 build/
-out/
 bin/
-lib/
+out/
 cmake-build-*/
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
 
-# ===== Compiled objects =====
+# Editor / OS
+.vscode/
+.DS_Store
+
+# Compiled
 *.o
 *.obj
-*.a
-*.lib
-*.so
-*.dll
-*.dylib
 *.exe
+*.dll
+*.so
+*.dylib
 
-# ===== SFML runtime copies (if generated) =====
-sfml-*-d-*.dll
-sfml-*.dll
-
-# ===== IDE / Editor =====
-.vscode/
-.idea/
-*.code-workspace
-
-# ===== OS junk =====
-.DS_Store
-Thumbs.db
-
-# ===== Logs / runtime output =====
-*.log
-
-# ===== Temporary / generated data =====
-*.tmp
-*.bak
-*.swp
-
-# ===== Cache =====
-.cache/
-
-# ===== User-specific =====
-*.user
+# Generated data (if applicable)
+heightmap.txt
+worldnoise.txt
