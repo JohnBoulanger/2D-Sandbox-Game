@@ -15,5 +15,5 @@ private:
     int maxHealth;
     sf::Texture heartTexture;
     sf::Texture emptyHeartTexture;
-    std::vector<sf::RectangleShape> healthBody;
+    std::vector<sf::RectangleShape> hearts;
 };

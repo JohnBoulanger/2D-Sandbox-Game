@@ -14,7 +14,7 @@ World::~World()
 
 }
 
-void World::update(sf::RenderWindow& window, float deltaTime)
+void World::update(sf::RenderWindow& window, float deltaTime, sf::View& camera, sf::View& uiView)
 {   
     // update map
     map.update(deltaTime);
@@ -22,20 +22,27 @@ void World::update(sf::RenderWindow& window, float deltaTime)
     // update player
     player.update(deltaTime);
     handleCollisions(window);
+    mousePixelPos = sf::Mouse::getPosition(window);
+    mouseWorldPos = window.mapPixelToCoords(mousePixelPos, camera);
+    mouseUIPos = window.mapPixelToCoords(mousePixelPos, uiView);
+    // if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) 
+    // {
+    //     printf("Mouse X: %d, Mouse Y: %d", mousePos.x, mousePos.y);
+    // }
 }
 
 void World::draw(sf::RenderWindow& window, sf::View& camera, sf::View& uiView)
 {
     // draw map
     window.setView(camera);
-    map.draw(window, camera);
+    map.draw(window, camera, mouseWorldPos);
 
     // draw player
     player.draw(window);
 
     // draw UI
     window.setView(uiView);
-    ui.draw(window);
+    ui.draw(window, mouseUIPos);
 }
 
 void World::handleCollisions(sf::RenderWindow& window)

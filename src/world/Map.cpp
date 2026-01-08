@@ -57,7 +57,7 @@ Map::~Map()
 }
 
 // todo: move bitmask logic to map::update eventually
-void Map::draw(sf::RenderWindow& window, sf::View& camera)
+void Map::draw(sf::RenderWindow& window, sf::View& camera, sf::Vector2f mousePos)
 {
     sf::Vector2f center = camera.getCenter();
     sf::Vector2f size = camera.getSize();
@@ -91,6 +91,22 @@ void Map::draw(sf::RenderWindow& window, sf::View& camera)
             map[x][y].draw(window, bitmask);
         }
     }
+
+    sf::RectangleShape mouseTile;
+    mouseTile.setSize({TILE_SIZE, TILE_SIZE});
+    mouseTile.setFillColor(sf::Color(255, 255, 0, 128));
+
+    // account for tile origin being at the center of the tile
+    sf::Vector2f gridPos = mousePos - sf::Vector2f(TILE_SIZE * 0.5f, TILE_SIZE * 0.5f);
+
+    int tileX = static_cast<int>(std::floor(gridPos.x / TILE_SIZE));
+    int tileY = static_cast<int>(std::floor(gridPos.y / TILE_SIZE));
+    sf::Vector2f tileCenter(
+        tileX * TILE_SIZE + TILE_SIZE * 0.5f,
+        tileY * TILE_SIZE + TILE_SIZE * 0.5f
+    );
+    mouseTile.setPosition(tileCenter);
+    window.draw(mouseTile);
 }
 
 void Map::update(float deltaTime)

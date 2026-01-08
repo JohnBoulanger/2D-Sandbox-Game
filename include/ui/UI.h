@@ -11,7 +11,7 @@ public:
     ~UI();
 
     void update();
-    void draw(sf::RenderWindow &window);
+    void draw(sf::RenderWindow &window, sf::Vector2f mousePos);
 
 private:
     sf::Font font;

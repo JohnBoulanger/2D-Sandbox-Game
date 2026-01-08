@@ -7,7 +7,7 @@ HealthBar::HealthBar()
 {
     health = 4;
     maxHealth = 5;
-    healthBody.resize(maxHealth);
+    hearts.resize(maxHealth);
     heartTexture.loadFromFile("terrariaTextures/UI/PlayerResourceSets/FancyClassic/HeartFill.png");
     emptyHeartTexture.loadFromFile("terrariaTextures/UI/PlayerResourceSets/FancyClassic/HeartEmpty.png");
 
@@ -19,18 +19,18 @@ HealthBar::HealthBar()
     for (int i = 0; i < maxHealth; i++) {
 
         if (i < health) {
-            healthBody[i].setTexture(&heartTexture);
+            hearts[i].setTexture(&heartTexture);
         } else {
-            healthBody[i].setTexture(&emptyHeartTexture);
+            hearts[i].setTexture(&emptyHeartTexture);
         }
 
         float healthBarX = VIEW_WIDTH - padding - (i + 1) * (heartSize + heartSpacing) * heartScale;
         float healthBarY = padding;
 
-        healthBody[i].setTextureRect(sf::IntRect(0, 0, heartSize, heartSize));
-        healthBody[i].setSize(sf::Vector2f(heartSize * heartScale, heartSize * heartScale));
+        hearts[i].setTextureRect(sf::IntRect(0, 0, heartSize, heartSize));
+        hearts[i].setSize(sf::Vector2f(heartSize * heartScale, heartSize * heartScale));
         // todo: update dynamically with view size
-        healthBody[i].setPosition(healthBarX, healthBarY);
+        hearts[i].setPosition(healthBarX, healthBarY);
     }
 }
 
@@ -47,6 +47,6 @@ void HealthBar::update()
 void HealthBar::draw(sf::RenderWindow& window)
 {
     for (int i = 0; i < maxHealth; i++) {
-        window.draw(healthBody[i]);
+        window.draw(hearts[i]);
     }
 }

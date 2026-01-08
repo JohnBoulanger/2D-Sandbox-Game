@@ -10,7 +10,7 @@ public:
     World();
     ~World();
 
-    void update(sf::RenderWindow& window, float deltaTime);
+    void update(sf::RenderWindow& window, float deltaTime, sf::View& camera, sf::View& uiView);
     void handleCollisions(sf::RenderWindow& window);
     void draw(sf::RenderWindow& window, sf::View& camera, sf::View& uiView);
 
@@ -24,5 +24,7 @@ private:
     Map map;
     // ui
     UI ui;
-    sf::Vector2f mousePos;
+    sf::Vector2i mousePixelPos;
+    sf::Vector2f mouseWorldPos;
+    sf::Vector2f mouseUIPos;
 };

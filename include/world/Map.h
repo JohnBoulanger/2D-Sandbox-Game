@@ -9,7 +9,7 @@ public:
     ~Map();
 
     void printMap();
-    void draw(sf::RenderWindow& window, sf::View& view);
+    void draw(sf::RenderWindow& window, sf::View& view, sf::Vector2f mousePos);
     void update(float deltaTime);
     void loadTileset();
     void generateHeightMap(std::vector<float>& noiseOutput, int width);
