@@ -12,7 +12,7 @@ constexpr int MAP_HEIGHT = 240;
 constexpr int GROUND_TO_TOP = 128;
 
 // PLAYER
-constexpr float SPEED = 500.0f;
+constexpr float SPEED = 100.0f;
 constexpr float GRAVITY = 981.0f;
 constexpr float MAX_Y = 500.0f;
 constexpr float JUMP_HEIGHT = 300.0f;

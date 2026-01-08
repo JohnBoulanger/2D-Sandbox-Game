@@ -14,7 +14,7 @@ HealthBar::HealthBar()
     int padding = 20;
     int heartSize = 22;
     int heartSpacing = 2;
-    float heartScale = 1.5f;
+    float heartScale = 1.3f;
 
     for (int i = 0; i < maxHealth; i++) {
 

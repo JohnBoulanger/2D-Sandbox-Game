@@ -24,5 +24,5 @@ private:
     Map map;
     // ui
     UI ui;
-    bool paused;
+    sf::Vector2f mousePos;
 };

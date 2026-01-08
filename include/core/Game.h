@@ -18,7 +18,8 @@ private:
     sf::View camera;
     sf::View uiView;
     sf::Clock clock;
-
+    bool paused = false;
+    
     // world
     World world;
 };
