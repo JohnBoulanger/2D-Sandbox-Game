@@ -22,6 +22,16 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(FastNoise2)
 
+set(TGUI_BACKEND SFML_GRAPHICS CACHE STRING "" FORCE)
+set(TGUI_BUILD_FRAMEWORK OFF CACHE BOOL "" FORCE)
+FetchContent_Declare(
+    TGUI
+    GIT_REPOSITORY https://github.com/texus/TGUI.git
+    GIT_TAG v1.4.0
+)
+FetchContent_MakeAvailable(TGUI)
+
+
 file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS
   "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
 )
@@ -33,6 +43,7 @@ target_link_libraries(terraria_clone PRIVATE
   sfml-window
   sfml-system
   FastNoise2
+  tgui
 )
 
 target_include_directories(terraria_clone PRIVATE
