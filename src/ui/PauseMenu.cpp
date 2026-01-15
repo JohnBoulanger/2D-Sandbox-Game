@@ -1,21 +1,14 @@
 #include "ui/PauseMenu.h"
+#include "core/GameState.h"
 
-PauseMenu::PauseMenu()
+PauseMenu::PauseMenu(GameState& gameState)
+: gameState(gameState)
 {
+}
+
+void PauseMenu::show(sf::RenderWindow& window) {
 
 }
 
-PauseMenu::~PauseMenu()
-{
-    
-}
-
-void PauseMenu::update()
-{
-
-}
-
-void PauseMenu::draw(sf::RenderWindow& window)
-{
-
+void PauseMenu::hide() {
 }

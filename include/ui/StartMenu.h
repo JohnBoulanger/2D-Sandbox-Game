@@ -3,9 +3,9 @@
 
 class GameState;
 
-class PauseMenu {
+class StartMenu {
 public:
-    PauseMenu(GameState& gameState);
+    StartMenu(GameState& gameState);
 
     void show(sf::RenderWindow& window);
     void hide();

@@ -1,10 +1,13 @@
 #include "world/World.h"
 #include "config/GameConstants.h"
 #include "core/TextureUtils.h"
+#include <core/GameState.h>
 
-World::World() :
+World::World(GameState& gameState) :
     map(),
-    player(DEFAULT_PLAYER_STATE, {PLAYER_ANIM_FRAMES, PLAYER_NUM_ANIMS}, PLAYER_ANIMATION_SPEED, SPEED, JUMP_HEIGHT)
+    player(DEFAULT_PLAYER_STATE, {PLAYER_ANIM_FRAMES, PLAYER_NUM_ANIMS}, PLAYER_ANIMATION_SPEED, SPEED, JUMP_HEIGHT),
+    gameState(gameState),
+    ui(gameState)
 {
 
 }
@@ -16,19 +19,21 @@ World::~World()
 
 void World::update(sf::RenderWindow& window, float deltaTime, sf::View& camera, sf::View& uiView)
 {   
-    // update map
-    map.update(deltaTime);
+    // update player and map when not paused
+    if (!gameState.isPaused()) {
+        // update map
+        map.update(deltaTime);
 
-    // update player
-    player.update(deltaTime);
-    handleCollisions(window);
-    mousePixelPos = sf::Mouse::getPosition(window);
-    mouseWorldPos = window.mapPixelToCoords(mousePixelPos, camera);
-    mouseUIPos = window.mapPixelToCoords(mousePixelPos, uiView);
-    // if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) 
-    // {
-    //     printf("Mouse X: %d, Mouse Y: %d", mousePos.x, mousePos.y);
-    // }
+        // update player
+        player.update(deltaTime);
+        handleCollisions(window);
+        mousePixelPos = sf::Mouse::getPosition(window);
+        mouseWorldPos = window.mapPixelToCoords(mousePixelPos, camera);
+        mouseUIPos = window.mapPixelToCoords(mousePixelPos, uiView);
+    };
+
+    // update UI
+    ui.update();
 }
 
 void World::draw(sf::RenderWindow& window, sf::View& camera, sf::View& uiView)

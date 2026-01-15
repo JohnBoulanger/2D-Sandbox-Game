@@ -4,7 +4,8 @@
 Game::Game()
     : window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), WINDOW_NAME, sf::Style::Close | sf::Style::Resize),
       camera({0.0f, 0.0f}, {VIEW_WIDTH, VIEW_HEIGHT}),
-      uiView({0.0f, 0.0f}, {VIEW_WIDTH, VIEW_HEIGHT})   
+      uiView({0.0f, 0.0f}, {VIEW_WIDTH, VIEW_HEIGHT}),
+      world(gameState) 
 {
     uiView.setCenter(VIEW_WIDTH * 0.5f, VIEW_HEIGHT * 0.5f);
 }
@@ -35,18 +36,16 @@ void Game::run()
                     resizeView(window, camera);
                     resizeView(window, uiView);
                 case sf::Event::KeyPressed:
-                    if (sf::Keyboard::isKeyPressed(sf::Keyboard::P))
+                    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
                     {
-                        paused = !paused;
+                        gameState.togglePause();
                     }
                 default:
                     break;
             }
         }
-        if (!paused) {
-            window.clear(sf::Color(59, 186, 255));
-            world.update(window, deltaTime, camera, uiView);
-        }
+        window.clear(sf::Color(59, 186, 255));
+        world.update(window, deltaTime, camera, uiView);
         // clamp view width to map size
         // todo: fix right world bounds due to player width offset
         sf::Vector2f camera_bounds(std::clamp(world.getPlayerPosition().x, VIEW_WIDTH * 0.5f, MAP_WIDTH * TILE_SIZE - VIEW_WIDTH * 0.5f ), world.getPlayerPosition().y); 

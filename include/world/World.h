@@ -4,10 +4,12 @@
 #include "ui/UI.h"
 #include "entities/Player.h"
 
+class GameState;
+
 class World
 {
 public:
-    World();
+    World(GameState& gameState);
     ~World();
 
     void update(sf::RenderWindow& window, float deltaTime, sf::View& camera, sf::View& uiView);
@@ -27,4 +29,6 @@ private:
     sf::Vector2i mousePixelPos;
     sf::Vector2f mouseWorldPos;
     sf::Vector2f mouseUIPos;
+    // state
+    GameState& gameState;
 };
