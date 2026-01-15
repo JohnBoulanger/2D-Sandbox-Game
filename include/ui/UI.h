@@ -1,6 +1,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+
 #include "HealthBar.h"
 #include "Inventory.h"
 #include "PauseMenu.h"
@@ -10,11 +11,13 @@ class GameState;
 
 class UI {
 public:
-    UI(GameState& gameState);
-    ~UI();
+    UI(GameState& gameState, const sf::Vector2f& windowSize);
 
-    void update();
-    void draw(sf::RenderWindow& window, sf::Vector2f mousePos);
+    // Forward SFML events to menus
+    void handleEvent(const sf::Event& event, sf::RenderWindow& window, sf::View& uiView);
+
+    // Draw everything UI-related
+    void draw(sf::RenderWindow& window);
 
 private:
     GameState& gameState;
@@ -22,6 +25,7 @@ private:
     PauseMenu pauseMenu;
     StartMenu startMenu;
 
+    // HUD
     HealthBar healthBar;
     Inventory inventory;
 };

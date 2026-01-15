@@ -1,40 +1,40 @@
-#include <ui/UI.h>
-#include <config/TileConstants.h>
-#include <core/GameState.h>
+#include "ui/UI.h"
+#include "core/GameState.h"
 
-UI::UI(GameState& gameState) :
-    gameState(gameState),
-    pauseMenu(gameState),
-    startMenu(gameState)
+UI::UI(GameState& gameState, const sf::Vector2f& windowSize)
+: gameState(gameState),
+  pauseMenu(gameState, windowSize),
+  startMenu(gameState, windowSize)
 {
-
 }
 
-UI::~UI()
+void UI::handleEvent(const sf::Event& event, sf::RenderWindow& window, sf::View& uiView)
 {
+    // Start menu gets priority
+    if (gameState.isInStartMenu()) {
+        startMenu.handleEvent(event, window, uiView);
+        return;
+    }
 
-}
-
-void UI::update()
-{
-
-}
-
-void UI::draw(sf::RenderWindow& window, sf::Vector2f mousePos)
-{
-    // HUD (SFML)
-    healthBar.draw(window);
-    inventory.draw(window);
-
-    // Menus (TGUI)
+    // Pause menu input
     if (gameState.isPaused()) {
-        pauseMenu.show(window);
-        startMenu.hide();
-    } else if (gameState.isInStartMenu()) {
-        startMenu.show(window);
-        pauseMenu.hide();
-    } else {
-        pauseMenu.hide();
-        startMenu.hide();
+        pauseMenu.handleEvent(event, window, uiView);
+    }
+}
+
+void UI::draw(sf::RenderWindow& window)
+{
+    // HUD (always visible when not in start menu)
+    if (!gameState.isInStartMenu()) {
+        healthBar.draw(window);
+        inventory.draw(window);
+    }
+
+    // Menus
+    if (gameState.isInStartMenu()) {
+        startMenu.draw(window);
+    }
+    else if (gameState.isPaused()) {
+        pauseMenu.draw(window);
     }
 }

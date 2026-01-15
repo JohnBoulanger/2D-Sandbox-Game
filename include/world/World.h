@@ -15,6 +15,7 @@ public:
     void update(sf::RenderWindow& window, float deltaTime, sf::View& camera, sf::View& uiView);
     void handleCollisions(sf::RenderWindow& window);
     void draw(sf::RenderWindow& window, sf::View& camera, sf::View& uiView);
+    void handleEvent(const sf::Event& event, sf::RenderWindow& window, sf::View& uiView);
 
     // getters
     sf::Vector2f getPlayerPosition() { return player.getPosition(); }
@@ -27,8 +28,7 @@ private:
     // ui
     UI ui;
     sf::Vector2i mousePixelPos;
-    sf::Vector2f mouseWorldPos;
-    sf::Vector2f mouseUIPos;
+    sf::Vector2f mousePos;
     // state
     GameState& gameState;
 };

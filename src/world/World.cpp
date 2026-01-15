@@ -2,12 +2,13 @@
 #include "config/GameConstants.h"
 #include "core/TextureUtils.h"
 #include <core/GameState.h>
+#include <core/View.h>
 
 World::World(GameState& gameState) :
     map(),
     player(DEFAULT_PLAYER_STATE, {PLAYER_ANIM_FRAMES, PLAYER_NUM_ANIMS}, PLAYER_ANIMATION_SPEED, SPEED, JUMP_HEIGHT),
     gameState(gameState),
-    ui(gameState)
+    ui(gameState, {VIEW_WIDTH, VIEW_HEIGHT})
 {
 
 }
@@ -28,26 +29,22 @@ void World::update(sf::RenderWindow& window, float deltaTime, sf::View& camera, 
         player.update(deltaTime);
         handleCollisions(window);
         mousePixelPos = sf::Mouse::getPosition(window);
-        mouseWorldPos = window.mapPixelToCoords(mousePixelPos, camera);
-        mouseUIPos = window.mapPixelToCoords(mousePixelPos, uiView);
+        mousePos = window.mapPixelToCoords(mousePixelPos, camera);
     };
-
-    // update UI
-    ui.update();
 }
 
 void World::draw(sf::RenderWindow& window, sf::View& camera, sf::View& uiView)
 {
     // draw map
     window.setView(camera);
-    map.draw(window, camera, mouseWorldPos);
+    map.draw(window, camera, mousePos);
 
     // draw player
     player.draw(window);
 
     // draw UI
     window.setView(uiView);
-    ui.draw(window, mouseUIPos);
+    ui.draw(window);
 }
 
 void World::handleCollisions(sf::RenderWindow& window)
@@ -73,3 +70,7 @@ void World::handleCollisions(sf::RenderWindow& window)
     }
 }
 
+void World::handleEvent(const sf::Event& event, sf::RenderWindow& window, sf::View& uiView)
+{
+    ui.handleEvent(event, window, uiView);
+}

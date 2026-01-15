@@ -27,6 +27,7 @@ void Game::run()
         sf::Event event;
         while (window.pollEvent(event))
         {
+            world.handleEvent(event, window, uiView);
             switch (event.type)
             {
                 case sf::Event::Closed:

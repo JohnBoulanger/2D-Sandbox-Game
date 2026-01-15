@@ -1,15 +1,21 @@
 #pragma once
+
 #include <SFML/Graphics.hpp>
 
 class GameState;
 
 class StartMenu {
 public:
-    StartMenu(GameState& gameState);
+    StartMenu(GameState& gameState, const sf::Vector2f& windowSize);
 
-    void show(sf::RenderWindow& window);
-    void hide();
+    void handleEvent(const sf::Event& event, sf::RenderWindow& window, sf::View& uiView);
+    void draw(sf::RenderWindow& window);
 
 private:
     GameState& gameState;
+
+    sf::RectangleShape overlay;
+    sf::RectangleShape startButton;
+    sf::Text startText;
+    sf::Font font;
 };
