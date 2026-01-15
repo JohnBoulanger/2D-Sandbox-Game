@@ -5,7 +5,6 @@
 StartMenu::StartMenu(GameState& gameState, const sf::Vector2f& windowSize)
 : gameState(gameState)
 {
-    // Load font (adjust path if needed)
     if (!font.loadFromFile("fonts/arial.ttf")) {
         std::cerr << "Failed to load font\n";
     }
@@ -14,18 +13,43 @@ StartMenu::StartMenu(GameState& gameState, const sf::Vector2f& windowSize)
     overlay.setSize(windowSize);
     overlay.setFillColor(sf::Color(0, 0, 0, 160));
 
-    // Start button
-    startButton.setSize({220.f, 70.f});
-    startButton.setFillColor(sf::Color(70, 70, 70));
-    startButton.setPosition(
-        windowSize.x * 0.5f - 110.f,
-        windowSize.y * 0.5f - 35.f
+    // Center panel
+    panel.setSize({360.f, 260.f});
+    panel.setFillColor(sf::Color(40, 40, 40, 230));
+    panel.setOutlineThickness(2.f);
+    panel.setOutlineColor(sf::Color(180, 180, 180));
+    panel.setPosition(
+        windowSize.x * 0.5f - panel.getSize().x * 0.5f,
+        windowSize.y * 0.5f - panel.getSize().y * 0.5f
     );
 
-    // Button text
+    // Title
+    titleText.setFont(font);
+    titleText.setString("Terraria Clone");
+    titleText.setCharacterSize(36);
+    titleText.setFillColor(sf::Color::White);
+
+    sf::FloatRect titleBounds = titleText.getLocalBounds();
+    titleText.setOrigin(
+        titleBounds.left + titleBounds.width / 2.f,
+        titleBounds.top + titleBounds.height / 2.f
+    );
+    titleText.setPosition(
+        panel.getPosition().x + panel.getSize().x / 2.f,
+        panel.getPosition().y + 50.f
+    );
+
+    // Start button
+    startButton.setSize({220.f, 60.f});
+    startButton.setFillColor(sf::Color(70, 70, 70));
+    startButton.setPosition(
+        panel.getPosition().x + panel.getSize().x / 2.f - 110.f,
+        panel.getPosition().y + 140.f
+    );
+
     startText.setFont(font);
     startText.setString("Start Game");
-    startText.setCharacterSize(28);
+    startText.setCharacterSize(26);
     startText.setFillColor(sf::Color::White);
 
     sf::FloatRect textBounds = startText.getLocalBounds();
@@ -59,10 +83,10 @@ void StartMenu::handleEvent(
 
         if (startButton.getGlobalBounds().contains(mousePos)) {
             gameState.toggleStartMenu();
+            gameState.togglePause(); // enter gameplay unpaused
         }
     }
 }
-
 
 void StartMenu::draw(sf::RenderWindow& window)
 {
@@ -70,6 +94,8 @@ void StartMenu::draw(sf::RenderWindow& window)
         return;
 
     window.draw(overlay);
+    window.draw(panel);
+    window.draw(titleText);
     window.draw(startButton);
     window.draw(startText);
 }
