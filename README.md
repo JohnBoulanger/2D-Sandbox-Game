@@ -1,6 +1,6 @@
 # 2D Sandbox Game Engine (C++ / SFML)
 
-[▶ Demo video](screenshots/Sandbox_Engine_Building.mov)
+[▶ Demo video](screenshots/Terraria_Clone_Building.mov)
 
 <img width="1008" height="730" alt="Sandbox Engine Screenshot" src="https://github.com/user-attachments/assets/8acd5e4e-de91-4925-b3cc-618b4ba1f229" />
 
