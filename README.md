@@ -2,6 +2,8 @@
 
 [▶ Demo video](screenshots/Terraria_Clone_Building.mov)
 
+<img width="1008" height="730" alt="Screenshot 2026-01-16 at 2 03 03 PM" src="https://github.com/user-attachments/assets/8acd5e4e-de91-4925-b3cc-618b4ba1f229" />
+
 A 2D sandbox game inspired by Terraria, built from scratch in C++ using SFML.
 Focuses on tile-based worlds, procedural generation, player physics, and clean engine-style architecture.
 
