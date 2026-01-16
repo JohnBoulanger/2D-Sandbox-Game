@@ -21,7 +21,7 @@ World::~World()
 void World::update(sf::RenderWindow& window, float deltaTime, sf::View& camera, sf::View& uiView)
 {   
     // update player and map when not paused
-    if (!gameState.isPaused()) {
+    if (!gameState.isPaused() && !gameState.isInStartMenu()) {
         // update map
         map.update(deltaTime);
 

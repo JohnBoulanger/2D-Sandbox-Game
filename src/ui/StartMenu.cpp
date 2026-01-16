@@ -42,6 +42,8 @@ StartMenu::StartMenu(GameState& gameState, const sf::Vector2f& windowSize)
     // Start button
     startButton.setSize({220.f, 60.f});
     startButton.setFillColor(sf::Color(70, 70, 70));
+    startButton.setOutlineThickness(1.f);
+    startButton.setOutlineColor(sf::Color::Black);
     startButton.setPosition(
         panel.getPosition().x + panel.getSize().x / 2.f - 110.f,
         panel.getPosition().y + 140.f
@@ -72,18 +74,22 @@ void StartMenu::handleEvent(
     if (!gameState.isInStartMenu())
         return;
 
-    if (event.type == sf::Event::MouseButtonPressed &&
-        event.mouseButton.button == sf::Mouse::Left)
-    {
-        sf::Vector2f mousePos =
-            window.mapPixelToCoords(
-                {event.mouseButton.x, event.mouseButton.y},
-                uiView
-            );
+    sf::Vector2f mousePos =
+    window.mapPixelToCoords(
+        {event.mouseButton.x, event.mouseButton.y},
+        uiView
+    );
 
+    startButton.setFillColor(
+        startButton.getGlobalBounds().contains(mousePos)
+                ? sf::Color(90, 90, 90)
+                : sf::Color(70, 70, 70)
+    );
+
+    if (event.type == sf::Event::MouseButtonPressed)
+    {
         if (startButton.getGlobalBounds().contains(mousePos)) {
             gameState.toggleStartMenu();
-            gameState.togglePause(); // enter gameplay unpaused
         }
     }
 }

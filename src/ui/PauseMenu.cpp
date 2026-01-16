@@ -121,8 +121,7 @@ void PauseMenu::handleEvent(
     );
 
     // === Click handling ===
-    if (event.type == sf::Event::MouseButtonPressed &&
-        event.mouseButton.button == sf::Mouse::Left)
+    if (event.type == sf::Event::MouseButtonPressed)
     {
         if (resumeButton.getGlobalBounds().contains(mousePos)) {
             gameState.togglePause();
