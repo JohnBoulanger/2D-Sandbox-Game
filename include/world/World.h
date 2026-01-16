@@ -16,6 +16,7 @@ public:
     void handleCollisions(sf::RenderWindow& window);
     void draw(sf::RenderWindow& window, sf::View& camera, sf::View& uiView);
     void handleEvent(const sf::Event& event, sf::RenderWindow& window, sf::View& uiView);
+    void loadBackground();
 
     // getters
     sf::Vector2f getPlayerPosition() { return player.getPosition(); }

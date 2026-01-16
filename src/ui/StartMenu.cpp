@@ -90,17 +90,14 @@ void StartMenu::handleEvent(
             uiView
         );
 
-    const bool hovered =
-        startButton.getGlobalBounds().contains(mousePos);
-
     startButton.setFillColor(
-        hovered ? sf::Color(90, 90, 90)
-                : sf::Color(70, 70, 70)
+        startButton.getGlobalBounds().contains(mousePos)
+            ? sf::Color(90, 90, 90)
+            : sf::Color(70, 70, 70)
     );
 
     if (event.type == sf::Event::MouseButtonPressed &&
-        event.mouseButton.button == sf::Mouse::Left &&
-        hovered)
+        event.mouseButton.button == sf::Mouse::Left)
     {
         gameState.toggleStartMenu();
     }

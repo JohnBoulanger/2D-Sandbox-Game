@@ -41,3 +41,23 @@ void Tile::draw(sf::RenderWindow& window, int bitmask)
     window.draw(body);
     //window.draw(hitbox);
 }
+
+void Tile::setTile(sf::Texture& texture, TileID newId)
+{
+    id = newId;
+    body.setTexture(texture, true);
+
+    if (newId > 0)
+    {
+        hitbox.setSize({TILE_SIZE, TILE_SIZE});
+        hitbox.setOrigin({TILE_SIZE * 0.5f, TILE_SIZE * 0.5f});
+        hitbox.setPosition(body.getPosition());
+        hitbox.setOutlineThickness(1.0f);
+        hitbox.setOutlineColor(sf::Color::Blue);
+        hitbox.setFillColor(sf::Color::Transparent);
+    }
+    else
+    {
+        hitbox.setSize({0.f, 0.f});
+    }
+}

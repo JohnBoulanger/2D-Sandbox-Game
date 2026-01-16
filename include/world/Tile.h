@@ -14,6 +14,10 @@ public:
     // getters
     Collider& getCollider() { return collider; }
     TileID getTileID() { return id; }
+
+    // setters
+    void setTile(sf::Texture& texture, TileID id);
+
 private:
     sf::Sprite body;
     sf::RectangleShape hitbox;

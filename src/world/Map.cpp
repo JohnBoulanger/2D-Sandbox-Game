@@ -132,7 +132,7 @@ void Map::loadTileset()
     tileset[2].loadFromFile("terrariaTextures/Dirt.png");
     tileset[3].loadFromFile("terrariaTextures/Stone.png");
     tileset[4].loadFromFile("terrariaTextures/Iron.png");
-
+    tileset[5].loadFromFile("terrariaTextures/Wood.png");
 }
 
 void Map::generateHeightMap(std::vector<float>& noiseOutput, int width)
@@ -193,4 +193,23 @@ void Map::generateWorldNoise(std::vector<float>& noiseOutput, int width, int hei
     }
 
     fclose(fp);
+}
+
+void Map::handleEvent(sf::Event event, sf::Vector2f mousePos)
+{
+    if (event.type == sf::Event::MouseButtonPressed)
+    {
+        sf::Vector2f gridPos = mousePos - sf::Vector2f(TILE_SIZE * 0.5f, TILE_SIZE * 0.5f);
+
+        int x = static_cast<int>(std::ceil(gridPos.x / TILE_SIZE));
+        int y = static_cast<int>(std::ceil(gridPos.y / TILE_SIZE));
+
+        if (x > 0 && y > 0) {
+            if(event.mouseButton.button == sf::Mouse::Left) {
+                map[x][y].setTile(tileset[WOOD], WOOD);
+            } else if (event.mouseButton.button == sf::Mouse::Right) {
+                map[x][y].setTile(tileset[AIR], AIR);
+            }
+        }
+    }
 }

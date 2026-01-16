@@ -7,7 +7,7 @@ enum TileID
     DIRT = 2,
     STONE = 3,
     IRON = 4,
-    WATER = 5
+    WOOD = 5
 };
 
 struct TileType {

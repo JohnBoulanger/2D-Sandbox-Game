@@ -14,6 +14,7 @@ public:
     void loadTileset();
     void generateHeightMap(std::vector<float>& noiseOutput, int width);
     void generateWorldNoise(std::vector<float>& noiseOutput, int width, int height);
+    void handleEvent(sf::Event event, sf::Vector2f mousePos);
 
     // getters
     Tile& getTile(int y, int x);

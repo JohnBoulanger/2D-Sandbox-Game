@@ -27,7 +27,6 @@ void Game::run()
         sf::Event event;
         while (window.pollEvent(event))
         {
-            world.handleEvent(event, window, uiView);
             switch (event.type)
             {
                 case sf::Event::Closed:
@@ -36,11 +35,16 @@ void Game::run()
                 case sf::Event::Resized:
                     resizeView(window, camera);
                     resizeView(window, uiView);
+                    break;
                 case sf::Event::KeyPressed:
                     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
                     {
                         gameState.togglePause();
                     }
+                    break;
+                case sf::Event::MouseButtonPressed:
+                    world.handleEvent(event, window, uiView);
+                    break;
                 default:
                     break;
             }
