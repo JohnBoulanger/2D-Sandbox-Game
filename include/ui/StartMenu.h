@@ -18,13 +18,16 @@ public:
 private:
     GameState& gameState;
 
+    // menu
     sf::Font font;
-
-    sf::RectangleShape overlay;
     sf::RectangleShape panel;
-
     sf::Text titleText;
-
     sf::RectangleShape startButton;
     sf::Text startText;
+
+    // background
+    sf::Texture skyTexture;
+    sf::Sprite skySprite;
+    sf::Texture backgroundTexture;
+    sf::Sprite backgroundSprite;
 };

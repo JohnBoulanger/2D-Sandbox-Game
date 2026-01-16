@@ -45,7 +45,7 @@ void Game::run()
                     break;
             }
         }
-        window.clear(sf::Color(59, 186, 255));
+        window.clear(sf::Color(135, 206, 235));
         world.update(window, deltaTime, camera, uiView);
         // clamp view width to map size
         // todo: fix right world bounds due to player width offset

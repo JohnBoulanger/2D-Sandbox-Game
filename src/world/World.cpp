@@ -3,15 +3,42 @@
 #include "core/TextureUtils.h"
 #include <core/GameState.h>
 #include <core/View.h>
+#include <iostream>
 
-World::World(GameState& gameState) :
-    map(),
-    player(DEFAULT_PLAYER_STATE, {PLAYER_ANIM_FRAMES, PLAYER_NUM_ANIMS}, PLAYER_ANIMATION_SPEED, SPEED, JUMP_HEIGHT),
-    gameState(gameState),
-    ui(gameState, {VIEW_WIDTH, VIEW_HEIGHT})
+World::World(GameState& gameState)
+: map()
+, player(
+      DEFAULT_PLAYER_STATE,
+      {PLAYER_ANIM_FRAMES, PLAYER_NUM_ANIMS},
+      PLAYER_ANIMATION_SPEED,
+      SPEED,
+      JUMP_HEIGHT
+  )
+, gameState(gameState)
+, ui(gameState, {VIEW_WIDTH, VIEW_HEIGHT})
 {
+    const sf::Vector2f windowSize{VIEW_WIDTH, VIEW_HEIGHT};
 
+    if (!backgroundTexture.loadFromFile("terrariaTextures/Background_11.png")) {
+        std::cerr << "Failed to load background texture\n";
+    }
+
+    if (!skyTexture.loadFromFile("terrariaTextures/Background_0.png")) {
+        std::cerr << "Failed to load sky texture\n";
+    }
+
+    applyCoverScaling(backgroundSprite, backgroundTexture, windowSize);
+
+    skySprite.setTexture(skyTexture);
+    const sf::Vector2u skySize = skyTexture.getSize();
+    const float skyScaleX = windowSize.x / skySize.x;
+    skySprite.setScale(skyScaleX, 1.f);
+    skySprite.setPosition(
+        (windowSize.x - skySize.x * skyScaleX) * 0.5f,
+        0.f
+    );
 }
+
 
 World::~World()
 {
@@ -31,12 +58,18 @@ void World::update(sf::RenderWindow& window, float deltaTime, sf::View& camera, 
         mousePixelPos = sf::Mouse::getPosition(window);
         mousePos = window.mapPixelToCoords(mousePixelPos, camera);
     };
+    skySprite.setPosition(player.getPosition().x - window.getSize().x * 0.5f, player.getPosition().y - window.getSize().y * 0.5f);
+    backgroundSprite.setPosition(player.getPosition().x - window.getSize().x * 0.5f, player.getPosition().y - window.getSize().y * 0.5f);
 }
 
 void World::draw(sf::RenderWindow& window, sf::View& camera, sf::View& uiView)
 {
-    // draw map
+    // draw background
     window.setView(camera);
+    window.draw(skySprite);
+    window.draw(backgroundSprite);
+    
+    // draw map
     map.draw(window, camera, mousePos);
 
     // draw player

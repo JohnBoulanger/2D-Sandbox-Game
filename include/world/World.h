@@ -31,4 +31,10 @@ private:
     sf::Vector2f mousePos;
     // state
     GameState& gameState;
+
+    // background
+    sf::Texture skyTexture;
+    sf::Sprite skySprite;
+    sf::Texture backgroundTexture;
+    sf::Sprite backgroundSprite;
 };
