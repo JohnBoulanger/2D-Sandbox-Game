@@ -31,7 +31,7 @@ void World::update(sf::RenderWindow& window, float deltaTime, sf::View& camera, 
     // update player and map when not paused
     if (!gameState.isPaused() && !gameState.isInStartMenu()) {
         // update map
-        map.update(deltaTime);
+        map.update(deltaTime, mousePos);
 
         // update player
         player.update(deltaTime);
@@ -78,6 +78,7 @@ void World::handleCollisions(sf::RenderWindow& window)
                 continue;
 
             Tile& tile = map.getTile(x, y);
+            if (!tile.isSolid()) continue;
             if (tile.getCollider().checkCollision(player.getCollider(), direction, 1.0f))
                 player.onCollision(direction);
         }
@@ -86,7 +87,7 @@ void World::handleCollisions(sf::RenderWindow& window)
 
 void World::handleEvent(const sf::Event& event, sf::RenderWindow& window, sf::View& uiView)
 {
-    map.handleEvent(event, mousePos);
+    map.handleEvent(event);
     ui.handleEvent(event, window, uiView);
 }
 

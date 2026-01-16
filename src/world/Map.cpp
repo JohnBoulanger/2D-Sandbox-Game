@@ -109,9 +109,23 @@ void Map::draw(sf::RenderWindow& window, sf::View& camera, sf::Vector2f mousePos
     window.draw(mouseTile);
 }
 
-void Map::update(float deltaTime)
+void Map::update(float deltaTime, sf::Vector2f mousePos)
 {
+    if (placing)
+    {
+        sf::Vector2f gridPos = mousePos - sf::Vector2f(TILE_SIZE * 0.5f, TILE_SIZE * 0.5f);
 
+        int x = static_cast<int>(std::ceil(gridPos.x / TILE_SIZE));
+        int y = static_cast<int>(std::ceil(gridPos.y / TILE_SIZE));
+
+        if (x > 0 && y > 0) {
+            if(sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
+                map[x][y].setTile(tileset[WOOD], WOOD, x, y);
+            } else if (sf::Mouse::isButtonPressed(sf::Mouse::Right)) {
+                map[x][y].setTile(tileset[AIR], AIR, x, y);
+            }
+        }
+    }
 }
 
 void Map::printMap()
@@ -195,21 +209,15 @@ void Map::generateWorldNoise(std::vector<float>& noiseOutput, int width, int hei
     fclose(fp);
 }
 
-void Map::handleEvent(sf::Event event, sf::Vector2f mousePos)
+void Map::handleEvent(sf::Event event)
 {
     if (event.type == sf::Event::MouseButtonPressed)
     {
-        sf::Vector2f gridPos = mousePos - sf::Vector2f(TILE_SIZE * 0.5f, TILE_SIZE * 0.5f);
+        placing = true;
+    }
 
-        int x = static_cast<int>(std::ceil(gridPos.x / TILE_SIZE));
-        int y = static_cast<int>(std::ceil(gridPos.y / TILE_SIZE));
-
-        if (x > 0 && y > 0) {
-            if(event.mouseButton.button == sf::Mouse::Left) {
-                map[x][y].setTile(tileset[WOOD], WOOD);
-            } else if (event.mouseButton.button == sf::Mouse::Right) {
-                map[x][y].setTile(tileset[AIR], AIR);
-            }
-        }
+    if (event.type == sf::Event::MouseButtonReleased)
+    {
+        placing = false;
     }
 }

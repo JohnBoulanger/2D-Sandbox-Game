@@ -14,9 +14,10 @@ public:
     // getters
     Collider& getCollider() { return collider; }
     TileID getTileID() { return id; }
+    bool isSolid() { return solid; }
 
     // setters
-    void setTile(sf::Texture& texture, TileID id);
+    void setTile(sf::Texture& texture, TileID id, int x, int y);
 
 private:
     sf::Sprite body;
@@ -25,4 +26,5 @@ private:
     TileID id;
     int option;
     TileType type;
+    bool solid = false;
 };
