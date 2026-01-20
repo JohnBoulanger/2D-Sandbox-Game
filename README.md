@@ -2,9 +2,9 @@
 
 [▶ Demo video](screenshots/Terraria_Clone_Building.mov)
 
-<img width="1008" height="730" alt="Sandbox Engine Screenshot" src="https://github.com/user-attachments/assets/8acd5e4e-de91-4925-b3cc-618b4ba1f229" />
+<img width="1008" height="730" alt="Sandbox Screenshot" src="https://github.com/user-attachments/assets/8acd5e4e-de91-4925-b3cc-618b4ba1f229" />
 
-A tile-based 2D sandbox game engine built from scratch in C++ using SFML.
+A tile-based 2D sandbox game built from scratch in C++ using SFML.
 The project focuses on real-time rendering, dynamic world modification, collision handling, and clean engine-style architecture. Sprites are gathered from an open source terraria asset pack
 
 ## Features
