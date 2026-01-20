@@ -1,4 +1,4 @@
-# 2D Sandbox Game Engine (C++ / SFML)
+# 2D Sandbox Game (C++ / SFML)
 
 [▶ Demo video](screenshots/Terraria_Clone_Building.mov)
 
