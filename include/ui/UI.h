@@ -6,6 +6,7 @@
 #include "Inventory.h"
 #include "PauseMenu.h"
 #include "StartMenu.h"
+#include "WorldSelectMenu.h"
 
 class GameState;
 
@@ -24,6 +25,7 @@ private:
 
     PauseMenu pauseMenu;
     StartMenu startMenu;
+    WorldSelectMenu worldSelectMenu;
 
     // HUD
     HealthBar healthBar;
