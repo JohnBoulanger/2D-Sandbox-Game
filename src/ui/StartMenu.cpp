@@ -60,7 +60,7 @@ StartMenu::StartMenu(GameState& gameState, const sf::Vector2f& windowSize)
     );
 
     startText.setFont(font);
-    startText.setString("Select World");
+    startText.setString("Start Game");
     startText.setCharacterSize(26);
     startText.setFillColor(sf::Color::White);
 
@@ -100,7 +100,6 @@ void StartMenu::handleEvent(
         event.mouseButton.button == sf::Mouse::Left)
     {
         gameState.toggleStartMenu();
-        gameState.toggleWorldSelectMenu();
     }
 }
 

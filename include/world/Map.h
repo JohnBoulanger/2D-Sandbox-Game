@@ -17,7 +17,7 @@ public:
     void handleEvent(sf::Event event);
 
     // getters
-    Tile& getTile(int x, int y);
+    Tile& getTile(int y, int x);
 
 private:
     std::vector<sf::Texture> tileset;
